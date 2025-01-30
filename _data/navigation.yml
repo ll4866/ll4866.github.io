@@ -3,8 +3,8 @@ main:
     url: /posts/
   - title: "About"
     url: /about/
-  - title: "DNL"
-    url: /dnl/
+  - title: "DLN"
+    url: /dln/
   - title: "Final Presentation"
     url: /finalpresentation/
   - title: "Assignments"
