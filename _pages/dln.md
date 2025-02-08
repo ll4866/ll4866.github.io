@@ -5,12 +5,12 @@ author_profile: false
 categories:
   - DNL
 tags:
-  - Started
+  - Done
 toc: true
 toc_label: "Digital Litaracy Narrative"
 toc_sticky: true
 ---
-This assignment focuses on personalizing a provided text to reflect my own digital literacies and the skills I aim to develop this semester. The goal is to adjust the content from my perspective, maintaining a length of around 750 words.
+Part 1: focuses on personalizing a provided text to reflect my own digital literacies and the skills I aim to develop this semester. The goal is to adjust the content from my perspective, maintaining a length of around 750 words.
 **Due date:** 8 February 2025.
 {: .notice}
 
