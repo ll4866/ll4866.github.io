@@ -20,34 +20,34 @@ This assignment focuses on personalizing a provided text to reflect my own digit
 
 ## Generated Response *(by GPT4o 30 Jan 25)*
 
-### A University Student’s View on Digital Literacy
+### Navigating Digital Literacy as an Interactive Media Arts Student
 
-As a 22-year-old university student at a liberal arts institution, I'm caught between digital skilss and critical thinking. Digital literacy goes beyound using computers or use social media—it is about understanding and questioning how these tools affect our lives in both academic and personal contexts. As technologies advances with AI and data-driven decisions, I see digital literacy isn't a fixed skill; it's constantly changing, requiring continuous learning and adaptation.
+As a 22-year-old university student at a liberal arts institution, I'm constantly balancing digital skills with critical thinking. Digital literacy isn’t just about using computers or scrolling through social media—it’s about understanding and questioning how these tools shape our lives, both academically and personally. With rapid advancements in AI and data-driven technologies, I’ve realized that digital literacy isn’t a fixed skill; it’s an evolving practice that demands continuous learning and adaptation.
 
-### Focused on Content Creation and Social Interaction
+### Creating, Connecting, and Collaborating Through Digital Tools
 
-As an Interactive Media Arts Major, Digital literacy is central to how I create content creation and engage with others. I work with Figma and Miro for UI/UX, Unity and Maya for 3D design, and Adobe Animate for 2D animation. Recently, I’ve started exploring film production with DaVinci Resolve and camera work. While my peers in Creative Writing may publish essays on Medium platforms like Medium or Substack, and Film students focus on video editing with Adobe Premiere Pro or DaVinci Resolve, we all rely onRegardless of discipline, we all rely on digital tools to share our work, engage audiences, and collaborate.
+As an Interactive Media Arts Major, digital literacy is at the core of how I create, connect, and collaborate. I work with Figma and Miro for UI/UX design, Unity and Maya for 3D projects, and Adobe Animate for 2D animation. Lately, I’ve been diving into film production with DaVinci Resolve and experimenting with camera work. While my peers in Creative Writing publish essays on platforms like Medium and Substack, and Film students focus on video editing with Adobe Premiere Pro or DaVinci Resolve, we all rely on digital tools to showcase our work, engage audiences, and collaborate seamlessly.
 
-Digital tools also shape how we interact socially. Platforms like Discord, Slack, and Trello help with academic teamwork, I use Google Workspace tools for documentation and collaboration, while Art History students curate digital exhibits on Google Arts & Culture. Understanding both the potentials and limitations of these platforms is key for effective communication and content creation.
+Digital platforms also shape how we interact socially. Tools like Discord, Slack, and Trello keep academic projects organized, while Google Workspace helps with documentation and teamwork. Art History students curate digital exhibits on platforms like Google Arts & Culture. Understanding the strengths and limitations of these platforms is key to effective communication and meaningful content creation.
 
-### Digital Research and Data Management
+### Research, Data, and the Power of Digital Organization
 
-Managing and analyzing research data is an important part of digital literacy. I’ve used Zotero once to organize citations for writing essays and worked with GitHub for version control. As an Interactive Media Arts major, I also use Unity to prototype interactive experiences. My friends in Computer Science use GitHub more extensively for coding projects, while Art and Art History students rely on databases like JSTOR and Artstor for research. Knowing how to manage digital information helps improve research and encourages critical thinking.
+Managing and analyzing research data is a big part of digital literacy. I’ve used Zotero to organize citations for essays and worked with GitHub for version control. As an Interactive Media Arts major, I also use Unity to prototype interactive experiences. My friends in Computer Science use GitHub extensively for coding projects, while Art History students lean on databases like JSTOR and Artstor for research. Learning how to manage digital information not only sharpens research skills but also fosters critical thinking.
 
-Data analysis is important across different fields. I’ve experimented with Voyant Tools for text analysis, while my peers in Computer Science use Python and R for data visualization. Film and New Media students use Google Analytics to study audience engagement. While each discipline uses different tools, digital humanities create a connection, showing how technology enhances the study of literature, media, and art.
+Data analysis plays a role across disciplines. I’ve experimented with Voyant Tools for text analysis, while Computer Science peers use Python and R for data visualization. Film and New Media students dive into Google Analytics to understand audience engagement. Despite our different approaches, digital humanities connect us, showing how technology enhances the study of literature, media, and art.
 
-### Digital Humanities and New Horizons in Learning
+### Digital Humanities: Blending Creativity with Technology
 
 The field of digital humanities provides an interdisciplinary space where traditional humanistic inquiry meets computational methods. Before taking courses in digital humanities, I viewed analysis as primarily focused on close reading. However, as an Interactive Media Arts major, my exposure to tools like Unity, Figma, and programming languages such as JavaScript and Python has broadened my perspective. I’ve worked with machine learning models for sentiment analysis and topic modeling, which helped me see literature and media not just as isolated works but as parts of larger, analyzable systems. Digital humanities expand possibilities in my field, from network analysis of characters to computational studies of user interaction and media design.
 
 This journey has also enhanced my understanding of computational thinking, as Berry and Fagerjord describe it—not just coding but thinking critically about how we use technology. In collaborative projects, I often bring a focus on user experience, interface design, and the ethical implications of digital tools, while my peers from computer science might focus on algorithmic efficiency. These diverse perspectives help us critically engage with the potential and limits of digital methods, fostering richer, more thoughtful outcomes.
 
-### Critical Reflections on My Digital Abilities and Future Growth
+### Reflecting on My Digital Journey and Where I’m Headed
 
 Despite my growing proficiency in digital research tools, I recognize gaps in my understanding. As an Interactive Media Arts major, I’m comfortable with basic text mining, visualization techniques, and tools like Unity, Figma, and JavaScript. However, I’d like to deepen my expertise in natural language processing and data storytelling. AI opens new possibilities in interactive media, from generative text models to immersive storytelling experiences, and I’m curious about how these tools can be used both critically and creatively.
 
 Additionally, I want to explore the ethical dimensions of digital work. How do biases in AI systems influence how information is processed and shared? How can we prevent digital tools from reinforcing systemic inequalities in academia and beyond? Digital literacy isn’t just about technical skills; it’s about cultivating a critical perspective to evaluate digital systems and their broader impact on society.
 
-### Conclusion
+### Growing as a Digital Thinker
 
-In my university journey as an Interactive Media Arts student, I’m eager to further explore digital humanities and computational thinking. I see digital literacy as a dynamic process, one that grows through constant learning and adaptation. Through interdisciplinary projects, critical engagement with tools like Unity, Figma, and Python, and new ways of working with data, I hope to build a digital fluency that balances technical expertise with ethical awareness. The liberal arts encourage this kind of exploration, where technology and the humanities intersect to deepen our connection with the world around us.
+As I continue my university journey, I’m excited to explore the process of digital humanities and computational thinking on a deeper level. For me, digital literacy isn’t just about using different tools—it’s about truly understanding how they work, why they matter, and what I’m actually doing when I use them. I want to connect the dots between the tools and the thinking behind them, learning how to apply them meaningfully. Whether it’s through interactive media projects, coding experiments, or data analysis, I aim to build a digital fluency that’s both technically sharp and grounded in curiosity and critical reflection. The liberal arts create the perfect environment for this kind of growth, where technology and the humanities meet, helping me make sense of—and even reshape—the world around me.
