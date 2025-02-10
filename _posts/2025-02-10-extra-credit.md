@@ -5,6 +5,8 @@ categories:
 tags:
   - Started
 ---
+![This is an alt text.](/image/extra-credit-event.jpg "This is a sample image.")
+
 **Event:** [Reducing Risk: An Introduction to Data Anonymization with Kristi Thompson](https://nyu.libcal.com/event/13661742?f=h).
 <br/>
 **Date:** Mon Feb 10, 2025 
