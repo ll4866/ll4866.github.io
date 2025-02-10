@@ -5,11 +5,12 @@ categories:
 tags:
   - Started
 ---
-### Extra Credit:
-
 **Event:** [Reducing Risk: An Introduction to Data Anonymization with Kristi Thompson](https://nyu.libcal.com/event/13661742?f=h).
+<br/>
 **Date:** Mon Feb 10, 2025 
+<br/>
 **Time:** 9pm - 10:30pm (GST)
+<br/>
 **Online:** [Zoom Link](https://nyu.zoom.us/j/92900010001).
 {: .notice}
 
