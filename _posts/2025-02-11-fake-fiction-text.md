@@ -55,8 +55,7 @@ To identify the fake story, I analyzed the frequency of common words across all 
 
 6. **Mandala Visualization (Keyword Usage):** Through the Mandala visualization, I noticed that Text 8 did not contain the words "men" and "away", both of which appeared in all the other texts. The absence of these common words in Text 8 further highlighted its deviation from typical human writing patterns.
 
-![Text that use men word.](/assets/images/scifi-men.png "This is a scifi-men.png.")
-![Text that use away word.](/assets/images/scifi-away.png "This is a scifi-away.png.")
+![Text that use men word.](/assets/images/scifi-men.png "This is a scifi-men.png.") ![Text that use away word.](/assets/images/scifi-away.png "This is a scifi-away.png.")
 
 ## Conclusion
 
