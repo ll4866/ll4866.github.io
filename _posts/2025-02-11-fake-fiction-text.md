@@ -10,18 +10,9 @@ Given nine different science fiction stories, one of which is fake and generated
 **For Class Date:** Mon Feb 11, 2025 
 {: .notice}
 
-| File   | Link                                                                                              |
-| -------|:-------------------------------------------------------------------------------------------------:|
-| Text 1 | [Drive](https://drive.google.com/file/d/1KkYOiZ906gf8TQESVCv6j_GUSuzqPMRl/view?usp=sharingh).     |
-| Text 2 | [Drive](https://drive.google.com/file/d/1qrCPVnLc_CpR1ACWzynZxNERNiff8Sq1/view?usp=drive_link).   |
-| Text 3 | [Drive](https://drive.google.com/file/d/1DheaI9s42TonhjGGCtI-2sHpo30X1YJq/view?usp=drive_link).   |
-| Text 4 | [Drive](https://drive.google.com/file/d/1JxlfZPp3kXpsKSP4YwQjufPsibDQL9Z_/view?usp=drive_link).   |
-| Text 5 | [Drive](https://drive.google.com/file/d/1_sXtLNq4TMLsDWgAIn8NsGdhcp67hxm5/view?usp=drive_link).   |
-| Text 6 | [Drive](https://drive.google.com/file/d/1aelzIXmW9Vam7YCP_x7ZutiDwAEzA404/view?usp=drive_link).   |
-| Text 7 | [Drive](https://drive.google.com/file/d/1EL3TCyF_-M6NKzfCzFRvpiG1vq2WwaYp/view?usp=drive_link).   |
-| Text 8 | [Drive](https://drive.google.com/file/d/1xAUeVWskx3XyiKSK4h9qHER4H5998rI_/view?usp=drive_link).   |
-| Text 9 | [Drive](https://drive.google.com/file/d/1klgVx6TrhpVaUg_X2kHFkryfKakjmzSy/view?usp=drive_link).   |
-| Folder | [Drive](https://drive.google.com/drive/folders/1EmW81uEWgqn9l1Z7_E0wSSTZu67AsyDp?usp=drive_link). |
+| File   | Text 1 | Text 2 | Text 3 | Text 4 | Text 5 | Text 6 | Text 7 | Text 8 | Text 9 | Drive |
+| -------|:---------------------------------------------------------------------------------------------:|
+| Link   | [Drive](https://drive.google.com/file/d/1KkYOiZ906gf8TQESVCv6j_GUSuzqPMRl/view?usp=sharingh).| [Drive](https://drive.google.com/file/d/1qrCPVnLc_CpR1ACWzynZxNERNiff8Sq1/view?usp=drive_link).| [Drive](https://drive.google.com/file/d/1DheaI9s42TonhjGGCtI-2sHpo30X1YJq/view?usp=drive_link).| [Drive](https://drive.google.com/file/d/1JxlfZPp3kXpsKSP4YwQjufPsibDQL9Z_/view?usp=drive_link).| [Drive](https://drive.google.com/file/d/1_sXtLNq4TMLsDWgAIn8NsGdhcp67hxm5/view?usp=drive_link).| [Drive](https://drive.google.com/file/d/1aelzIXmW9Vam7YCP_x7ZutiDwAEzA404/view?usp=drive_link).| [Drive](https://drive.google.com/file/d/1EL3TCyF_-M6NKzfCzFRvpiG1vq2WwaYp/view?usp=drive_link).| [Drive](https://drive.google.com/file/d/1xAUeVWskx3XyiKSK4h9qHER4H5998rI_/view?usp=drive_link).| [Drive](https://drive.google.com/file/d/1klgVx6TrhpVaUg_X2kHFkryfKakjmzSy/view?usp=drive_link).| [Drive](https://drive.google.com/drive/folders/1EmW81uEWgqn9l1Z7_E0wSSTZu67AsyDp?usp=drive_link).|
 
 ## Initial Hypothesis
 At first, I suspected Text 3 to be the AI-generated story due to the unique occurrence of the word "Seaton", which was not present in any of the other texts. This seemed abnormal at first glance. However, upon further consideration, I realized that "Seaton" is a proper name, and its uniqueness could be attributed to creative variation rather than artificial generation. This led me to adjust my approach to focus on broader linguistic patterns across all texts.
