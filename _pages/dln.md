@@ -10,7 +10,7 @@ toc: true
 toc_label: "Digital Litaracy Narrative"
 toc_sticky: true
 ---
-**Step 1:** focuses on personalizing a provided text to reflect my own digital literacies and the skills I aim to develop this semester. The goal is to adjust the content from my perspective, maintaining a length of around 750 words.
+**Step 1:** focuses on personalizing a provided text to reflect my own digital literacies and the skills I aim to develop this semester. The goal is to revise the Generated Response (by GPT-4o, 30 Jan 25) to reflect my perspective while keeping it around 750 words.
 
 **Due date:** 8 February 2025.
 {: .notice}
@@ -18,8 +18,6 @@ toc_sticky: true
 ## Prompt:
 
 > Write a 750 word reflection on digital literacy from the perspective of a 20 year old university student at a liberal arts university. Include strategies they might already know how to employ in their daily and academic lives for content creation, social interaction, as well as any platforms or software they use for research data management as well as data manipulation and analysis. Consider the different skill sets in the room given all the interdisciplinary majors ( in different fields such as Computer Science, Interactive Media, Film and New Media, Literature or Creative Writing, Art and Art History). Reflect on how digital humanities might offer new horizons on what they are studying, how collaboration might offer new avenues for developing their “computational thinking” that is in the sense of Berry and Fagerjord (A cognitive practice involving practical wisdom and reflection on computation) and how they can learn about new ways of approaching data and the world of AI. Offer critical reflection on your current abilities, what you are what you are discovering in the course as well as what kinds of new ways of thinking you would like to explore.
-
-## Generated Response *(by GPT4o 30 Jan 25)*
 
 ### Navigating Digital Literacy as an Interactive Media Arts Student
 
