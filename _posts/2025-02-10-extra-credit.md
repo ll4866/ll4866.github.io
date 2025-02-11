@@ -3,7 +3,7 @@ title: "Extra Credit"
 categories:
   - Extra
 tags:
-  - Started
+  - Ongoing
 ---
 ![This is a Extra Credit Poster image](/assets/images/extra-credit-event.png "This is a Extra Credit Poster image.")
 
