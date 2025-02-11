@@ -11,7 +11,7 @@ Given nine different science fiction stories, one of which is fake and generated
 {: .notice}
 
 | File | Text 1 | Text 2 | Text 3 | Text 4 | Text 5 | Text 6 | Text 7 | Text 8 | Text 9 |
-| ------ |:------------------------------------------------------------------------------:|
+| ---- |:------------------------------------------------------------------------------:|
 | [Drive](https://drive.google.com/drive/folders/1EmW81uEWgqn9l1Z7_E0wSSTZu67AsyDp?usp=drive_link)| [Drive](https://drive.google.com/file/d/1KkYOiZ906gf8TQESVCv6j_GUSuzqPMRl/view?usp=sharingh)| [Drive](https://drive.google.com/file/d/1qrCPVnLc_CpR1ACWzynZxNERNiff8Sq1/view?usp=drive_link)| [Drive](https://drive.google.com/file/d/1DheaI9s42TonhjGGCtI-2sHpo30X1YJq/view?usp=drive_link)| [Drive](https://drive.google.com/file/d/1JxlfZPp3kXpsKSP4YwQjufPsibDQL9Z_/view?usp=drive_link)| [Drive](https://drive.google.com/file/d/1_sXtLNq4TMLsDWgAIn8NsGdhcp67hxm5/view?usp=drive_link)| [Drive](https://drive.google.com/file/d/1aelzIXmW9Vam7YCP_x7ZutiDwAEzA404/view?usp=drive_link)| [Drive](https://drive.google.com/file/d/1EL3TCyF_-M6NKzfCzFRvpiG1vq2WwaYp/view?usp=drive_link).| [Drive](https://drive.google.com/file/d/1xAUeVWskx3XyiKSK4h9qHER4H5998rI_/view?usp=drive_link).| [Drive](https://drive.google.com/file/d/1klgVx6TrhpVaUg_X2kHFkryfKakjmzSy/view?usp=drive_link)|
 
 ## Initial Hypothesis
@@ -26,7 +26,10 @@ To identify the fake story, I analyzed the frequency of common words across all 
 4. **Micro Search:** Analyzing the distribution of frequent words throughout the texts, I observed that Text 8 was less “colorful,” exhibiting a limited variety and usage of these words. This lack of lexical diversity suggests a mechanical generation process, as AI models may struggle to replicate the nuanced word choices typical of human authors.![Micro Search.](/assets/images/scifi-microsearch.png "This is a scifi-microsearch.png.")
 5. **Bubblelines Visualization:** In the Bubblelines visualization, both Text 2 and Text 8 demonstrated evenly spaced and balanced patterns in the occurrence of common words—patterns that appeared almost machine-like in their precision. While this raised suspicion for both texts, the consistency observed in Text 8 aligned with other anomalies I had identified. ![This is a Bubbleline Analysis.](/assets/images/scifi-bubbleline.png "This is a scifi-bubbleline.png.")
 6. **Mandala Visualization (Keyword Usage):** Through the Mandala visualization, I noticed that Text 8 did not contain the words "men" and "away", both of which appeared in all the other texts. The absence of these common words in Text 8 further highlighted its deviation from typical human writing patterns.
-![Text that use men word.](/assets/images/scifi-men.png "This is a scifi-men.png.") ![Text that use away word.](/assets/images/scifi-away.png "This is a scifi-away.png.")
+
+Mandala "Men"              | Mandala "Away" 
+:-------------------------:|:-------------------------:
+![Text that use men word.](/assets/images/scifi-men.png "This is a scifi-men.png.") | ![Text that use away word.](/assets/images/scifi-away.png "This is a scifi-away.png.")
 
 ## Conclusion
 Considering all these uncommon patterns—high readability, uneven topic distribution, controlled word frequency, limited lexical richness, machine-like bubbleline patterns, and missing common keywords—I concluded that Text 8 is most likely the AI-generated story.
