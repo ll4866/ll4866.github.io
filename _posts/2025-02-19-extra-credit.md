@@ -35,6 +35,9 @@ Key points discussed during the event:
 
 ## Resources: 
 
+No Links to Tutorials or Open Data were provided during the event. However, important terms and concepts discussed
+{: .notice}
+
 * K-Anonymity Explained
 * L-Diversity and T-Closeness Overview
 * Privacy-Preserving Data Sharing Techniques
