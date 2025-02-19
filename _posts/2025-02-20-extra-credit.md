@@ -86,7 +86,7 @@ One thing that really stood out was how anonymized data isn’t necessarily safe
 
 Going forward, I want to apply these insights in different ways:
 
-* **In Future Classes:**I’ll be more skeptical about the datasets we use in research, making sure privacy concerns are actually addressed rather than just assuming anonymization is sufficient.
+* **In Future Classes:** I’ll be more skeptical about the datasets we use in research, making sure privacy concerns are actually addressed rather than just assuming anonymization is sufficient.
 * **In Capstone Projects:** If I work with survey or demographic data, I’ll explore different anonymization methods beyond k-anonymity—like sampling or differential privacy—to better evaluate how secure the data really is.
 * **In Professional Work:** If I end up working in data collection, AI, or research, I’ll prioritize ethical data management to avoid potential privacy risks.This event made me realize that data security isn’t just an academic issue—it has real-world consequences.
 
