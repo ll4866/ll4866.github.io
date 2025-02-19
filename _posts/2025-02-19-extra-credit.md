@@ -3,7 +3,7 @@ title: "Extra Credit"
 categories:
   - Extra
 tags:
-  - Ongoing
+  - Done
 ---
 ![This is a Extra Credit Poster image](/assets/images/extra-credit-event.png "This is a Extra Credit Poster image.")
 
@@ -35,13 +35,13 @@ Key points discussed during the event:
 
 ## Resources: 
 
-No Links to Tutorials or Open Data were provided during the event. However, important terms and concepts discussed
-{: .notice}
-
 * K-Anonymity Explained
 * L-Diversity and T-Closeness Overview
 * Privacy-Preserving Data Sharing Techniques
 * Introduction to Data Sampling Methods
+
+No Links to Tutorials or Open Data were provided during the event. However, important terms and concepts discussed
+{: .notice}
 
 ## Additional Resources: 
 
@@ -52,9 +52,11 @@ No Links to Tutorials or Open Data were provided during the event. However, impo
 ## Visuals: 
 
 **Understanding Anonymization Techniques:** A diagram illustrating different anonymization methods, from basic k-anonymity to more advanced techniques like l-diversity and t-closeness.
+
 ![This is a Extra Credit How Data Can Be Reidentified image](/assets/images/extra-credit-howDataCanBeReidentified.png "This is a Extra Credit How Data Can Be Reidentified image.")
 
 **How Data Can Be Reidentified:** A visual representation of how attackers can use public data sources to reidentify individuals in anonymized datasets.
+
 ![This is a Extra Credit Understanding Anonymization Techniques image](/assets/images/extra-credit-understandingAnonymizationTechniques.png "This is a Extra Credit Understanding Anonymization Techniques image.")
 
 ## Course Connection:
