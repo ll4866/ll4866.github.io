@@ -49,6 +49,9 @@ No Links to Tutorials or Open Data were provided during the event. However, impo
 * Open Data and Anonymization Techniques
 * Penetration Testing for Data Security
 
+No Links to Learning Resources or Beginner Learn were provided during the event. However, important terms and concepts discussed
+{: .notice}
+
 ## Visuals: 
 
 **Understanding Anonymization Techniques:** A diagram illustrating different anonymization methods, from basic k-anonymity to more advanced techniques like l-diversity and t-closeness.
@@ -61,14 +64,27 @@ No Links to Tutorials or Open Data were provided during the event. However, impo
 
 ## Course Connection:
 
-This event ties directly to Intro to DAAH, particularly our discussions on what information should and should not be shared with AI tools like ChatGPT. In class, we explored how data is recorded, processed, and the ethical implications of sharing information online. The event reinforced these ideas by showing how even anonymized data can be cross-referenced with external sources to expose private information.
+This event directly ties into what we’ve been discussing in **Digital Approaches in the Arts and Humanities (DAAH)**—especially the challenges of working with data ethically and effectively.
 
-Additionally, we discussed responsible AI use and the risks of improper data handling. If AI models train on datasets that are not properly anonymized, they can inadvertently expose sensitive details. This underscores the importance of carefully managing structured data before sharing or processing it through AI tools.
+1. **Data, AI, and Ethical Considerations**
+In class, we’ve explored how data is collected, processed, and shared, particularly with AI tools like ChatGPT. This event showed how even when data is anonymized, there’s still a risk of reidentification. This reinforces the importance of data ethics and the need to be mindful of how information is handled.
+
+2. **Computational Complexity and Digital Humanities**
+We read Berry and Fagerjord’s *“On the Way to Computational Thinking,”* which talks about the challenges of working with large datasets. This event built on that idea, showing how balancing privacy and data usefulness is a complex problem—not just in anonymization but in digital humanities research in general.
+
+3. **Text Analysis and Data Privacy**
+In Rockwell and Sinclair’s *“The Measured Words,”* we discussed how computational tools analyze large text datasets. But as this event showed, privacy risks don’t disappear just because data is stripped of names—attackers can still use patterns and external sources to reidentify individuals.
+
+4. **AI, Large Language Models, and Privacy Risks**
+The discussion on data linkage and reidentification connects to our conversations about LLMs and AI ethics. We’ve talked about how AI models are trained on massive datasets—this event made it clear that anonymized data isn’t always as private as it seems, which is a key consideration when using or contributing to AI-driven projects.
 
 ## Personal Reflection: 
 
-> This event helped me better understand how anonymization works and the risks associated with data privacy. Moving forward, I plan to apply these insights in several ways:
-In Future Classes: I will pay closer attention to how data anonymization impacts research and ensure any datasets I use are properly deidentified.
-In Capstone Projects: If I work with survey or demographic data, I will explore sampling techniques and penetration testing to assess privacy risks before publishing findings.
-In Professional Work: If my career involves data collection or AI, I will prioritize ethical data management to prevent privacy breaches.
-This event highlighted the difficulty of balancing privacy with data usability. As data sharing increases, understanding and applying effective anonymization techniques will be essential for maintaining security in research and professional fields.
+> Honestly, I didn’t understand much during the event itself. The concepts were technical and overwhelming, and at times, it felt like I was just trying to keep up. However, after going through the screenshots of the slides I took, I was able to piece together a rough understanding of what was discussed. Seeing the key points visually helped me make connections to what we've covered in class, like data ethics and the difficulties of handling large datasets.
+One thing that really stood out was how anonymized data isn’t necessarily safe. I used to assume that removing names and personal details was enough to protect privacy, but this event highlighted how attackers can still reidentify individuals using external data sources. The case study on incomplete anonymization really drove this home—it was surprising to see how even small bits of data can be linked together to expose someone’s identity.
+Going forward, I want to apply these insights in different ways:
+* **In Future Classes:**I’ll be more skeptical about the datasets we use in research, making sure privacy concerns are actually addressed rather than just assuming anonymization is sufficient.
+* **In Capstone Projects:** If I work with survey or demographic data, I’ll explore different anonymization methods beyond k-anonymity—like sampling or differential privacy—to better evaluate how secure the data really is.
+* **In Professional Work:** If I end up working in data collection, AI, or research, I’ll prioritize ethical data management to avoid potential privacy risks. This event made me realize that data security isn’t just an academic issue—it has real-world consequences.
+Something I’m still thinking about is how to balance privacy with data utility. The event made it clear that stronger anonymization can mean losing important details in a dataset. But if we strip too much away, do we risk making the data useless? And if we keep too much, are we sacrificing privacy? These are questions that seem more and more relevant as data-driven technologies continue to advance.
+Overall, this event reinforced that privacy is an ongoing challenge. As technology evolves, so do the methods for reidentification, meaning that anonymization strategies need to keep up. Understanding and applying better anonymization techniques will be crucial—not just for research, but for maintaining security in a world where data is constantly being collected, shared, and analyzed.
