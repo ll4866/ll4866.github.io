@@ -18,6 +18,9 @@ tags:
 
 ## Summary:
 
+Notice: Some sections of this document were refined using AI to enhance clarity and readability while preserving the original meaning.
+{: .notice}
+
 Key points discussed during the event:
 * **K-Anonymity and Extensions:** K-anonymity is a privacy-preserving method that ensures each individual in a dataset is indistinguishable from at least k−1 others based on certain attributes. However, it has limitations, particularly when sensitive data is involved. To address these limitations, two extensions have been developed: L-diversity and T-closeness. L-diversity ensures that within a group of similar records, there are at least l different values for any sensitive attribute, preventing attackers from easily inferring private information. T-closeness takes this further by ensuring that the distribution of sensitive values within any group is statistically similar to the overall dataset, making it more difficult to extract sensitive insights.
 
