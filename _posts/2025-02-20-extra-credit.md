@@ -71,7 +71,7 @@ No Links to Learning Resources or Beginner Learn were provided during the event.
 This event directly ties into what we’ve been discussing in **Digital Approaches in the Arts and Humanities (DAAH)**—especially the challenges of working with data ethically and effectively.
 
 1. **Data, AI, and Ethical Considerations**
-In class, we’ve explored how data is collected, processed, and shared, particularly with AI tools like ChatGPT. This event showed how even when data is anonymized, there’s still a risk of reidentification. This reinforces the importance of data ethics and the need to be mindful of how information is handled.
+In class, we’ve explored how data is collected, processed, and shared, as well as the risks of anonymization. This event highlighted how even anonymized data can be vulnerable to reidentification, reinforcing the importance of ethical considerations in data handling.  
 
 2. **Computational Complexity and Digital Humanities**
 We read Berry and Fagerjord’s *“On the Way to Computational Thinking,”* which talks about the challenges of working with large datasets. This event built on that idea, showing how balancing privacy and data usefulness is a complex problem—not just in anonymization but in digital humanities research in general.
