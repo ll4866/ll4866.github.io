@@ -12,7 +12,7 @@ This exercise has three main elements:
 2. using digital textual analysis tools to see what kind of exploratory data analysis (EDA) you can do using that corpus,
 3. assembling the evidence in a piece of web-facing written work along with visuals.
 
-**Due Date:** Thursday Feb 28, 2025 
+**Due Date:** Friday Feb 28, 2025 
 {: .notice}
 
 ## Step 1: Three different sets of articles from a single class or multiple classes in your major.Permalink
