@@ -6,7 +6,7 @@ categories:
 tags:
   - Done
 ---
-![This is a Extra Credit Poster image](/assets/images/extra-credit-event.png "This is a Extra Credit Poster image.")
+![This is a Extra Credit Poster image](/assets/images/extra-credit/extra-credit-event.pngextra-credit-event.png "This is a Extra Credit Poster image.")
 
 **Event:** [Reducing Risk: An Introduction to Data Anonymization with Kristi Thompson](https://nyu.libcal.com/event/13661742?f=h).
 <br/>
@@ -60,11 +60,11 @@ No Links to Learning Resources or Beginner Learn were provided during the event.
 
 **Understanding Anonymization Techniques:** A diagram illustrating different anonymization methods, from basic k-anonymity to more advanced techniques like l-diversity and t-closeness.
 
-![This is a Extra Credit How Data Can Be Reidentified image](/assets/images/extra-credit-howDataCanBeReidentified.png "This is a Extra Credit How Data Can Be Reidentified image.")
+![This is a Extra Credit How Data Can Be Reidentified image](/assets/images/extra-credit/extra-credit-howDataCanBeReidentified.pngextra-credit-howDataCanBeReidentified.png "This is a Extra Credit How Data Can Be Reidentified image.")
 
 **How Data Can Be Reidentified:** A visual representation of how attackers can use public data sources to reidentify individuals in anonymized datasets.
 
-![This is a Extra Credit Understanding Anonymization Techniques image](/assets/images/extra-credit-understandingAnonymizationTechniques.png "This is a Extra Credit Understanding Anonymization Techniques image.")
+![This is a Extra Credit Understanding Anonymization Techniques image](/assets/images/extra-credit/extra-credit-understandingAnonymizationTechniques.pngextra-credit-understandingAnonymizationTechniques.png "This is a Extra Credit Understanding Anonymization Techniques image.")
 
 ## Course Connection:
 
