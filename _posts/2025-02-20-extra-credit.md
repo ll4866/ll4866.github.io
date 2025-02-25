@@ -64,7 +64,7 @@ No Links to Learning Resources or Beginner Learn were provided during the event.
 
 **How Data Can Be Reidentified:** A visual representation of how attackers can use public data sources to reidentify individuals in anonymized datasets.
 
-![This is a Extra Credit Understanding Anonymization Techniques image](/assets/images/extra-credit/extra-credit-understandingAnonymizationTechniques.png "This is a Extra Credit Understanding Anonymization Techniques image.")
+![This is a Extra Credit Understanding Anonymization Techniques image](/assets/images/extra-credit-understandingAnonymizationTechniques.png "This is a Extra Credit Understanding Anonymization Techniques image.")
 
 ## Course Connection:
 
