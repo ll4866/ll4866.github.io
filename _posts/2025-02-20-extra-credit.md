@@ -60,7 +60,7 @@ No Links to Learning Resources or Beginner Learn were provided during the event.
 
 **Understanding Anonymization Techniques:** A diagram illustrating different anonymization methods, from basic k-anonymity to more advanced techniques like l-diversity and t-closeness.
 
-![This is a Extra Credit How Data Can Be Reidentified image](/assets/images/extra-credit/extra-credit-howDataCanBeReidentified.png "This is a Extra Credit How Data Can Be Reidentified image.")
+![This is a Extra Credit How Data Can Be Reidentified image](assets/images/extra-credit/extra-credit-event.png "This is a Extra Credit How Data Can Be Reidentified image.")
 
 **How Data Can Be Reidentified:** A visual representation of how attackers can use public data sources to reidentify individuals in anonymized datasets.
 
