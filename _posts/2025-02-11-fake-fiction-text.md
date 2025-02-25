@@ -22,7 +22,7 @@ To identify the fake story, I analyzed the frequency of common words across all 
 ![Frequent Words.](/assets/images/scifi-frequent-words.png "This is a scifi-frequent-words.png.")
 
 1. **Readability Score:** Considering that AI-generated texts, particularly from models like GPT, often exhibit high readability, I assessed the readability levels across all texts. While this alone wasn’t conclusive, it helped narrow down the potential candidates to those with notably higher readability scores. Text 8 stood out in this regard. 
-![Readibility Score.](/assets/images/fake-fiction/scifi-readibility-score.png "This is a scifi-readibility-score.png.")
+![Readibility Score.](/assets/images/scifi-readibility-score.png "This is a scifi-readibility-score.png.")
 2. **Topic Distribution:** When comparing topic modeling results, I found that Text 8 exhibited an uneven topic distribution. One topic dominated with an extremely high percentage, while the other topics had significantly lower representation. In contrast, the other texts displayed a more balanced distribution across 3-4 topics, suggesting a more natural thematic spread typical of human writing. 
 ![Text 8 topics percentage.](/assets/images/scifi-text8-topics.png "This is a scifi-text8-topics.png.") 
 3. **Relative Frequency of Common Words:** Examining the relative frequency of common words revealed abnormalities in both Text 3 and Text 8. Text 3 showed an unusually consistent frequency for all common words, almost as if it were deliberately controlled. Similarly, Text 8 displayed controlled frequency patterns, though split across two distinct frequency ranges. This level of regularity is often characteristic of AI-generated text.
@@ -35,7 +35,7 @@ To identify the fake story, I analyzed the frequency of common words across all 
 
 Mandala "Men"              | Mandala "Away" 
 :-------------------------:|:-------------------------:
-![Text that use men word.](/assets/images/scifi-men.pngscifi-men.png "This is a scifi-men.png.") | ![Text that use away word.](/assets/images/scifi-away.png "This is a scifi-away.png.")
+![Text that use men word.](/assets/images/scifi-men.png "This is a scifi-men.png.") | ![Text that use away word.](/assets/images/scifi-away.png "This is a scifi-away.png.")
 
 ## Conclusion
 Considering all these uncommon patterns—high readability, uneven topic distribution, controlled word frequency, limited lexical richness, machine-like bubbleline patterns, and missing common keywords—I concluded that Text 8 is most likely the AI-generated story.
