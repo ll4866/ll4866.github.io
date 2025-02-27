@@ -2,7 +2,7 @@
 title: "UFO map"
 last_modified_at: 2025-02-26T22:00:00-05:00
 categories:
-  - Extra
+  - Class Notes
 tags:
   - Done
 ---
