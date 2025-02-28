@@ -6,7 +6,7 @@ categories:
 tags:
   - Working
 ---
-## <span style="color:orange"> Background Information </span>
+## Background Information
 We conducted a distant reading of Sir Arthur Conan Doyle’s works to examine whether the Sherlock Holmes series influenced his later books. Doyle, best known for creating the legendary detective, was a 19th-century British writer whose background in medicine shaped his storytelling, particularly in forensic detail and logical reasoning.
 This study investigates whether the themes, vocabulary, and stylistic choices of Sherlock Holmes carried over into Doyle’s later works. Using distant reading techniques, we analyzed a selection of Doyle’s books across three distinct periods—before, during, and after Sherlock Holmes. We employed `Voyant Tools` and `Posit.cloud (RMarkdown)` to track linguistic and thematic shifts across these periods.
 
@@ -18,15 +18,15 @@ All selected books were chosen based on their time of publication and genre, wit
 
 | Category | Book Title & Description | Theme | Book Number |
 |----------|--------------------------|-------|-------------|
-| **Pre-Sherlock Holmes (pre-SH)** | [The Gully of Bluemansdyke (1881)](https://www.gutenberg.org/ebooks/40848) - A collection of short stories exploring crime, morality, and human nature, often with dark or tragic themes. | Mystery, Crime, Supernatural, Human Condition | #40848 |
-|  | [The Captain of the Polestar and Other Tales (1883-1887)](https://www.gutenberg.org/ebooks/294) - A mix of supernatural and adventure stories, featuring ghostly encounters and mysterious events. | Mystery, Supernatural, Adventure | #294 |
+| **Pre-Sherlock Holmes (pre-SH)** | [The Gully of Bluemansdyke (1881)](https://www.gutenberg.org/ebooks/40848) - A collection of short stories exploring crime, morality, and human nature, often with dark or tragic themes. | <span style="color:orange">Mystery</span>, <span style="color:red">Crime</span>, <span style="color:blue">Supernatural</span>, <span style="color:yellow">Human Condition</span> | #40848 |
+|  | [The Captain of the Polestar and Other Tales (1883-1887)](https://www.gutenberg.org/ebooks/294) - A mix of supernatural and adventure stories, featuring ghostly encounters and mysterious events. | <span style="color:orange">Mystery</span>, Supernatural, Adventure | #294 |
 |  | [My Friend the Murderer](https://www.gutenberg.org/ebooks/69260) (Late 19th c.) - A short story centered on crime and redemption, exploring themes of justice and guilt. | Mystery, Crime, Human Condition | #69260 |
-| **Sherlock Holmes Books (SHB)** | [A Study in Scarlet (1887)](https://www.gutenberg.org/ebooks/244) - The first Sherlock Holmes novel, introducing Holmes and Watson as they solve a murder linked to past events in America. | Mystery, Detective | #244 |
-|  | [The Sign of the Four (1890)](https://www.gutenberg.org/ebooks/2097) - A mystery involving a hidden treasure, betrayal, and an elaborate revenge plot. | Mystery, Detective | #2097 |
-|  | [Adventures of Sherlock Holmes (1892)](https://www.gutenberg.org/ebooks/1661) - A collection of short stories showcasing Holmes’ detective skills through various intriguing cases. | Mystery, Detective | #1661 |
-| **Post-Sherlock Holmes (post-SH)** | [The White Company (1891)](https://www.gutenberg.org/ebooks/903) - A historical adventure novel set during the Hundred Years’ War, following a group of English archers. | Historical, War | #903 |
-|  | [Uncle Bernac (1897)](https://www.gutenberg.org/ebooks/10581) - A Napoleonic-era novel focused on espionage, war, and political intrigue. | Mystery, War (Napoleonic) | #10581 |
-|  | [Rodney Stone (1896)](https://www.gutenberg.org/ebooks/5148) - A historical novel blending themes of boxing, aristocracy, and naval warfare in 18th-century England. | Historical, Boxing | #5148 |
+| **Sherlock Holmes Books (SHB)** | [A Study in Scarlet (1887)](https://www.gutenberg.org/ebooks/244) - The first Sherlock Holmes novel, introducing Holmes and Watson as they solve a murder linked to past events in America. | <span style="color:orange">Mystery</span>, Detective | #244 |
+|  | [The Sign of the Four (1890)](https://www.gutenberg.org/ebooks/2097) - A mystery involving a hidden treasure, betrayal, and an elaborate revenge plot. | <span style="color:orange">Mystery</span>, Detective | #2097 |
+|  | [Adventures of Sherlock Holmes (1892)](https://www.gutenberg.org/ebooks/1661) - A collection of short stories showcasing Holmes’ detective skills through various intriguing cases. | <span style="color:orange">Mystery</span>, Detective | #1661 |
+| **Post-Sherlock Holmes (post-SH)** | [The White Company (1891)](https://www.gutenberg.org/ebooks/903) - A historical adventure novel set during the Hundred Years’ War, following a group of English archers. | Historical, <span style="color:purple">War</span> | #903 |
+|  | [Uncle Bernac (1897)](https://www.gutenberg.org/ebooks/10581) - A Napoleonic-era novel focused on espionage, war, and political intrigue. | <span style="color:orange">Mystery</span>, <span style="color:purple">War</span> (Napoleonic) | #10581 |
+|  | [Rodney Stone (1896)](https://www.gutenberg.org/ebooks/5148) - A historical novel blending themes of boxing, aristocracy, and naval warfare in 18th-century England. | <span style="color:orange">Mystery</span>, Historical, Boxing | #5148 |
 
 *We refer to the bibliography [here](https://en.wikipedia.org/wiki/Arthur_Conan_Doyle_bibliography). The books analyzed in this study were sourced from Project Gutenberg, with their respective eBook ID numbers available for reference.*
 {: .notice}
@@ -79,7 +79,7 @@ We decided to change things around this time by comparing pre-Sherlock Holmes bo
 
 The data reveals that Doyle’s writing evolved after Sherlock Holmes, with post-Holmes works having the highest word count and longer sentences, indicating a shift toward more descriptive storytelling. Sherlock Holmes books feature shorter sentences, reinforcing their fast-paced detective style. Despite these differences, Doyle’s vocabulary range remained stable, as seen in the consistent 6% type-to-word ratio. However, the data does not strongly suggest that post-Holmes works retained the stylistic influence of Sherlock Holmes, implying a deliberate narrative shift in Doyle’s later writing.
 
-<iframe style='width: 1112px; height: 673px;' src='https://voyant-tools.org/tool/ScatterPlot/?docId=81a2da64a1c005e22b2471173ef02741&docId=2749a81ed25292d87f0d823a8029fb76&docId=5ebae079c45f874a11df3273e9852b7a&limit=206&dimensions=2&label=docs&label=summary&view=topics&corpus=1d58c9ad21987f6fbb38a73090d4017c'></iframe>
+<iframe style='width: 444; height: 408px;' src='https://voyant-tools.org/tool/ScatterPlot/?docId=81a2da64a1c005e22b2471173ef02741&docId=2749a81ed25292d87f0d823a8029fb76&docId=5ebae079c45f874a11df3273e9852b7a&limit=206&dimensions=2&label=docs&label=summary&view=topics&corpus=1d58c9ad21987f6fbb38a73090d4017c'></iframe>
 
 The scatter plot reveals distinct stylistic shifts in Doyle’s writing across different phases. The clustering of Sherlock Holmes books and Pre-Holmes works suggests that Doyle retained certain stylistic traits despite shifting to detective fiction. However, the Post-Holmes books are positioned farther from the Holmes stories, indicating a notable departure in style and a move toward a different literary direction. Despite this shift, alignment along the Y-axis suggests lingering stylistic influences, such as sentence complexity. This supports the idea that the Sherlock Holmes series was a distinct phase in Doyle’s career rather than a permanent stylistic transformation.
 
