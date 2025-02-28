@@ -6,7 +6,7 @@ categories:
 tags:
   - Working
 ---
-## Background Information  
+## <span style="color:orange"> Background Information </span>
 We conducted a distant reading of Sir Arthur Conan Doyle’s works to examine whether the Sherlock Holmes series influenced his later books. Doyle, best known for creating the legendary detective, was a 19th-century British writer whose background in medicine shaped his storytelling, particularly in forensic detail and logical reasoning.
 This study investigates whether the themes, vocabulary, and stylistic choices of Sherlock Holmes carried over into Doyle’s later works. Using distant reading techniques, we analyzed a selection of Doyle’s books across three distinct periods—before, during, and after Sherlock Holmes. We employed `Voyant Tools` and `Posit.cloud (RMarkdown)` to track linguistic and thematic shifts across these periods.
 
