@@ -43,8 +43,8 @@ To analyze linguistic patterns, thematic shifts, and word frequency distribution
 
 1. **Voyant Tools:** We compiled all books within the same category into a single text file, creating three full-text documents: one for pre-SH, one for SHB, and one for post-SH. These combined texts were then uploaded into Voyant Tools, where we conducted word cloud analysis, frequency distributions, and general textual analysis to identify recurring terms and themes across different time periods.
 2. **Posit.cloud (RStudio, ggplot2):** Used for in-depth statistical analysis, including graphical representations of recurring terms. Key analyses included:
-  * `Identifying the Most Distinctive Words in Three (Sets of) Texts Compared` - compared vocabulary differences between pre-SH, SHB, and post-SH books.
-  * `Summarizing a text from Project Gutenberg in a word cloud` - Created visual representations of each corpus to highlight dominant themes.
+  * <span style="color:red">`Identifying the Most Distinctive Words in Three (Sets of) Texts Compared`</span> - compared vocabulary differences between pre-SH, SHB, and post-SH books.
+  * <span style="color:red">`Summarizing a text from Project Gutenberg in a word cloud`</span> - Created visual representations of each corpus to highlight dominant themes.
 
 This method follows the ideas discussed in Rockwell and Sinclair’s "The Measured Words: How Computers Analyze Text", which explains how computational tools recognize patterns rather than interpret meaning. While these tools helped us detect trends in Doyle’s writing, we applied human interpretation to refine our conclusions and gain a more nuanced understanding of the data.
 
