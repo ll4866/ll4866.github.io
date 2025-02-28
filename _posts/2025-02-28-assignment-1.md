@@ -11,7 +11,7 @@ We conducted a distant reading of Sir Arthur Conan Doyle’s works to examine wh
 This study investigates whether the themes, vocabulary, and stylistic choices of Sherlock Holmes carried over into Doyle’s later works. Using distant reading techniques, we analyzed a selection of Doyle’s books across three distinct periods—before, during, and after Sherlock Holmes. We employed `Voyant Tools` and `Posit.cloud (RMarkdown)` to track linguistic and thematic shifts across these periods.
 
 ## Hypothesis: The Sherlock Holmes Influence  
-WWe hypothesize that writing the Sherlock Holmes series influenced Doyle’s later works. If so, his post-Holmes books should share notable similarities with the Holmes stories in vocabulary, themes, or narrative style. Given Holmes' popularity, we expected to see detective fiction elements carried over into Doyle's later works.
+We hypothesize that writing the Sherlock Holmes series influenced Doyle’s later works. If so, his post-Holmes books should share notable similarities with the Holmes stories in vocabulary, themes, or narrative style. Given Holmes' popularity, we expected to see detective fiction elements carried over into Doyle's later works.
 
 ## Material Selection & Corpus  
 All selected books were chosen based on their time of publication and genre, with a focus on mystery. While Doyle continued to write mystery and detective fiction beyond the Sherlock Holmes series, we focused on the following works to examine his stylistic and thematic evolution.
@@ -119,3 +119,4 @@ This article was co-authored by Lucas Lin and Hafizh Ahmad Dahlan. Hafizh develo
 * Rockwell, Geoffrey, and Stéfan Sinclair. 2016. The Measured Words: How Computers Analyze Text. University of Illinois Press. <span style="color:blue">https://ieeexplore.ieee.org/document/7580345.]</span>
 
 Not ready for grading
+{: .notice}
