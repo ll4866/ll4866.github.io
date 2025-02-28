@@ -28,7 +28,7 @@ All selected books were chosen based on their time of publication and genre, wit
 |  | [Uncle Bernac (1897)](https://www.gutenberg.org/ebooks/10581) - A Napoleonic-era novel focused on espionage, war, and political intrigue. | <span style="color:orange">Mystery</span>, <span style="color:purple">War</span> (Napoleonic) | #10581 |
 |  | [Rodney Stone (1896)](https://www.gutenberg.org/ebooks/5148) - A historical novel blending themes of boxing, aristocracy, and naval warfare in 18th-century England. | <span style="color:orange">Mystery</span>, <span style="color:green">Historical</span>, Boxing | #5148 |
 
-*We refer to the bibliography <span style="color:blue">[here]</span>(https://en.wikipedia.org/wiki/Arthur_Conan_Doyle_bibliography). The books analyzed in this study were sourced from Project Gutenberg, with their respective eBook ID numbers available for reference.*
+*We refer to the bibliography <span style="color:blue">[here](https://en.wikipedia.org/wiki/Arthur_Conan_Doyle_bibliography)</span>. The books analyzed in this study were sourced from Project Gutenberg, with their respective eBook ID numbers available for reference.*
 {: .notice}
 
 ## Our Process  
