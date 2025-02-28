@@ -28,7 +28,7 @@ All selected books were chosen based on their time of publication and genre, wit
 |  | [Uncle Bernac (1897)](https://www.gutenberg.org/ebooks/10581) - A Napoleonic-era novel focused on espionage, war, and political intrigue. | <span style="color:orange">Mystery</span>, <span style="color:purple">War</span> (Napoleonic) | #10581 |
 |  | [Rodney Stone (1896)](https://www.gutenberg.org/ebooks/5148) - A historical novel blending themes of boxing, aristocracy, and naval warfare in 18th-century England. | <span style="color:orange">Mystery</span>, <span style="color:green">Historical</span>, Boxing | #5148 |
 
-*We refer to the bibliography <span style="color:purple">[here]</span>(https://en.wikipedia.org/wiki/Arthur_Conan_Doyle_bibliography). The books analyzed in this study were sourced from Project Gutenberg, with their respective eBook ID numbers available for reference.*
+*We refer to the bibliography <span style="color:blue">[here]</span>(https://en.wikipedia.org/wiki/Arthur_Conan_Doyle_bibliography). The books analyzed in this study were sourced from Project Gutenberg, with their respective eBook ID numbers available for reference.*
 {: .notice}
 
 ## Our Process  
@@ -115,7 +115,7 @@ Ultimately, Sherlock Holmes refined the detective genre, but it was a distinct p
 This article was co-authored by Lucas Lin and Hafizh Ahmad Dahlan. Hafizh developed the research focus and selected the texts, while Lucas structured and designed the document. The analysis was divided between them: Hafizh conducted research using Posit Cloud, while Lucas analyzed data with Voyant Tools. After discussing their findings, they collaborated on the conclusion, which Lucas drafted. For theoretical connections, Hafizh linked the research to Drucker, while Lucas referenced Rockwell and Sinclair. Hafizh wrote the initial background introduction, and both authors proofread and refined the text for clarity and coherence.
 
 ## Resources
-* Drucker, Johanna. 2021. The Digital Humanities Coursebook: An Introduction to Digital Methods for Research and Scholarship. 1st ed. Routledge. https://doi.org/10.4324/9781003106531.
-* Rockwell, Geoffrey, and Stéfan Sinclair. 2016. The Measured Words: How Computers Analyze Text. University of Illinois Press. https://ieeexplore.ieee.org/document/7580345.
+* Drucker, Johanna. 2021. The Digital Humanities Coursebook: An Introduction to Digital Methods for Research and Scholarship. 1st ed. Routledge. <span style="color:blue">[https://doi.org/10.4324/9781003106531.]</span>
+* Rockwell, Geoffrey, and Stéfan Sinclair. 2016. The Measured Words: How Computers Analyze Text. University of Illinois Press. <span style="color:blue">[https://ieeexplore.ieee.org/document/7580345.]</span>
 
 Not ready for grading
