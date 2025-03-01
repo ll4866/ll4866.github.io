@@ -7,15 +7,15 @@ tags:
   - Done
 ---
 ## Background Information
-We conducted a distant reading of Sir Arthur Conan Doyle’s works to examine whether the Sherlock Holmes series influenced his later books. Doyle, best known for creating the legendary detective, was a 19th-century British writer whose background in medicine shaped his storytelling, particularly in forensic detail and logical reasoning.
-
-This study investigates whether the themes, vocabulary, and stylistic choices of Sherlock Holmes carried over into Doyle’s later works. Using distant reading techniques, we analyzed a selection of Doyle’s books across three distinct periods—before, during, and after Sherlock Holmes. We employed <span style="color:blue">`Voyant Tools`</span> and <span style="color:blue">`Posit.cloud (RMarkdown)`</span> to track linguistic and thematic shifts across these periods.
+We conducted a distant reading of Sir Arthur Conan Doyle’s works to examine whether the Sherlock Holmes series influenced his later books. Doyle, best known for creating the legendary detective, was a 19th-century British writer whose background in medicine shaped his storytelling, particularly in forensic detail and logical reasoning. This study investigates whether the themes, vocabulary, and stylistic choices of Sherlock Holmes carried over into Doyle’s later works. Using distant reading techniques, we analyzed a selection of Doyle’s books across three distinct periods—before, during, and after Sherlock Holmes. We employed <span style="color:blue">`Voyant Tools`</span> and <span style="color:blue">`Posit.cloud (RMarkdown)`</span> to track linguistic and thematic shifts across these periods.
 
 ## Hypothesis: The Sherlock Holmes Influence  
-We hypothesize that writing the Sherlock Holmes series influenced Doyle’s later works. If so, his post-Holmes books should share notable similarities with the Holmes stories in vocabulary, themes, or narrative style. Given Holmes' popularity, we expected to see detective fiction elements carried over into Doyle's later works.
+> ** We hypothesize that writing the Sherlock Holmes series influenced Doyle’s later works. ** If so, his post-Holmes books should share notable similarities with the Holmes stories in vocabulary, themes, or narrative style. Given Holmes' popularity, we expected to see detective fiction elements carried over into Doyle's later works.
 
 ## Material Selection & Corpus  
 All selected books were chosen based on their time of publication and genre, with a focus on mystery. While Doyle continued to write mystery and detective fiction beyond the Sherlock Holmes series, we focused on the following works to examine his stylistic and thematic evolution.
+
+All materials were sourced from Project Gutenberg and categorized into three **corpora**:
 
 | Category | Book Title & Description | Theme | Book Number |
 |----------|--------------------------|-------|-------------|
@@ -33,67 +33,68 @@ All selected books were chosen based on their time of publication and genre, wit
 {: .notice}
 
 ## Our Process  
-A digital humanities workflow is composed of materials, processing, and visualization (Drucker 2). Our process involves selecting books from a large collection of Doyle’s works (Materials), inputting them into <span style="color:blue">`Voyant Tools`</span> and <span style="color:blue">`Posit.cloud (RMarkdown)`</span> to be examined (Processing), and then displaying them as graphs in posts within a blog form (Visualization).
+A digital humanities workflow is composed of materials, processing, and visualization (Drucker 2). Our process involves selecting books from a large collection of Doyle’s works (Materials), inputting them into <span style="color:blue">`Voyant Tools`</span> and <span style="color:blue">`Posit.cloud (RMarkdown)`</span> to be examined (Processing), and then displaying them as graphs in posts within a blog form (Visualization). We organized the selected books into three **corpora** based on their publication period:
 
-We organized the selected books into three **corpora** based on their publication period:
-
-1. **Pre-Sherlock Holmes (pre-SH):** Works written before the introduction of Sherlock Holmes, reflecting Doyle’s early style and themes.
-2. **Sherlock Holmes Books (SHB):** Novels and short stories from the Holmes series, serving as a benchmark for Doyle’s detective fiction.
-3. **Post-Sherlock Holmes (post-SH):** Works written after Holmes, where we examine whether elements of detective fiction persist or if Doyle’s writing shifts towards new themes.
+1. **`Pre-Sherlock Holmes (pre-SH):`** Works written before the introduction of Sherlock Holmes, reflecting Doyle’s early style and themes.
+2. **`Sherlock Holmes Books (SHB):`** Novels and short stories from the Holmes series, serving as a benchmark for Doyle’s detective fiction.
+3. **`Post-Sherlock Holmes (post-SH):`** Works written after Holmes, where we examine whether elements of detective fiction persist or if Doyle’s writing shifts towards new themes.
 
 To analyze linguistic patterns, thematic shifts, and word frequency distributions, we used two primary tools:
 
 1. **Voyant Tools:** We compiled all books within the same category into a single text file, creating three full-text documents: one for pre-SH, one for SHB, and one for post-SH. These combined texts were then uploaded into Voyant Tools, where we conducted word cloud analysis, frequency distributions, and general textual analysis to identify recurring terms and themes across different time periods.
-2. **Posit.cloud (RStudio, ggplot2):** Used for in-depth statistical analysis, including graphical representations of recurring terms. Key analyses included:
-  * <span style="color:red">`Identifying the Most Distinctive Words in Three (Sets of) Texts Compared`</span> - compared vocabulary differences between pre-SH, SHB, and post-SH books.
-  * <span style="color:red">`Summarizing a text from Project Gutenberg in a word cloud`</span> - Created visual representations of each corpus to highlight dominant themes.
+2. **Posit.cloud (RStudio, ggplot2):** We also use a RMarkdown file that was introduced in the class:
+  * <span style="color:red">`Identifying the Most Distinctive Words Across Text Sets`</span> - was used to compare vocabulary differences between pre-SH, SHB, and post-SH books. It was also used to generate word clouds.
 
-This method follows the ideas discussed in Rockwell and Sinclair’s "The Measured Words: How Computers Analyze Text", which explains how computational tools recognize patterns rather than interpret meaning. While these tools helped us detect trends in Doyle’s writing, we applied human interpretation to refine our conclusions and gain a more nuanced understanding of the data.
+This method follows the ideas discussed in Rockwell and Sinclair’s "The Measured Words: How Computers Analyze Text", which explains how computational tools recognize patterns rather than interpret meaning. 
+> While these tools helped us detect trends in Doyle’s writing, we applied human interpretation to refine our conclusions and gain a more nuanced understanding of the data.
 
-## RMarkdown (Posit.cloud) Results
+## RMarkdown (Posit.cloud) Findings
 ### Word Cloud Results:
-
+Our first analysis begins with a Word Cloud. Using this tool allows us to visualize our material generally. The most common words will pop-up and we can expect that words like Holmes or Sherlock should appear the most.
 | ![This is a Posit Pre SH WordCloud image](/assets/images/posit-img_wordcloud_preSH.png "This is a Posit Pre SH WordCloud image.") | ![This is a Posit SHB WordCloud image](/assets/images/posit-img_wordcloud_SHB.png "This is a Posit Pre SHB WordCloud image.") |
 | This image is a word cloud from a corpus of all pre-Sherlock Holmes Books. | This image is a word cloud from a corpus of all pre-Sherlock Holmes Books. |
 | ![This is a Posit Post SH WordCloud image](/assets/images/posit-img_wordcloud_postSH.png "This is a Posit Post SH WordCloud image.") | |
 | This image is a word cloud from the selected novels post-Sherlock Holmes series. | |
 
 ### GGPlot Results
-This time, we are using ggplot to reveal some more insights. The graph below shows the most recurring words in all selected Sherlock Holmes books. Based on the word cloud we generated previously, we expect the word ‘Holmes’ to appear at the top. In this scenario, we sorted out the words so that only words that reoccur above 150 times would show up.
+This time, we are using ggplot to reveal some more insights. The graph below shows the most recurring words in all selected Sherlock Holmes books. Based on the word cloud we generated previously, we expect the word ‘Holmes’ or ‘Sherlock’ to appear at the top. In this scenario, we sorted out the words so that only words that reoccur above 150 times would show up.
 ![This is a Posit Word Freq image](/assets/images/posit-ggplot_wordfreq.png "This is a Posit Word Freq image.")
 
 #### First Iteration
-
+Next, we compared the groups to get more insights. In the first iteration, we compared Sherlock Holmes books with pre-SH and post-SH. Our expectation is to observe words closer to the center line in Sherlock Holmes with post-SH compared to with pre-SH.
 ![This is a Posit First Iteration image](/assets/images/posit-ggplot_first_iteration.png "This is a Posit First Iteration  image.")
 
 #### Second Iteration
-In this graph, we modified the values of the jitter size, height, and width. We also adjusted the colors so that it differs from the first iteration. We observed that the change allowed for more distinct words to show up.
+In this graph, we modified the values of the jitter size, height, and width. We also adjusted the colors so that it differs from the first iteration. We observed that the change allowed for more distinct words to show up compared to the first iteration.
 ![This is a Posit Second Iteration image](/assets/images/posit-ggplot_second_iteration.png "This is a Posit Second Iteration  image.")
 
 #### Third Iteration
-We decided to change things around this time by comparing pre-Sherlock Holmes books with the post and Sherlock Holmes series itself. The ggplot values are the same as the previous graph. Only the color is changed this time around. 
-
+We decided to change things around this time by comparing pre-Sherlock Holmes books with the post and Sherlock Holmes series itself. The ggplot values are the same as the previous graph. Only the color is changed this time around.
 ![This is a Posit Third Iteration image](/assets/images/posit-ggplot_third_iteration.png "This is a Posit Third Iteration  image.")
 
-## Voyant Tools Results
+## Voyant Tools Findings
 ### General
 ![This is a Voyant Basic Info image](/assets/images/voyant-basicInfo.png "This is a Voyant Basic Info image.")
 
-The data reveals that Doyle’s writing evolved after Sherlock Holmes, with post-Holmes works having the highest word count and longer sentences, indicating a shift toward more descriptive storytelling. Sherlock Holmes books feature shorter sentences, reinforcing their fast-paced detective style. Despite these differences, Doyle’s vocabulary range remained stable, as seen in the consistent 6% type-to-word ratio. However, the data does not strongly suggest that post-Holmes works retained the stylistic influence of Sherlock Holmes, implying a deliberate narrative shift in Doyle’s later writing.
+The data reveals that Doyle’s writing evolved after Sherlock Holmes, with post-Holmes works having the highest word count and longer sentences, indicating a shift toward more descriptive storytelling. Sherlock Holmes books feature shorter sentences, reinforcing their fast-paced detective style. Despite these differences, Doyle’s vocabulary range remained stable, as seen in the consistent 6% type-to-word ratio.
+
+> The data does not strongly suggest that post-Holmes works retained the stylistic influence of Sherlock Holmes, implying a deliberate narrative shift in Doyle’s later writing.
 
 <iframe style='width: 800px; height: 800px;' src='https://voyant-tools.org/tool/ScatterPlot/?docId=81a2da64a1c005e22b2471173ef02741&docId=2749a81ed25292d87f0d823a8029fb76&docId=5ebae079c45f874a11df3273e9852b7a&limit=206&dimensions=2&label=docs&label=summary&view=topics&corpus=1d58c9ad21987f6fbb38a73090d4017c'></iframe>
 
-The scatter plot reveals distinct stylistic shifts in Doyle’s writing across different phases. The clustering of Sherlock Holmes books and Pre-Holmes works suggests that Doyle retained certain stylistic traits despite shifting to detective fiction. However, the Post-Holmes books are positioned farther from the Holmes stories, indicating a notable departure in style and a move toward a different literary direction. Despite this shift, alignment along the Y-axis suggests lingering stylistic influences, such as sentence complexity. This supports the idea that the Sherlock Holmes series was a distinct phase in Doyle’s career rather than a permanent stylistic transformation.
+The scatter plot above highlights a clear pattern in Doyle’s evolving writing style across different phases of his career:
+
+> The close clustering of the Sherlock Holmes books (green) and the Pre-SH books (pink) suggests that while the detective stories had a distinct narrative focus, they still retained stylistic similarities with Doyle’s earlier works. This could indicate that his writing tendencies, such as sentence structure, word choice, or narrative flow, remained consistent even as he introduced the detective genre’s unique elements.
 
 ### Word Theme Analysis
 
 #### Detective-Related Terms
 ![This is a Voyant Detective-Related Terms image](/assets/images/voyant-detectiveWords.png "This is a Voyant Detective-Related Terms image.")
-The Sherlock Holmes books exhibit a significantly higher frequency of detective-related terms—such as case, crime, mystery, and investigation—compared to Doyle’s pre-Holmes works. This suggests that Doyle refined and popularized the detective genre by making investigative elements more central. However, post-Holmes books show a marked decline in these terms, indicating a shift away from detective fiction. While some investigative language persists, its reduced frequency and dispersion imply that Doyle transitioned toward broader storytelling approaches rather than continuing the detective-driven style of Sherlock Holmes.
+The Sherlock Holmes books (SHB) show a significantly higher use of detective-related terms compared to pre-SH books, with words like case, crime, mystery, investigation, clue, and solution appearing more frequently. `This indicates that Doyle refined and popularized the detective genre by making investigative elements central to the narrative.` In contrast, post-SH books show a noticeable decline in these terms, suggesting a shift away from detective fiction
 
 #### Action and Suspense-Related Terms
 ![This is a Voyant Action and Suspense-Related Terms image](/assets/images/voyant-actionSuspenseTerms.png "This is a Voyant Action and Suspense-Related Terms image.")
-Action and suspense-related terms were minimal in Doyle’s pre-Holmes works, moderately present in the Sherlock Holmes stories, and significantly increased in post-Holmes books. While Holmes’ narratives emphasized deduction over action, Doyle’s later works leaned toward adventure-driven storytelling, incorporating more frequent mentions of fight, thrill, and chase. This shift suggests a departure from pure detective fiction, aligning with the rise of pulp fiction and early thriller genres.
+Action and suspense-related terms were minimal in Doyle’s pre-Holmes works, moderately present in the Sherlock Holmes stories, and significantly increased in post-Holmes books.`While Holmes’ narratives emphasized deduction over action, Doyle’s later works leaned toward adventure-driven storytelling, incorporating more frequent mentions of fight, thrill, and chase.`This shift suggests a departure from pure detective fiction, aligning with the rise of pulp fiction and early thriller genres.
 
 #### Psychological Theme
 ![This is a Voyant Psychological Theme image](/assets/images/voyant-psychologicalTerms.png "This is a Voyant Psychological Theme image.")
@@ -101,29 +102,25 @@ Sherlock Holmes introduced psychological themes such as perception, deception, a
 
 #### Character and Role-related Terms
 ![This is a Voyant Character and Role-related Terms image](/assets/images/voyant-characterRoleTerms.png "This is a Character and Role-related Terms image.")
-The bar graph illustrates the evolution of character and role-related terms in Doyle’s works. During the Sherlock Holmes era, terms like "inspector," "detective," and "criminal" rise significantly, reflecting a strong focus on investigation. Pre-Holmes books feature "inspector" and "agent" but with less emphasis on detectives. Post-Holmes, detective-related terms decline as "officer" becomes more prominent, marking a shift from detective-driven narratives to broader authority figures. This suggests that while Holmes reinforced Doyle’s engagement with crime and justice, his later works shifted toward legal and societal themes over individual investigations.
+The bar graph illustrates the evolution of character and role-related terms in Doyle’s works. During the Sherlock Holmes era, terms like “inspector,” “detective,” and “criminal” rise significantly, reflecting a strong focus on investigation. Pre-Holmes books feature “inspector” and “agent” but with less emphasis on detectives. Post-Holmes, detective-related terms decline as “officer” becomes more prominent, marking a shift from detective-driven narratives to broader authority figures. This suggests that while Holmes reinforced Doyle’s engagement with crime and justice, his later works shifted toward legal and societal themes over individual investigations.
 
 ## Discussion/Conclusion
-
 ### RStudio Conclusion
 Our initial hypothesis was that writing Sherlock Holmes influenced Doyle’s later works. We expected words that were absent before Sherlock Holmes to recur afterward, appearing closer to the center line between post-Holmes and Sherlock Holmes books in our analysis. However, the data did not support this assumption. Comparing Sherlock Holmes books (SHB) with both pre-Sherlock (pre-SH) and post-Sherlock (post-SH) works showed only minor differences. Thus, this computational approach could not definitively answer whether Sherlock Holmes influenced Doyle’s later writing.
 
-Unlike close reading, which provides specific insights, distant reading offers broader patterns that require further interpretation (Drucker 115).Our findings reveal that the theme of ‘adventure’ is present in all of Doyle’s works, though Sherlock Holmes deepens this theme, as evidenced by its closer alignment between pre-SH and post-SH texts. Another significant discovery is the thematic shift across different periods. Sherlock Holmes books prominently feature human anatomy, medicine, and physician-related terms—such as ‘arm,’ ‘bosom,’ and ‘brain’—likely influenced by Doyle’s medical background. By the end of his career, Doyle’s works shifted toward political, historical, and war-focused themes, seen in the increasing use of words like ‘battle,’ ‘sword,’ and ‘country.’ This shift may reflect the political climate of Europe, given its proximity to WWI and WWII.
+Unlike close reading, which provides specific insights, distant reading offers broader patterns that require further interpretation (Drucker 115).Our findings reveal that the theme of ‘adventure’ is present in all of Doyle’s works, though Sherlock Holmes deepens this theme, as evidenced by its closer alignment between pre-SH and post-SH texts. Another significant discovery is the thematic shift across different periods. Sherlock Holmes books prominently feature human anatomy, medicine, and physician-related terms—such as ‘arm,’ ‘bosom,’ and ‘brain’ which are likely influenced by Doyle’s medical background. By the end of his career, Doyle’s works shifted toward political, historical, and war-focused themes, seen in the increasing use of words like ‘battle,’ ‘sword,’ and ‘country.’ This shift may reflect the political climate of Europe, given its proximity to WWI and WWII.
 
-The <span style="color:blue">`Voyant Tools`</span> analysis further illustrates this evolution. While Sherlock Holmes books were concise and fast-paced, centered on detective work, logic, and crime-solving, this influence did not persist in Doyle’s later works. Post-Holmes books instead emphasized historical adventure, war, and political intrigue. Detective-related terms (such as ‘case,’ ‘crime,’ and ‘investigation’) declined, while action-driven vocabulary (‘battle,’ ‘sword,’ ‘kingdom’) rose. Sentence structure also changed—SHB had the shortest sentences (15.8 words per sentence), aligning with detective fiction’s need for clarity, while post-Holmes books had the longest (19.9 words per sentence), indicating a more descriptive, complex narrative style. Psychological themes like perception and deception remained, expanding beyond detective fiction into broader storytelling. While law and justice themes persisted, they transitioned from detective trials to structured legal and political discussions.
+Using both <span style="color:blue">`Voyant Tools and RStudio`</span> our analysis shows that while Sherlock Holmes was a pivotal phase in Doyle’s career, it did not permanently alter his writing style. Before Holmes, his works explored crime, morality, and the supernatural. During the Holmes era, his writing became sharper and centered on investigation and logical reasoning. However, after Holmes, Doyle moved away from detective fiction, favoring historical adventure, war, and politics.
 
-Our analysis shows that while Sherlock Holmes was a pivotal phase in Doyle’s career, it did not permanently alter his writing style. Before Holmes, his works explored crime, morality, and the supernatural. During the Holmes era, his writing became sharper and centered on investigation and logical reasoning. However, after Holmes, Doyle moved away from detective fiction, favoring historical adventure, war, and politics.
-
-Using <span style="color:blue">`Voyant Tools`</span>, we observed a decline in detective-related terms post-Holmes, while action and suspense elements increased, indicating a shift toward dynamic storytelling. Word clouds and frequency graphs highlighted how themes of observation and deduction faded in favor of historical and political topics. Meanwhile,<span style="color:blue">`Posit.cloud (RMarkdown)`</span> revealed changes in sentence structure, with Holmes-era books featuring shorter, more concise sentences, while post-Holmes books had longer, more complex structures suited to descriptive storytelling. Distinctive word analysis confirmed Doyle’s later vocabulary aligned more with adventure and historical fiction.
-
-Ultimately, Sherlock Holmes refined the detective genre, but it was a distinct phase rather than a defining influence on Doyle’s later works. His post-Holmes books returned to themes more in line with his early storytelling—adventure, history, and human psychology—rather than investigative crime fiction. Through computational analysis and human interpretation, we conclude that while Holmes left a mark on the mystery genre, Doyle himself moved on.
+> All in all, Sherlock Holmes refined the detective genre, but it was a distinct phase rather than a defining influence on Doyle’s later works. His post-Holmes books returned to themes more in line with his early storytelling—adventure, history, and human psychology—rather than investigative crime fiction. Through computational analysis and human interpretation, we conclude that while Holmes left a mark on the mystery genre, Doyle himself moved on.
 
 ## Author Contributions
-This article was co-authored by Lucas Lin and Hafizh Ahmad Dahlan. Hafizh developed the research focus and selected the texts, while Lucas structured and designed the document. The analysis was divided between them: Hafizh conducted research using <span style="color:blue">`Posit.cloud (RMarkdown)`</span>, while Lucas analyzed data with <span style="color:blue">`Voyant Tools`</span>. After discussing their findings, they collaborated on the conclusion, which Lucas drafted. For theoretical connections, Hafizh linked the research to Drucker, while Lucas referenced Rockwell and Sinclair. Hafizh wrote the initial background introduction, and both authors proofread and refined the text for clarity and coherence.
+This article was co-authored by Lucas Lin and Hafizh Ahmad Dahlan. Hafizh developed the research focus and selected the texts, while Lucas structured and designed the document. The analysis was divided between them: Hafizh conducted research using Posit Cloud, while Lucas analyzed data with Voyant Tools. After discussing their findings, they collaborated on the conclusion, which Lucas drafted. For theoretical connections, Hafizh linked the research to Drucker, while Lucas referenced Rockwell and Sinclair. Hafizh wrote the initial background introduction, and both authors proofread and refined the text for clarity and coherence.
 
 ## Resources
-* Drucker, Johanna. 2021. The Digital Humanities Coursebook: An Introduction to Digital Methods for Research and Scholarship. 1st ed. Routledge. <span style="color:blue">[https://doi.org/10.4324/9781003106531.]</span>
-* Rockwell, Geoffrey, and Stéfan Sinclair. 2016. The Measured Words: How Computers Analyze Text. University of Illinois Press. <span style="color:blue">https://ieeexplore.ieee.org/document/7580345.]</span>
+* Drucker, Johanna. 2021. The Digital Humanities Coursebook: An Introduction to Digital Methods for Research and Scholarship. 1st ed. Routledge. <span style="color:blue">https://doi.org/10.4324/9781003106531.</span>
+* Rockwell, Geoffrey, and Stéfan Sinclair. 2016. The Measured Words: How Computers Analyze Text. University of Illinois Press. <span style="color:blue">https://ieeexplore.ieee.org/document/7580345.</span>
+* DAAH Assignment 1 Images. Google Drive Folder. <span style="color:blue">https://drive.google.com/drive/folders/1rJ2Qpp3dRragVGbPkpCsLGkPa6Kq2eTW?usp=drive_link</span>
 
-Ready for grading
+✅ Ready for grading ✅
 {: .notice}
