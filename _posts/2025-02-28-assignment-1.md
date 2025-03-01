@@ -19,7 +19,6 @@ All selected books were chosen based on their time of publication and genre, wit
 
 All materials were sourced from Project Gutenberg and categorized into three **corpora**:
 
-<!-- Book table begin-->
 | Category                           | Book Title & Description                                                                                                                                                                           | Theme                                                                                                                                                                           | Book Number |
 |:----------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------:|
 | **Pre-Sherlock Holmes (pre-SH)**   | [The Gully of Bluemansdyke (1881)](https://www.gutenberg.org/ebooks/40848) - A collection of short stories exploring crime, morality, and human nature, often with dark or tragic themes.          | <span style="color:orange">Mystery</span>, <span style="color:red">Crime</span>, <span style="color:purple">Supernatural</span>, <span style="color:blue">Human Condition</span>| #40848      |
@@ -31,7 +30,6 @@ All materials were sourced from Project Gutenberg and categorized into three **c
 | **Post-Sherlock Holmes (post-SH)** | [The White Company (1891)](https://www.gutenberg.org/ebooks/903) - A historical adventure novel set during the Hundred Years’ War, following a group of English archers.                           | <span style="color:green">Historical</span>, <span style="color:purple">War</span>                                                                                              | #903        |
 |                                    | [Uncle Bernac (1897)](https://www.gutenberg.org/ebooks/10581) - A Napoleonic-era novel focused on espionage, war, and political intrigue.                                                          | <span style="color:orange">Mystery</span>, <span style="color:purple">War</span> (Napoleonic)                                                                                   | #10581      |
 |                                    | [Rodney Stone (1896)](https://www.gutenberg.org/ebooks/5148) - A historical novel blending themes of boxing, aristocracy, and naval warfare in 18th-century England.                               | <span style="color:orange">Mystery</span>, <span style="color:green">Historical</span>, Boxing                                                                                  | #5148       |
-<!-- Book table ends -->
 
 *We refer to the bibliography [here](https://en.wikipedia.org/wiki/Arthur_Conan_Doyle_bibliography).  The books analyzed in this study were sourced from Project Gutenberg, with their respective eBook ID numbers available for reference.*
 {: .notice}
