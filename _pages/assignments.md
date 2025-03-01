@@ -4,7 +4,7 @@ title: "Assignments"
 ---
 Yet to be Assigned...
 
-[ASSIGNMENT 1](https://ll4866.github.io/assignment/assignment-1): Did Sherlock Holmes Influence Arthur Conan Doyle’s Later Works?
+**ASSIGNMENT 1:**[Did Sherlock Holmes Influence Arthur Conan Doyle’s Later Works?](https://ll4866.github.io/assignment/assignment-1)
 
 [ASSIGNMENT 2](https://ll4866.github.io/assignments/assignment-2)
 
