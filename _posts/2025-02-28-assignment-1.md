@@ -54,10 +54,10 @@ This method follows the ideas discussed in Rockwell and Sinclair’s "The Measur
 ## RMarkdown (Posit.cloud) Findings
 ### Word Cloud Results:
 Our first analysis begins with a Word Cloud. Using this tool allows us to visualize our material generally. The most common words will pop-up and we can expect that words like Holmes or Sherlock should appear the most.
-| ![This is a Posit Pre SH WordCloud image](/assets/images/posit-img_wordcloud_preSH.png "This is a Posit Pre SH WordCloud image.") | ![This is a Posit SHB WordCloud image](/assets/images/posit-img_wordcloud_SHB.png "This is a Posit Pre SHB WordCloud image.") |
-| This image is a word cloud from a corpus of all pre-Sherlock Holmes Books. | This image is a word cloud from a corpus of all pre-Sherlock Holmes Books. |
-| ![This is a Posit Post SH WordCloud image](/assets/images/posit-img_wordcloud_postSH.png "This is a Posit Post SH WordCloud image.") | |
-| This image is a word cloud from the selected novels post-Sherlock Holmes series. | |
+| ![This is a Posit Pre SH WordCloud image](/assets/images/posit-img_wordcloud_preSH.png "This is a Posit Pre SH WordCloud image.")    | ![This is a Posit SHB WordCloud image](/assets/images/posit-img_wordcloud_SHB.png "This is a Posit Pre SHB WordCloud image.") |
+| This image is a word cloud from a corpus of all pre-Sherlock Holmes Books.                                                           | This image is a word cloud from a corpus of all pre-Sherlock Holmes Books.                                                    |
+| ![This is a Posit Post SH WordCloud image](/assets/images/posit-img_wordcloud_postSH.png "This is a Posit Post SH WordCloud image.") |                                                                                                                               |
+| This image is a word cloud from the selected novels post-Sherlock Holmes series.                                                     |                                                                                                                               |
 
 ### GGPlot Results
 This time, we are using ggplot to reveal some more insights. The graph below shows the most recurring words in all selected Sherlock Holmes books. Based on the word cloud we generated previously, we expect the word ‘Holmes’ or ‘Sherlock’ to appear at the top. In this scenario, we sorted out the words so that only words that reoccur above 150 times would show up.
@@ -90,7 +90,6 @@ The scatter plot above highlights a clear pattern in Doyle’s evolving writing 
 > The close clustering of the Sherlock Holmes books (green) and the Pre-SH books (pink) suggests that while the detective stories had a distinct narrative focus, they still retained stylistic similarities with Doyle’s earlier works. This could indicate that his writing tendencies, such as sentence structure, word choice, or narrative flow, remained consistent even as he introduced the detective genre’s unique elements.
 
 ### Word Theme Analysis
-
 #### Detective-Related Terms
 ![This is a Voyant Detective-Related Terms image](/assets/images/voyant-detectiveWords.png "This is a Voyant Detective-Related Terms image.")
 The Sherlock Holmes books (SHB) show a significantly higher use of detective-related terms compared to pre-SH books, with words like case, crime, mystery, investigation, clue, and solution appearing more frequently. `This indicates that Doyle refined and popularized the detective genre by making investigative elements central to the narrative.` In contrast, post-SH books show a noticeable decline in these terms, suggesting a shift away from detective fiction
@@ -115,7 +114,7 @@ Unlike close reading, which provides specific insights, distant reading offers b
 
 Using both <span style="color:blue">`Voyant Tools and RStudio`</span> our analysis shows that while Sherlock Holmes was a pivotal phase in Doyle’s career, it did not permanently alter his writing style. Before Holmes, his works explored crime, morality, and the supernatural. During the Holmes era, his writing became sharper and centered on investigation and logical reasoning. However, after Holmes, Doyle moved away from detective fiction, favoring historical adventure, war, and politics.
 
-> All in all, Sherlock Holmes refined the detective genre, but it was a distinct phase rather than a defining influence on Doyle’s later works. His post-Holmes books returned to themes more in line with his early storytelling—adventure, history, and human psychology—rather than investigative crime fiction. Through computational analysis and human interpretation, we conclude that while Holmes left a mark on the mystery genre, Doyle himself moved on.
+>All in all, Sherlock Holmes refined the detective genre, but it was a distinct phase rather than a defining influence on Doyle’s later works. His post-Holmes books returned to themes more in line with his early storytelling—adventure, history, and human psychology—rather than investigative crime fiction. Through computational analysis and human interpretation, we conclude that while Holmes left a mark on the mystery genre, Doyle himself moved on.
 
 ## Author Contributions
 This article was co-authored by Lucas Lin and Hafizh Ahmad Dahlan. Hafizh developed the research focus and selected the texts, while Lucas structured and designed the document. The analysis was divided between them: Hafizh conducted research using Posit Cloud, while Lucas analyzed data with Voyant Tools. After discussing their findings, they collaborated on the conclusion, which Lucas drafted. For theoretical connections, Hafizh linked the research to Drucker, while Lucas referenced Rockwell and Sinclair. Hafizh wrote the initial background introduction, and both authors proofread and refined the text for clarity and coherence.
