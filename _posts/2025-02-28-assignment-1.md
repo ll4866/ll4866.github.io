@@ -55,6 +55,7 @@ This method follows the ideas discussed in Rockwell and Sinclair’s "The Measur
 ## RMarkdown (Posit.cloud) Findings
 ### Word Cloud Results:
 Our first analysis begins with a Word Cloud. Using this tool allows us to visualize our material generally. The most common words will pop-up and we can expect that words like Holmes or Sherlock should appear the most.
+
 | ![This is a Posit Pre SH WordCloud image](/assets/images/posit-img_wordcloud_preSH.png "This is a Posit Pre SH WordCloud image.") | ![This is a Posit SHB WordCloud image](/assets/images/posit-img_wordcloud_SHB.png "This is a Posit Pre SHB WordCloud image.") |
 | This image is a word cloud from a corpus of all pre-Sherlock Holmes Books. | This image is a word cloud from a corpus of all pre-Sherlock Holmes Books. |
 | ![This is a Posit Post SH WordCloud image](/assets/images/posit-img_wordcloud_postSH.png "This is a Posit Post SH WordCloud image.") | |
