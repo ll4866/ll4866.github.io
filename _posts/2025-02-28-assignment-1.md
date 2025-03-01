@@ -52,10 +52,10 @@ This method follows the ideas discussed in Rockwell and Sinclair’s "The Measur
 ## RMarkdown (Posit.cloud) Findings
 ### Word Cloud Results:
 Our first analysis begins with a Word Cloud. Using this tool allows us to visualize our material generally. The most common words will pop-up and we can expect that words like Holmes or Sherlock should appear the most.
-| ![This is a Posit Pre SH WordCloud image](/assets/images/posit-img_wordcloud_preSH.png "This is a Posit Pre SH WordCloud image.")    | ![This is a Posit SHB WordCloud image](/assets/images/posit-img_wordcloud_SHB.png "This is a Posit Pre SHB WordCloud image.") |
-| This image is a word cloud from a corpus of all pre-Sherlock Holmes Books.                                                           | This image is a word cloud from a corpus of all pre-Sherlock Holmes Books.                                                    |
-| ![This is a Posit Post SH WordCloud image](/assets/images/posit-img_wordcloud_postSH.png "This is a Posit Post SH WordCloud image.") |                                                                                                                               |
-| This image is a word cloud from the selected novels post-Sherlock Holmes series.                                                     |                                                                                                                               |
+| ![This is a Posit Pre SH WordCloud image](/assets/images/posit-img_wordcloud_preSH.png "This is a Posit Pre SH WordCloud image.") | ![This is a Posit SHB WordCloud image](/assets/images/posit-img_wordcloud_SHB.png "This is a Posit Pre SHB WordCloud image.") |
+| This image is a word cloud from a corpus of all pre-Sherlock Holmes Books. | This image is a word cloud from a corpus of all pre-Sherlock Holmes Books. |
+| ![This is a Posit Post SH WordCloud image](/assets/images/posit-img_wordcloud_postSH.png "This is a Posit Post SH WordCloud image.") | |
+| This image is a word cloud from the selected novels post-Sherlock Holmes series. | |
 
 ### GGPlot Results
 This time, we are using ggplot to reveal some more insights. The graph below shows the most recurring words in all selected Sherlock Holmes books. Based on the word cloud we generated previously, we expect the word ‘Holmes’ or ‘Sherlock’ to appear at the top. In this scenario, we sorted out the words so that only words that reoccur above 150 times would show up.
