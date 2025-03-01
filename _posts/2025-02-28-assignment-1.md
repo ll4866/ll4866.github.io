@@ -15,7 +15,7 @@ Written and researched by Ahmad Hafizh and Lucas Lin.
 We conducted a distant reading of Sir Arthur Conan Doyle’s works to examine whether the Sherlock Holmes series influenced his later books. Doyle, best known for creating the legendary detective, was a 19th-century British writer whose background in medicine shaped his storytelling, particularly in forensic detail and logical reasoning. This study investigates whether the themes, vocabulary, and stylistic choices of Sherlock Holmes carried over into Doyle’s later works. Using distant reading techniques, we analyzed a selection of Doyle’s books across three distinct periods—before, during, and after Sherlock Holmes. We employed <span style="color:blue">`Voyant Tools`</span> and <span style="color:blue">`Posit.cloud (RMarkdown)`</span> to track linguistic and thematic shifts across these periods.
 
 ## Hypothesis: The Sherlock Holmes Influence  
-> ** We hypothesize that writing the Sherlock Holmes series influenced Doyle’s later works. ** If so, his post-Holmes books should share notable similarities with the Holmes stories in vocabulary, themes, or narrative style. Given Holmes' popularity, we expected to see detective fiction elements carried over into Doyle's later works.
+> **We hypothesize that writing the Sherlock Holmes series influenced Doyle’s later works.** If so, his post-Holmes books should share notable similarities with the Holmes stories in vocabulary, themes, or narrative style. Given Holmes' popularity, we expected to see detective fiction elements carried over into Doyle's later works.
 
 ## Material Selection & Corpus  
 All selected books were chosen based on their time of publication and genre, with a focus on mystery. While Doyle continued to write mystery and detective fiction beyond the Sherlock Holmes series, we focused on the following works to examine his stylistic and thematic evolution.
@@ -65,20 +65,17 @@ Our first analysis begins with a Word Cloud. Using this tool allows us to visual
 This time, we are using ggplot to reveal some more insights. The graph below shows the most recurring words in all selected Sherlock Holmes books. Based on the word cloud we generated previously, we expect the word ‘Holmes’ or ‘Sherlock’ to appear at the top. In this scenario, we sorted out the words so that only words that reoccur above 150 times would show up.
 ![This is a Posit Word Freq image](/assets/images/posit-ggplot_wordfreq.png "This is a Posit Word Freq image.")
 
-#### First Iteration
-Next, we compared the groups to get more insights. In the first iteration, we compared Sherlock Holmes books with pre-SH and post-SH. Our expectation is to observe words closer to the center line in Sherlock Holmes with post-SH compared to with pre-SH.
+**First Iteration** Next, we compared the groups to get more insights. In the first iteration, we compared Sherlock Holmes books with pre-SH and post-SH. Our expectation is to observe words closer to the center line in Sherlock Holmes with post-SH compared to with pre-SH.
 ![This is a Posit First Iteration image](/assets/images/posit-ggplot_first_iteration.png "This is a Posit First Iteration  image.")
 
-#### Second Iteration
-In this graph, we modified the values of the jitter size, height, and width. We also adjusted the colors so that it differs from the first iteration. We observed that the change allowed for more distinct words to show up compared to the first iteration.
+**Second Iteration** In this graph, we modified the values of the jitter size, height, and width. We also adjusted the colors so that it differs from the first iteration. We observed that the change allowed for more distinct words to show up compared to the first iteration.
 ![This is a Posit Second Iteration image](/assets/images/posit-ggplot_second_iteration.png "This is a Posit Second Iteration  image.")
 
-#### Third Iteration
-We decided to change things around this time by comparing pre-Sherlock Holmes books with the post and Sherlock Holmes series itself. The ggplot values are the same as the previous graph. Only the color is changed this time around.
+**Third Iteration** We decided to change things around this time by comparing pre-Sherlock Holmes books with the post and Sherlock Holmes series itself. The ggplot values are the same as the previous graph. Only the color is changed this time around.
 ![This is a Posit Third Iteration image](/assets/images/posit-ggplot_third_iteration.png "This is a Posit Third Iteration  image.")
 
 ## Voyant Tools Findings
-### General
+### General Information
 ![This is a Voyant Basic Info image](/assets/images/voyant-basicInfo.png "This is a Voyant Basic Info image.")
 
 The data reveals that Doyle’s writing evolved after Sherlock Holmes, with post-Holmes works having the highest word count and longer sentences, indicating a shift toward more descriptive storytelling. Sherlock Holmes books feature shorter sentences, reinforcing their fast-paced detective style. Despite these differences, Doyle’s vocabulary range remained stable, as seen in the consistent 6% type-to-word ratio.
@@ -93,16 +90,16 @@ The scatter plot above highlights a clear pattern in Doyle’s evolving writing 
 
 ### Word Theme Analysis
 #### Detective-Related Terms
-![This is a Voyant Detective-Related Terms image](/assets/images/voyant-detectiveWords.png "This is a Voyant Detective-Related Terms image.")
 The Sherlock Holmes books (SHB) show a significantly higher use of detective-related terms compared to pre-SH books, with words like case, crime, mystery, investigation, clue, and solution appearing more frequently. `This indicates that Doyle refined and popularized the detective genre by making investigative elements central to the narrative.` In contrast, post-SH books show a noticeable decline in these terms, suggesting a shift away from detective fiction
+![This is a Voyant Detective-Related Terms image](/assets/images/voyant-detectiveWords.png "This is a Voyant Detective-Related Terms image.")
 
 #### Action and Suspense-Related Terms
-![This is a Voyant Action and Suspense-Related Terms image](/assets/images/voyant-actionSuspenseTerms.png "This is a Voyant Action and Suspense-Related Terms image.")
 Action and suspense-related terms were minimal in Doyle’s pre-Holmes works, moderately present in the Sherlock Holmes stories, and significantly increased in post-Holmes books.`While Holmes’ narratives emphasized deduction over action, Doyle’s later works leaned toward adventure-driven storytelling, incorporating more frequent mentions of fight, thrill, and chase.`This shift suggests a departure from pure detective fiction, aligning with the rise of pulp fiction and early thriller genres.
+![This is a Voyant Action and Suspense-Related Terms image](/assets/images/voyant-actionSuspenseTerms.png "This is a Voyant Action and Suspense-Related Terms image.")
 
 #### Psychological Theme
-![This is a Voyant Psychological Theme image](/assets/images/voyant-psychologicalTerms.png "This is a Voyant Psychological Theme image.")
 Sherlock Holmes introduced psychological themes such as perception, deception, and manipulation, making them more prominent than in Doyle’s pre-Holmes works. Post-Holmes books expanded even further on these elements, emphasizing psychological complexity. This suggests that while Holmes played a crucial role in shaping psychological themes in detective fiction, later works evolved beyond imitation, deepening the exploration of human psychology.
+![This is a Voyant Psychological Theme image](/assets/images/voyant-psychologicalTerms.png "This is a Voyant Psychological Theme image.")
 
 #### Character and Role-related Terms
 ![This is a Voyant Character and Role-related Terms image](/assets/images/voyant-characterRoleTerms.png "This is a Character and Role-related Terms image.")
