@@ -123,5 +123,5 @@ This article was co-authored by Lucas Lin and Hafizh Ahmad Dahlan. Hafizh develo
 * Rockwell, Geoffrey, and Stéfan Sinclair. 2016. The Measured Words: How Computers Analyze Text. University of Illinois Press. <span style="color:blue">https://ieeexplore.ieee.org/document/7580345.</span>
 * DAAH Assignment 1 Images. Google Drive Folder. <span style="color:blue">https://drive.google.com/drive/folders/1rJ2Qpp3dRragVGbPkpCsLGkPa6Kq2eTW?usp=drive_link</span>
 
-✅ Ready for grading ✅
+**✅ Ready for grading**
 {: .notice}
