@@ -5,7 +5,7 @@ categories:
 tags:
   - Done
 toc: true
-toc_label: "Digital Litaracy Narrative"
+toc_label: "Extra Credit"
 toc_sticky: true
 ---
 ![This is a Extra Credit Poster image](/assets/images/extra-credit-event.png "This is a Extra Credit Poster image.")
