@@ -6,7 +6,7 @@ categories:
 tags:
   - Done
 toc: true
-toc_label: "Digital Litaracy Narrative"
+toc_label: "Assignment 1"
 toc_sticky: true
 ---
 Written and researched by Ahmad Hafizh and Lucas Lin.
