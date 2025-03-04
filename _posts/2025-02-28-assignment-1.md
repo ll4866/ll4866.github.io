@@ -56,27 +56,27 @@ This method follows the ideas discussed in Rockwell and Sinclair’s "The Measur
 ### Word Cloud Results:
 Our first analysis begins with a Word Cloud. Using this tool allows us to visualize our material generally. The most common words will pop-up and we can expect that words like Holmes or Sherlock should appear the most.
 
-| ![This is a Posit Pre SH WordCloud image](/assets/images/posit-img_wordcloud_preSH.png "This is a Posit Pre SH WordCloud image.") | ![This is a Posit SHB WordCloud image](/assets/images/posit-img_wordcloud_SHB.png "This is a Posit Pre SHB WordCloud image.") |
+| ![This is a Posit Pre SH WordCloud image](/assets/images/assignment-1/posit-img_wordcloud_preSH.png "This is a Posit Pre SH WordCloud image.") | ![This is a Posit SHB WordCloud image](/assets/images/assignment-1/posit-img_wordcloud_SHB.png "This is a Posit Pre SHB WordCloud image.") |
 | This image is a word cloud from a corpus of all pre-Sherlock Holmes Books. | This image is a word cloud from a corpus of all pre-Sherlock Holmes Books. |
-| ![This is a Posit Post SH WordCloud image](/assets/images/posit-img_wordcloud_postSH.png "This is a Posit Post SH WordCloud image.") | |
+| ![This is a Posit Post SH WordCloud image](/assets/images/assignment-1/posit-img_wordcloud_postSH.png "This is a Posit Post SH WordCloud image.") | |
 | This image is a word cloud from the selected novels post-Sherlock Holmes series. | |
 
 ### GGPlot Results
 This time, we are using ggplot to reveal some more insights. The graph below shows the most recurring words in all selected Sherlock Holmes books. Based on the word cloud we generated previously, we expect the word ‘Holmes’ or ‘Sherlock’ to appear at the top. In this scenario, we sorted out the words so that only words that reoccur above 150 times would show up.
-![This is a Posit Word Freq image](/assets/images/posit-ggplot_wordfreq.png "This is a Posit Word Freq image.")
+![This is a Posit Word Freq image](/assets/images/assignment-1/posit-ggplot_wordfreq.png "This is a Posit Word Freq image.")
 
 **First Iteration** Next, we compared the groups to get more insights. In the first iteration, we compared Sherlock Holmes books with pre-SH and post-SH. Our expectation is to observe words closer to the center line in Sherlock Holmes with post-SH compared to with pre-SH.
-![This is a Posit First Iteration image](/assets/images/posit-ggplot_first_iteration.png "This is a Posit First Iteration  image.")
+![This is a Posit First Iteration image](/assets/images/assignment-1/posit-ggplot_first_iteration.png "This is a Posit First Iteration  image.")
 
 **Second Iteration** In this graph, we modified the values of the jitter size, height, and width. We also adjusted the colors so that it differs from the first iteration. We observed that the change allowed for more distinct words to show up compared to the first iteration.
-![This is a Posit Second Iteration image](/assets/images/posit-ggplot_second_iteration.png "This is a Posit Second Iteration  image.")
+![This is a Posit Second Iteration image](/assets/images/assignment-1/posit-ggplot_second_iteration.png "This is a Posit Second Iteration  image.")
 
 **Third Iteration** We decided to change things around this time by comparing pre-Sherlock Holmes books with the post and Sherlock Holmes series itself. The ggplot values are the same as the previous graph. Only the color is changed this time around.
-![This is a Posit Third Iteration image](/assets/images/posit-ggplot_third_iteration.png "This is a Posit Third Iteration  image.")
+![This is a Posit Third Iteration image](/assets/images/assignment-1/posit-ggplot_third_iteration.png "This is a Posit Third Iteration  image.")
 
 ## Voyant Tools Findings
 ### General Information
-![This is a Voyant Basic Info image](/assets/images/voyant-basicInfo.png "This is a Voyant Basic Info image.")
+![This is a Voyant Basic Info image](/assets/images/assignment-1/voyant-basicInfo.png "This is a Voyant Basic Info image.")
 
 The data reveals that Doyle’s writing evolved after Sherlock Holmes, with post-Holmes works having the highest word count and longer sentences, indicating a shift toward more descriptive storytelling. Sherlock Holmes books feature shorter sentences, reinforcing their fast-paced detective style. Despite these differences, Doyle’s vocabulary range remained stable, as seen in the consistent 6% type-to-word ratio.
 
@@ -91,18 +91,18 @@ The scatter plot above highlights a clear pattern in Doyle’s evolving writing 
 ### Word Theme Analysis
 #### Detective-Related Terms
 The Sherlock Holmes books (SHB) show a significantly higher use of detective-related terms compared to pre-SH books, with words like case, crime, mystery, investigation, clue, and solution appearing more frequently. `This indicates that Doyle refined and popularized the detective genre by making investigative elements central to the narrative.` In contrast, post-SH books show a noticeable decline in these terms, suggesting a shift away from detective fiction
-![This is a Voyant Detective-Related Terms image](/assets/images/voyant-detectiveWords.png "This is a Voyant Detective-Related Terms image.")
+![This is a Voyant Detective-Related Terms image](/assets/images/assignment-1/voyant-detectiveWords.png "This is a Voyant Detective-Related Terms image.")
 
 #### Action and Suspense-Related Terms
 Action and suspense-related terms were minimal in Doyle’s pre-Holmes works, moderately present in the Sherlock Holmes stories, and significantly increased in post-Holmes books.`While Holmes’ narratives emphasized deduction over action, Doyle’s later works leaned toward adventure-driven storytelling, incorporating more frequent mentions of fight, thrill, and chase.`This shift suggests a departure from pure detective fiction, aligning with the rise of pulp fiction and early thriller genres.
-![This is a Voyant Action and Suspense-Related Terms image](/assets/images/voyant-actionSuspenseTerms.png "This is a Voyant Action and Suspense-Related Terms image.")
+![This is a Voyant Action and Suspense-Related Terms image](/assets/images/assignment-1/voyant-actionSuspenseTerms.png "This is a Voyant Action and Suspense-Related Terms image.")
 
 #### Psychological Theme
 Sherlock Holmes introduced psychological themes such as perception, deception, and manipulation, making them more prominent than in Doyle’s pre-Holmes works. Post-Holmes books expanded even further on these elements, emphasizing psychological complexity. This suggests that while Holmes played a crucial role in shaping psychological themes in detective fiction, later works evolved beyond imitation, deepening the exploration of human psychology.
-![This is a Voyant Psychological Theme image](/assets/images/voyant-psychologicalTerms.png "This is a Voyant Psychological Theme image.")
+![This is a Voyant Psychological Theme image](/assets/images/assignment-1/voyant-psychologicalTerms.png "This is a Voyant Psychological Theme image.")
 
 #### Character and Role-related Terms
-![This is a Voyant Character and Role-related Terms image](/assets/images/voyant-characterRoleTerms.png "This is a Character and Role-related Terms image.")
+![This is a Voyant Character and Role-related Terms image](/assets/images/assignment-1/voyant-characterRoleTerms.png "This is a Character and Role-related Terms image.")
 The bar graph illustrates the evolution of character and role-related terms in Doyle’s works. During the Sherlock Holmes era, terms like “inspector,” “detective,” and “criminal” rise significantly, reflecting a strong focus on investigation. Pre-Holmes books feature “inspector” and “agent” but with less emphasis on detectives. Post-Holmes, detective-related terms decline as “officer” becomes more prominent, marking a shift from detective-driven narratives to broader authority figures. This suggests that while Holmes reinforced Doyle’s engagement with crime and justice, his later works shifted toward legal and societal themes over individual investigations.
 
 ## Discussion/Conclusion
