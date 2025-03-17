@@ -39,3 +39,6 @@ Mandala "Men"              | Mandala "Away"
 
 ## Conclusion
 Considering all these uncommon patterns—high readability, uneven topic distribution, controlled word frequency, limited lexical richness, machine-like bubbleline patterns, and missing common keywords—I concluded that Text 8 is most likely the AI-generated story.
+
+**✅ Ready for grading**
+{: .notice}

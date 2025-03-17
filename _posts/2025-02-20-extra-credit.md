@@ -96,3 +96,6 @@ The discussion on data linkage and reidentification connects to our conversation
 
 > Something I’m still thinking about is how to balance privacy with data utility. The event made it clear that stronger anonymization can mean losing important details in a dataset. But if we strip too much away, do we risk making the data useless? And if we keep too much, are we sacrificing privacy? These are questions that seem more and more relevant as data-driven technologies continue to advance.
 > Overall, this event reinforced that privacy is an ongoing challenge. As technology evolves, so do the methods for reidentification, meaning that anonymization strategies need to keep up. Understanding and applying better anonymization techniques will be crucial—not just for research, but for maintaining security in a world where data is constantly being collected, shared, and analyzed.
+
+**✅ Ready for grading**
+{: .notice}

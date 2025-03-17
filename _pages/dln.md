@@ -12,7 +12,8 @@ toc_sticky: true
 ---
 **Step 1:** focuses on personalizing a provided text to reflect my own digital literacies and the skills I aim to develop this semester. The goal is to revise the Generated Response (by GPT-4o, 30 Jan 25) to reflect my perspective while keeping it around 750 words.
 
-**Due date:** 8 February 2025.
+**Phase 1 Due date:** 8 February 2025.
+**Revision Due date:** 22 March 2025.
 {: .notice}
 
 ## Prompt:
@@ -61,4 +62,7 @@ In the future, I look forward to diving deeper into digital humanities and compu
 By integrating digital tools into my studies, I am learning how to think critically and creatively, preparing myself for the challenges and opportunities that lie ahead. As I continue to expand my digital literacy, I am excited about the potential of these technologies to shape both my academic journey and the world around me.
 
 Used GPT to refine my text
+{: .notice}
+
+** Working on Revision...
 {: .notice}
