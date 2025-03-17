@@ -13,6 +13,7 @@ toc_sticky: true
 **Step 1:** focuses on personalizing a provided text to reflect my own digital literacies and the skills I aim to develop this semester. The goal is to revise the Generated Response (by GPT-4o, 30 Jan 25) to reflect my perspective while keeping it around 750 words.
 
 **Phase 1 Due date:** 8 February 2025.
+<br/>
 **Revision Due date:** 22 March 2025.
 {: .notice}
 
