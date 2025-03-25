@@ -7,7 +7,7 @@ tags:
   - Done
 ---
 
-Previously, we explored various map projects, examining their uses, purposes, and potential applications. To delve deeper into the technical aspects of map creation, we began working with map features. We specifically explored OpenStreetMap’s features and were curious about replicating similar functionalities in our own maps.
+Previously, we explored various map projects, examining their uses, purposes, and potential applications. To delve deeper into the technical aspects of map creation, we began working with map features. We specifically explored [OpenStreetMap’s features](https://wiki.openstreetmap.org/wiki/Map_features) and were curious about replicating similar functionalities in our own maps.
 
 Using [Overpass Turbo](https://overpass-turbo.eu/) , we generated queries with prompts like “Write an Overpass Turbo query for amenity = (desired feature).” The resulting data was exported as a JPEG and imported into [Kepler](https://kepler.gl/demo) for visualization.
 
