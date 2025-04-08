@@ -8,3 +8,5 @@ tags:
 ---
 
 Working...
+
+![This is a GIF](/assets/Map.gif "This is a GIF.") 
