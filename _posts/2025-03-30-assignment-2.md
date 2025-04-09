@@ -5,8 +5,24 @@ categories:
   - Assignments
 tags:
   - Working
+toc: true
+toc_label: "Assignment 1"
+toc_sticky: true
 ---
+Written and researched by Ahmad Hafizh and Lucas Lin.
 
-Working...
+## Background Info
 
+## Modeling
+
+## Correcting Data
+
+## Visualization
 ![This is a GIF](/assets/gif/Map.gif "This is a GIF.") 
+
+## Result Discussion
+
+## Contribution
+
+**✅ Working,,,**
+{: .notice}
