@@ -9,4 +9,4 @@ tags:
 
 Working...
 
-![This is a GIF](/assets/Map.gif "This is a GIF.") 
+![This is a GIF](/assets/gif/Map.gif "This is a GIF.") 
