@@ -9,9 +9,6 @@ tags:
   - OCR
   - Historical Data
   - Data Visualization
-toc: true
-toc_label: "Assignment 2"
-toc_sticky: true
 ---
 *Written and researched by Ahmad Hafizh and Lucas Lin.*
 
@@ -25,23 +22,23 @@ Within this collection, we explored several tables, including mail schedules, me
 2. Their ease of transcription allowed us to focus on automating the data extraction process and to invest more time in in-depth analysis and visualization.
 
 ### Competition Between Machines
-One cornerstone that Klein emphasizes is the idea that ‘*the bigger AI model does not mean it is better.*' heir research suggests that simply increasing the volume of data, model complexity, or computational power does not always lead to more accurate AI outputs. For humanities researchers, this insight highlights the limitations of pursuing a single, all-encompassing form of artificial intelligence—revealing the complexity and potential shortcomings of such an approach.
+One cornerstone that Klein emphasizes is the idea that ‘*the bigger AI model does not mean it is better.*' Their research suggests that simply increasing the volume of data, model complexity, or computational power does not always lead to more accurate AI outputs. For humanities researchers, this insight highlights the limitations of pursuing a single, all-encompassing form of artificial intelligence—revealing the complexity and potential shortcomings of such an approach.
 
 Initially, we used the free version of ChatGPT-4  as our primary tool for text recognition. However, we quickly encountered limitations in processing capacity, managing only around five prompts and twenty rows of data. To address this, we shifted to using Google’s Gemini and DeepSeek which provided broader capabilities for our needs.
 
 We began by using the following prompt for Google Gemini:
 > **“*Please generate me a table and .csv file for the image shown here.*”**
 
-This prompt allows us to gain two things from the generated outcome. First, by displaying the `.csv` in a table, we can immediately see the result that the AI has generated. This display is important as it will provide us with a quick spot if the AI missed or falsely recognized the text. Second, the .csv file helps us import the data into Google Sheets. We also compared both DeepSeek and Gemini results to see whether they would generate different results. In later parts of our article, we will discuss the pros and cons of both tools.
+This prompt allows us to gain two things from the generated outcome. First, by displaying the .csv in a table, we can immediately see the result that the AI has generated. This display is important as it will provide us with a quick spot if the AI missed or falsely recognized the text. Second, the .csv file helps us import the data into Google Sheets. We also compared both DeepSeek and Gemini results to see whether they would generate different results. In later parts of our article, we will discuss the pros and cons of both tools.
 
 ### Observations:
 After working on our assignment using both Google’s Gemini and DeepSeek, we noted the following:
 1. **Gemini**
-- The tool lacks support for reading `.csv` files. Since our project heavily relied on this format, this limitation significantly impacted our workflow.
+- The tool lacks support for reading .csv files. Since our project heavily relied on this format, this limitation significantly impacted our workflow.
 - When performing OCR, Gemini does not apply self-correction. It returns exactly what it reads—even when the output contains errors. As a result, inaccuracies are likely to persist unless manually fixed.
 2. **DeepSeek**
 - In contrast, DeepSeek performs data cleanup. For example, it intelligently interprets ditto marks in tables and fills in repeated values based on preceding rows. We'll showcase several examples of this cleanup later.
-- Additionally, DeepSeek can read  `.csv` files , which allowed it to reference our existing data structure. This feature proved especially useful, as new OCR outputs could be seamlessly merged with our dataset.
+- Additionally, DeepSeek can read  .csv files , which allowed it to reference our existing data structure. This feature proved especially useful, as new OCR outputs could be seamlessly merged with our dataset.
 
 > **<span style="color:#b8984f"> 🏆 Winner: </span>** DeepSeek takes the crown, as it was able to perform key tasks and deliver results that directly supported our research. It may have been trained on similar datasets, enabling it to recognize and interpret our content more accurately than Gemini. Furthermore, DeepSeek provided unique insights based on our tables—something that would have required significant time and manual effort had we done it row by row.
 
@@ -58,8 +55,7 @@ The following is a detailed explanation of our processes. We extracted shipping 
 ### Key Adjustments:
 There are several changes that we made before visualizing our data:
 
-1.  **Changing "Cargo Type" to "Ship Type"**
-- We observed that ships could be broadly classified into two categories: *a cargo ship* and *a warship (Man-O’-War)*. Since "Cargo Type", we deem, is unnecessary for our research and would not provide beneficial information. Instead, knowing what type came during a specific week of the month (that is, cargo ships or warships) makes our data much more interesting.
+1.  **Changing "Cargo Type" to "Ship Type"** We observed that ships could be broadly classified into two categories: *a cargo ship* and *a warship (Man-O’-War)*. Since "Cargo Type", we deem, is unnecessary for our research and would not provide beneficial information. Instead, knowing what type came during a specific week of the month (that is, cargo ships or warships) makes our data much more interesting.
 2. **Replacing “Still in Harbour”**
 - During our review, we frequently encountered the phrase *Still in harbour* , typically appearing in the *Bound To* column. We interpreted this phrase signifies that the ship has yet to depart from its current harbor. To avoid ambiguity and enhance the accuracy of our visualizations, we replaced this phrase with the ship’s original harbor name. This ensured that the data would still plot correctly on the map—even when the vessel had not moved—preventing missing or broken lines in our final output.
 3.  **Geographic Data Verification**
@@ -88,12 +84,12 @@ After manually processing over a hundred rows, fatigue inevitably set in. Manual
 
 >***“What if we feed the machine our edited tabular data and ask them to do OCR and generate the output based on our table structure?”***
 
-At this point, we discovered that Gemini does not support `.csv` files—but fortunately, DeepSeek does. Below is a summary of the prompt sequence we used to generate over 100 rows of structured data with DeepSeek.
+At this point, we discovered that Gemini does not support .csv files—but fortunately, DeepSeek does. Below is a summary of the prompt sequence we used to generate over 100 rows of structured data with DeepSeek.
 
 | Prompt | Output |
 |--------|--------|
 | **Uploaded** `1909_ShippingReport.csv` **(our base file)** "Okay. I have attached a file here. Please examine the file and take note of the headers and the contents stored within."| DeepSeek examines the file. *Let me know if you’d like to explore specific aspects (e.g., filtering by nationality, time ranges, or missing data)!* |
-| **Uploaded a screenshot of the Zanzibar Gazette Shipping Reports 1 June 1909** Now, examine the `1909_ShippingReport.csv` file I have provided. If you still remember and examined correctly, you should notice that the tabular data image I have provided you contains data structured similarly to the `.csv` file I provided. Can you merge the `.csv` file I just provided with the ones you created? Ignore the longitude (from), latitude (from), longitude (destination), and latitude (destination) columns and leave them empty. | ![Prompt 2.png](/assets/images/assignment-2/Prompt2.png)|
+| **Uploaded a screenshot of the Zanzibar Gazette Shipping Reports 1 June 1909** Now, examine the `1909_ShippingReport.csv` file I have provided. If you still remember and examined correctly, you should notice that the tabular data image I have provided you contains data structured similarly to the `.csv` file I provided. Can you merge the .csv file I just provided with the ones you created? Ignore the longitude (from), latitude (from), longitude (destination), and latitude (destination) columns and leave them empty. | ![Prompt 2.png](/assets/images/assignment-2/Prompt2.png)|
 | **"Remember the steps that you have done previously."** "Here is a new image similar to the ones I gave before. Extract the textual information and adjust the data so that it fits the  `1909_ShippingReport.csv` structure while ignoring longitude (from), latitude (from), longitude (destination), and latitude (destination) columns and leave them empty." | ![Prompt 3.png](/assets/images/assignment-2/Prompt3.png)|
 
 ## Visualization
