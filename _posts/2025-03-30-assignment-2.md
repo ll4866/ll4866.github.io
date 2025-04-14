@@ -27,19 +27,19 @@ Within this collection, we explored several tables, including mail schedules, me
 ### Competition Between Machines
 One cornerstone that Klein emphasizes is the idea that ‘*the bigger AI model does not mean it is better.*' heir research suggests that simply increasing the volume of data, model complexity, or computational power does not always lead to more accurate AI outputs. For humanities researchers, this insight highlights the limitations of pursuing a single, all-encompassing form of artificial intelligence—revealing the complexity and potential shortcomings of such an approach.
 
-Initially, we used the free version of **ChatGPT-4**  as our primary tool for text recognition. However, we quickly encountered limitations in processing capacity, managing only around five prompts and twenty rows of data. To address this, we shifted to using <span style="color:blue">Google’s Gemini</span> and <span style="color:blue">DeepSeek</span> which provided broader capabilities for our needs.
+Initially, we used the free version of **ChatGPT-4**  as our primary tool for text recognition. However, we quickly encountered limitations in processing capacity, managing only around five prompts and twenty rows of data. To address this, we shifted to using <span style="color:#5e5eff">Google’s Gemini</span> and <span style="color:#5e5eff">DeepSeek</span> which provided broader capabilities for our needs.
 
 We began by using the following prompt for Google Gemini:
 > **“*Please generate me a table and .csv file for the image shown here.*”**
 
-This prompt allows us to gain two things from the generated outcome. First, by displaying the `.csv` in a table, we can immediately see the result that the AI has generated. This display is important as it will provide us with a quick spot if the AI missed or falsely recognized the text. Second, the .csv file helps us import the data into <span style="color:blue">Google Sheets</span>. We also compared both DeepSeek and Gemini results to see whether they would generate different results. In later parts of our article, we will discuss the pros and cons of both tools.
+This prompt allows us to gain two things from the generated outcome. First, by displaying the `.csv` in a table, we can immediately see the result that the AI has generated. This display is important as it will provide us with a quick spot if the AI missed or falsely recognized the text. Second, the .csv file helps us import the data into <span style="color:#5e5eff">Google Sheets</span>. We also compared both DeepSeek and Gemini results to see whether they would generate different results. In later parts of our article, we will discuss the pros and cons of both tools.
 
 #### Observations:
 After working on our assignment using both Google’s Gemini and DeepSeek, we noted the following:
-1. <span style="color:blue">Gemini</span>
+1. **<span style="color:#5e5eff">Gemini</span>**
 - The tool <span style="color:red"> lacks support</span> for reading `.csv` files. Since our project heavily relied on this format, this limitation significantly impacted our workflow.
 - When performing OCR, Gemini  <span style="color:red"> does not apply self-correction.</span> It returns exactly what it reads—even when the output contains errors. As a result, inaccuracies are likely to persist unless manually fixed.
-2. <span style="color:blue">DeepSeek</span>
+2. **<span style="color:#5e5eff">DeepSeek</span>**
 - In contrast, DeepSeek <span style="color:green">performs data cleanup.</span>  For example, it intelligently interprets ditto marks in tables and fills in repeated values based on preceding rows. We'll showcase several examples of this cleanup later.
 - Additionally, DeepSeek <span style="color:green"> can read `.csv` files </span>, which allowed it to reference our existing data structure. This feature proved especially useful, as new OCR outputs could be seamlessly merged with our dataset.
 
@@ -98,7 +98,7 @@ At this point, we discovered that Gemini does not support `.csv` files—but for
 | **"Remember the steps that you have done previously."** "Here is a new image similar to the ones I gave before. Extract the textual information and adjust the data so that it fits the  `1909_ShippingReport.csv` structure while ignoring longitude (from), latitude (from), longitude (destination), and latitude (destination) columns and leave them empty." | ![Prompt 3.png](/assets/images/assignment-2/Prompt3.png)|
 
 ### Fantastic Dhows and Where to Find Them
-Initially, we tried using Google Sheets to represent our analysis on Dhows. However, we encountered numerous problems regarding Timeline Graphs, and the outcome did not display the data like we expected. Instead, we used an online tool called [<span style="color:blue">CSV Plots</span>](https://www.csvplot.com/) to map our data in a line graph. 
+Initially, we tried using Google Sheets to represent our analysis on Dhows. However, we encountered numerous problems regarding Timeline Graphs, and the outcome did not display the data like we expected. Instead, we used an online tool called [<span style="color:#5e5eff">CSV Plots</span>](https://www.csvplot.com/) to map our data in a line graph. 
 
 | Dhows Sailed  |
 |---------------|
