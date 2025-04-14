@@ -77,7 +77,7 @@ Three-quarters into the process, a significant oversight came to light when we a
 
 > This discovery revealed that the reports were not limited to cargo ships but also included warships (categorized as Man-O-War) and smaller, traditional vessels (classified as Dhows). Consequently, what was once a visualization focused solely on cargo ships was expanded to encompass a broader range of maritime activity.
 
-With this new insight, we decided to incorporate warships into our primary shipping report table. However, since the ‘*Dhows Arrived*’ and ‘*Dhows Departed*’ data followed a different structure, we chose not to integrate them into the main table. Instead, we created a separate table and visualized the dhow data using bar graphs. 
+With this new insight, we decided to incorporate warships into our primary shipping report table. However, since the *Dhows Arrived* and *Dhows Departed* data followed a different structure, we chose not to integrate them into the main table. Instead, we created a separate table and visualized the dhow data using bar graphs. 
 
 ### Nudging the Tool
 After manually processing over a hundred rows, fatigue inevitably set in. Manually editing each entry was no longer feasible. This prompted a new idea:
