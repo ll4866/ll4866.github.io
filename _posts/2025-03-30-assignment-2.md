@@ -37,11 +37,11 @@ This prompt allows us to gain two things from the generated outcome. First, by d
 #### Observations:
 After working on our assignment using both Google’s Gemini and DeepSeek, we noted the following:
 1. <span style="color:blue">`Gemini`</span>
-- The tool lacks support for reading `.csv` files. Since our project heavily relied on this format, this limitation significantly impacted our workflow.
-- When performing OCR, Gemini does not apply self-correction. It returns exactly what it reads—even when the output contains errors. As a result, inaccuracies are likely to persist unless manually fixed.
+- The tool <span style="color:red"> lacks support</span> for reading `.csv` files. Since our project heavily relied on this format, this limitation significantly impacted our workflow.
+- When performing OCR, Gemini  <span style="color:red"> does not apply self-correction.</span> It returns exactly what it reads—even when the output contains errors. As a result, inaccuracies are likely to persist unless manually fixed.
 2. <span style="color:blue">`DeepSeek`</span>
-- In contrast, DeepSeek performs data cleanup. For example, it intelligently interprets ditto marks in tables and fills in repeated values based on preceding rows. We'll showcase several examples of this cleanup later.
-- Additionally, DeepSeek can read `.csv` files, which allowed it to reference our existing data structure. This feature proved especially useful, as new OCR outputs could be seamlessly merged with our dataset.
+- In contrast, DeepSeek <span style="color:green">performs data cleanup.</span>  For example, it intelligently interprets ditto marks in tables and fills in repeated values based on preceding rows. We'll showcase several examples of this cleanup later.
+- Additionally, DeepSeek <span style="color:green"> can read `.csv` files </span>, which allowed it to reference our existing data structure. This feature proved especially useful, as new OCR outputs could be seamlessly merged with our dataset.
 
 > **🏆 Winner: DeepSeek** takes the crown, as it was able to perform key tasks and deliver results that directly supported our research. It may have been trained on similar datasets, enabling it to recognize and interpret our content more accurately than Gemini. Furthermore, DeepSeek provided unique insights based on our tables—something that would have required significant time and manual effort had we done it row by row.
 
