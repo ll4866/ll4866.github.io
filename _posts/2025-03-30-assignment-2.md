@@ -53,7 +53,6 @@ The following is a detailed explanation of our processes. We extracted shipping 
 *Absolutely! Let's break down the information in the image and create a table and a CSV representation.*
 
 | ![This is Prompt 1: Table Response.png image](/assets/images/assignment-2/TableResponse.png)  |
-|---|
 | ![This is Prompt 1: Prompt 1: CSV Response.png image](/assets/images/assignment-2/CSVResponse.png)  |
 
 ### Key Adjustments:
