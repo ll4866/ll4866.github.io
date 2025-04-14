@@ -20,14 +20,14 @@ toc_sticky: true
 
 For this assignment, we analyzed the Zanzibar Gazette Year 1909. This specific year was chosen due to its high-quality metadata (text-searchable content), visual clarity, and the overall tidiness of its layout compared to earlier issues. We deliberately avoided the years 1914–1918 due to expected publication gaps or inconsistencies caused by World War I.
 
-Within this collection, we explored several tables, including mail schedules, meteorological data, customs reports, principal item exports, and ship sailings. Among these, the **Shipping Reports** caught our attention for two main reasons:
+Within this collection, we explored several tables, including mail schedules, meteorological data, customs reports, principal item exports, and ship sailings. Among these, the Shipping Reports caught our attention for two main reasons:
 1. They featured a relatively consistent layout and clear quality, making them easier for us—and presumably for machines—to process.
 2. Their ease of transcription allowed us to focus on automating the data extraction process and to invest more time in in-depth analysis and visualization.
 
 ### Competition Between Machines
 One cornerstone that Klein emphasizes is the idea that ‘*the bigger AI model does not mean it is better.*' heir research suggests that simply increasing the volume of data, model complexity, or computational power does not always lead to more accurate AI outputs. For humanities researchers, this insight highlights the limitations of pursuing a single, all-encompassing form of artificial intelligence—revealing the complexity and potential shortcomings of such an approach.
 
-Initially, we used the free version of **ChatGPT-4**  as our primary tool for text recognition. However, we quickly encountered limitations in processing capacity, managing only around five prompts and twenty rows of data. To address this, we shifted to using Google’s Gemini and DeepSeek which provided broader capabilities for our needs.
+Initially, we used the free version of ChatGPT-4  as our primary tool for text recognition. However, we quickly encountered limitations in processing capacity, managing only around five prompts and twenty rows of data. To address this, we shifted to using Google’s Gemini and DeepSeek which provided broader capabilities for our needs.
 
 We began by using the following prompt for Google Gemini:
 > **“*Please generate me a table and .csv file for the image shown here.*”**
