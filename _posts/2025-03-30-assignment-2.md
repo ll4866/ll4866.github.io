@@ -26,7 +26,7 @@ Within this collection, we explored several tables, including mail schedules, me
 ### Competition Between Machines
 One cornerstone that Klein emphasizes is the idea that ‘*the bigger AI model does not mean it is better.*' heir research suggests that simply increasing the volume of data, model complexity, or computational power does not always lead to more accurate AI outputs. For humanities researchers, this insight highlights the limitations of pursuing a single, all-encompassing form of artificial intelligence—revealing the complexity and potential shortcomings of such an approach.
 
-Initially, we used the free version of **ChatGPT-4**  as our primary tool for text recognition. However, we quickly encountered limitations in processing capacity, managing only around five prompts and twenty rows of data. To address this, we shifted to using [<span style="color:blue">`Google’s Gemini`</span>](https://gemini.google.com/app) and [<span style="color:blue">`DeepSeek`</span>](https://www.deepseek.com/), which provided broader capabilities for our needs.
+Initially, we used the free version of **ChatGPT-4**  as our primary tool for text recognition. However, we quickly encountered limitations in processing capacity, managing only around five prompts and twenty rows of data. To address this, we shifted to using [*<span style="color:blue">`Google’s Gemini`</span>*](https://gemini.google.com/app) and [<span style="color:blue">`DeepSeek`</span>](https://www.deepseek.com/), which provided broader capabilities for our needs.
 
 We began by using the following prompt for Google Gemini:
 > **“*Please generate me a table and .csv file for the image shown here.*”**
