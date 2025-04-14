@@ -14,7 +14,6 @@ tags:
 
 ## Background
 ### Source Material
-
 For this assignment, we analyzed the Zanzibar Gazette Year 1909. This specific year was chosen due to its high-quality metadata (text-searchable content), visual clarity, and the overall tidiness of its layout compared to earlier issues. We deliberately avoided the years 1914–1918 due to expected publication gaps or inconsistencies caused by World War I.
 
 Within this collection, we explored several tables, including mail schedules, meteorological data, customs reports, principal item exports, and ship sailings. Among these, the Shipping Reports caught our attention for two main reasons:
@@ -55,21 +54,18 @@ The following is a detailed explanation of our processes. We extracted shipping 
 ### Key Adjustments:
 There are several changes that we made before visualizing our data:
 
-1.  **Changing "Cargo Type" to "Ship Type"** We observed that ships could be broadly classified into two categories: *a cargo ship* and *a warship (Man-O’-War)*. Since "Cargo Type", we deem, is unnecessary for our research and would not provide beneficial information. Instead, knowing what type came during a specific week of the month (that is, cargo ships or warships) makes our data much more interesting.
-2. **Replacing “Still in Harbour”**
-- During our review, we frequently encountered the phrase *Still in harbour* , typically appearing in the *Bound To* column. We interpreted this phrase signifies that the ship has yet to depart from its current harbor. To avoid ambiguity and enhance the accuracy of our visualizations, we replaced this phrase with the ship’s original harbor name. This ensured that the data would still plot correctly on the map—even when the vessel had not moved—preventing missing or broken lines in our final output.
-3.  **Geographic Data Verification**
-- The geocoding stage revealed several geographic inconsistencies that required custom solutions:
+1.  **Changing "Cargo Type" to "Ship Type":** We observed that ships could be broadly classified into two categories: *a cargo ship* and *a warship (Man-O’-War)*. Since "Cargo Type", we deem, is unnecessary for our research and would not provide beneficial information. Instead, knowing what type came during a specific week of the month (that is, cargo ships or warships) makes our data much more interesting.
+2. **Replacing “Still in Harbour”:** During our review, we frequently encountered the phrase *Still in harbour* , typically appearing in the *Bound To* column. We interpreted this phrase signifies that the ship has yet to depart from its current harbor. To avoid ambiguity and enhance the accuracy of our visualizations, we replaced this phrase with the ship’s original harbor name. This ensured that the data would still plot correctly on the map—even when the vessel had not moved—preventing missing or broken lines in our final output.
+3.  **Geographic Data Verification:** The geocoding stage revealed several geographic inconsistencies that required custom solutions:
   * Unrecognizable names like German Coast were replaced with their modern equivalents (e.g., Germany), following archival research.
   * Directional terms (e.g., South) were interpreted in context—typically mapped to South Africa when no specific destination was mentioned.
   * Spelling variations (e.g., Daressalaam vs Dar es Salaam) were standardized using a master reference list.
   * Obsolete or ambiguous locations (e.g., Tania, Gaulle ato Dobouti) were researched through colonial-era records to determine their modern equivalents.
-4.  **Text Recognition and Formatting Corrections**
-- Due to the suboptimal quality of the source images, our team conducted meticulous side-by-side comparisons between the OCR-extracted data and the original newspaper scans. From this process, we compiled a comprehensive list of common error patterns (e.g., "1900" vs "1909", "Wami" vs "Wani") to inform consistent and targeted corrections. Company names were also standardized through carefully defined rules addressing spacing (e.g., D.O.A.L. vs D. O. A. L.), capitalization (Co. vs co.), and punctuation for ampersands and abbreviations. Each data point was subject to double verification, with particular attention given to numerical values—often misread by OCR due to the poor image quality—to guarantee the highest level of accuracy.
-5.  **Temporal Data Preparation**
-- Preparing the date data for Kepler visualization required a high level of precision. We implemented a strict standardization process, beginning with the reconstruction of incomplete dates by examining contextual clues from surrounding entries and aligning them with the publication rhythm of the newspaper. Each timestamp was reformatted to include both date and time components, with any missing time values defaulted to 00:00:00. The entire date column was manually processed to enforce a consistent structure—specifically, the "1909-MM-DD 00:00:00" format—ensuring full compatibility with Kepler’s input requirements. Special care was taken to correct OCR-induced date errors while preserving historical accuracy across the dataset.
-6.  **Ship Prefix Standardization Process**
-- Due to inconsistencies in how ship prefixes were recorded (e.g., S.S. for steamship, C.S. for cable ship), extensive manual corrections were necessary. Prefixes often appeared in the wrong columns, were omitted altogether, or featured irregular spacing and punctuation (e.g., "S .S.", "S.S ."). We conducted a comprehensive audit of each entry, cross-referencing historical shipping registers to confirm accurate prefix usage. All variations were then standardized to the correct "S.S." or "C.S." format, ensuring clarity and consistency throughout the dataset.
+4.  **Text Recognition and Formatting Corrections:** Due to the suboptimal quality of the source images, our team conducted meticulous side-by-side comparisons between the OCR-extracted data and the original newspaper scans. From this process, we compiled a comprehensive list of common error patterns (e.g., "1900" vs "1909", "Wami" vs "Wani") to inform consistent and targeted corrections. Company names were also standardized through carefully defined rules addressing spacing (e.g., D.O.A.L. vs D. O. A. L.), capitalization (Co. vs co.), and punctuation for ampersands and abbreviations. Each data point was subject to double verification, with particular attention given to numerical values—often misread by OCR due to the poor image quality—to guarantee the highest level of accuracy.
+5.  **Temporal Data Preparation:** Preparing the date data for Kepler visualization required a high level of precision. We implemented a strict standardization process, beginning with the reconstruction of incomplete dates by examining contextual clues from surrounding entries and aligning them with the publication rhythm of the newspaper. Each timestamp was reformatted to include both date and time components, with any missing time values defaulted to 00:00:00. The entire date column was manually processed to enforce a consistent structure—specifically, the "1909-MM-DD 00:00:00" format—ensuring full compatibility with Kepler’s input requirements. Special care was taken to correct OCR-induced date errors while preserving historical accuracy across the dataset.
+6.  **Ship Prefix Standardization Process:** Due to inconsistencies in how ship prefixes were recorded (e.g., S.S. for steamship, C.S. for cable ship), extensive manual corrections were necessary. Prefixes often appeared in the wrong columns, were omitted altogether, or featured irregular spacing and punctuation (e.g., "S .S.", "S.S ."). We conducted a comprehensive audit of each entry, cross-referencing historical shipping registers to confirm accurate prefix usage. All variations were then standardized to the correct "S.S." or "C.S." format, ensuring clarity and consistency throughout the dataset.
+
+<a href="/assets/csv/DAAH Assignment 2 Sheet - Ship Report 262 Rows.csv" download> Click here to download the CSV for Ships</a>
 
 ## Data Correction
 ### A Major Overlook
@@ -103,6 +99,8 @@ For clarity, origin labels are styled in blue, and destination tags in yellow. W
 
 ![This is a GIF](/assets/gif/Map.gif "This is a GIF.") 
 
+<a href="/assets/json/kepler.gl.json" download>📥 Click here to the Kepler data</a>
+
 ### Fantastic Dhows and Where to Find Them
 Initially, we tried using Google Sheets to represent our analysis on Dhows. However, we encountered numerous problems regarding Timeline Graphs, and the outcome did not display the data like we expected. Instead, we used an online tool called CSV Plots to map our data in a line graph. 
 
@@ -113,6 +111,8 @@ Initially, we tried using Google Sheets to represent our analysis on Dhows. Howe
 | Dhows Arrived |
 |---------------|
 | ![Dhows Arrived](/assets/images/assignment-2/DhowsArrive.png) |
+
+<a href="/assets/csv/DAAH Assignment 2 Sheet - Dhows.csvv" download> Click here to download the CSV for Dhows</a>
 
 ## Conclusion
 This assignment has allowed us to learn more about AI, specifically its capabilities of doing humanities tasks. On first glance, we did not identify any major conclusions from our data. Rather than not having enough information, it lies at the point that nothing particularly ‘interesting’ surfaced from the shipping records.However, through closer inspection and contextual analysis, we were able to identify meaningful patterns—though these observations remain provisional and would require further research beyond our dataset to confirm. Zanzibar, in 1909, stood as a vital maritime trade hub in East Africa. Although under British colonial rule at the time, it maintained strong commercial ties with Arabian traders, particularly those from Oman. The high number of Zanzibar/British dhows indicates local dominance in maritime activity. We also took into account external influences that might affect the data, such as:
@@ -130,13 +130,6 @@ Ultimately, while our project began as a technical exercise in digitization and 
 ## Resources
 Klein, Lauren, et al. "Provocations from the humanities for generative ai research." arXiv preprint arXiv:2502.19190 (2025).
 The Editors of Encyclopaedia Britannica. "German East Africa". Encyclopedia Britannica, 15 Oct. 2024, https://www.britannica.com/place/German-East-Africa. 
-
-Download links to our data:  
-<a href="/assets/csv/DAAH Assignment 2 Sheet - Ship Report 262 Rows.csv" download> Click here to download the CSV for Ships</a>
-<br/>
-<a href="/assets/csv/DAAH Assignment 2 Sheet - Dhows.csvv" download> Click here to download the CSV for Dhows</a>
-<br/>
-<a href="/assets/json/kepler.gl.json" download>📥 Click here to the Kepler data</a>
 
 **✅ Ready for grading**
 {: .notice}
