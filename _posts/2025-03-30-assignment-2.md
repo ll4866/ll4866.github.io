@@ -34,7 +34,7 @@ We began by using the following prompt for Google Gemini:
 
 This prompt allows us to gain two things from the generated outcome. First, by displaying the `.csv` in a table, we can immediately see the result that the AI has generated. This display is important as it will provide us with a quick spot if the AI missed or falsely recognized the text. Second, the .csv file helps us import the data into <span style="color:#5e5eff">Google Sheets</span>. We also compared both DeepSeek and Gemini results to see whether they would generate different results. In later parts of our article, we will discuss the pros and cons of both tools.
 
-#### Observations:
+### Observations:
 After working on our assignment using both Google’s Gemini and DeepSeek, we noted the following:
 1. **<span style="color:#5e5eff">Gemini</span>**
 - The tool <span style="color:red"> lacks support</span> for reading `.csv` files. Since our project heavily relied on this format, this limitation significantly impacted our workflow.
@@ -56,7 +56,7 @@ The following is a detailed explanation of our processes. We extracted shipping 
 |---|
 | ![This is Prompt 1: Prompt 1: CSV Response.png image](/assets/images/assignment-2/CSVResponse.png)  |
 
-#### Key Adjustments:
+### Key Adjustments:
 There are several changes that we made before visualizing our data:
 
 1.  **Changing "Cargo Type" to "Ship Type"**
