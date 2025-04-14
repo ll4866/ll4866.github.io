@@ -1,54 +1,63 @@
 ---
-title: "Assignment 2"
-last_modified_at: 2025-03-30T22:00:00-05:00
+title: "Historical Data Extration from the Zanzibar Gazette (1909)"
+last_modified_at: 2025-04-15T22:00:00-05:00
 categories:
   - Assignments
 tags:
-  - Working
+  - Done
+  - AI tools
+  - OCR
+  - Historical Data
+  - Data Visualization
 toc: true
-toc_label: "Assignment 1"
+toc_label: "Assignment 2"
 toc_sticky: true
 ---
-Written and researched by Ahmad Hafizh and Lucas Lin.
+*Written and researched by Ahmad Hafizh and Lucas Lin.*
 
 ## Background
 ### Source Material
-For this assignment, we are using the Zanzibar Gazette Year 1909. The year was chosen considering metadata quality (the ability to search texts inside) and visibility (how good the visuals are). Our next consideration is the tidiness of the data. The year 1909 onwards provide better layout and clarity on the information stored compared to previous years. We also would like to avoid the years between 1914 - 1918 as it was the period of World War I, and we expect lower amounts of data in the Gazette during these years.
+For this assignment, we analyzed the Zanzibar Gazette Year 1909. This specific year was chosen due to its high-quality metadata (text-searchable content), visual clarity, and the overall tidiness of its layout compared to earlier issues. We deliberately avoided the years 1914–1918 due to expected publication gaps or inconsistencies caused by World War I.
 
-In this collection, we scrambled through the tables within. As far as we observed, there are tables regarding mail, meteorological reports, custom and principal item reports, ship sailings, and shipping reports. Zanzibar Gazette’s shipping report caught our attention for two reasons: a) compared to other tables, shipping reports were more consistent in terms of layout because it is legible enough for us, and presumably for our machine to read. b) we would like to automate our processes as best as possible so that we could allocate our time for in-depth analysis and visualization of our map.
+Within this collection, we explored several tables, including mail schedules, meteorological data, customs reports, principal item exports, and ship sailings. Among these, the **Shipping Reports** caught our attention for two main reasons:
+1. They featured a relatively consistent layout and clear quality, making them easier for us—and presumably for machines—to process.
+2. Their ease of transcription allowed us to focus on automating the data extraction process and to invest more time in in-depth analysis and visualization.
 
 ### Competition Between Machines
-One cornerstone that Klein touched upon is the idea that ‘*the bigger AI model does not mean it is better.*' Their research studies indicate that simply increasing the amount of data, model complexity, or computational power does not necessarily improve the accuracy of AI outputs. For humanities researchers, this suggests that striving for a single, all-encompassing form of artificial intelligence is a complex and problematic goal, highlighting the limitations of such an approach.
+One cornerstone that Klein emphasizes is the idea that ‘*the bigger AI model does not mean it is better.*' heir research suggests that simply increasing the volume of data, model complexity, or computational power does not always lead to more accurate AI outputs. For humanities researchers, this insight highlights the limitations of pursuing a single, all-encompassing form of artificial intelligence—revealing the complexity and potential shortcomings of such an approach.
 
-Initially, we used the free version of ChatGPT-4 as our primary machine to recognize the text. However, we soon encountered a limit to the processing demands of around 5 prompts and 20 rows of data analyzed. Because of this limit, we decided to change our program to use Google’s [Gemini](https://gemini.google.com/app) and [DeepSeek](https://www.deepseek.com/).
+Initially, we used the free version of **ChatGPT-4**  as our primary tool for text recognition. However, we quickly encountered limitations in processing capacity, managing only around five prompts and twenty rows of data. To address this, we shifted to using Google’s <span style="color:blue">`[Gemini](https://gemini.google.com/app)`</span> and <span style="color:blue">`[DeepSeek](https://www.deepseek.com/)`</span>, which provided broader capabilities for our needs.
 
-Initially, we used this prompt for Google Gemini:
+We began by using the following prompt for Google Gemini:
 > **“*Please generate me a table and .csv file for the image shown here.*”**
 
-This prompt allows us to gain two things from the generated outcome. First, by displaying the .csv file in a table, we can immediately see the result that the AI has generated. This display is important as it will provide us with a quick spot if the AI missed or falsely recognized the text. Second, the .csv file helps us import the data into [Google Sheets](https://sheets.google.com/). We also compared both DeepSeek and Gemini results to see whether they would generate different results. In later parts of our article, we will discuss the pros and cons of both tools.
+This prompt allows us to gain two things from the generated outcome. First, by displaying the `.csv` in a table, we can immediately see the result that the AI has generated. This display is important as it will provide us with a quick spot if the AI missed or falsely recognized the text. Second, the .csv file helps us import the data into <span style="color:blue">`[Google Sheets](https://sheets.google.com/)`</span>. We also compared both DeepSeek and Gemini results to see whether they would generate different results. In later parts of our article, we will discuss the pros and cons of both tools.
 
-After working on our assignment with both Google’s Gemini and DeepSeek, here are some of our thoughts:
-1.  **Gemini**
-- The tool lacked .csv file reading capabilities. Since our work relied heavily on this file type, we felt that we were limited by the tool.
--  For OCR, Gemini does not correct itself and instead chooses to give whatever it recognizes. In other words, if the outcome produced by Gemini contained a mistake, it would likely persist.
-1. **DeepSeek**
-- In comparison, DeepSeek can clean up data. As an example, DeepSeek understands dittos in the table and assumes that it should follow the preceding table value. There are also several cleanups that the tool performed which we will showcase later.
-- Moreover, DeepSeek is capable of reading .csv files. This process helped us tremendously as it was able to refer to our data structure; hence, when new OCRs are performed, the output was easily mergeable with ours.
+#### Observations:
+After working on our assignment using both Google’s Gemini and DeepSeek, we noted the following:
+1. <span style="color:blue">`[Gemini](https://gemini.google.com/app)`</span> 
+- The tool lacks support for reading `.csv` files. Since our project heavily relied on this format, this limitation significantly impacted our workflow.
+- When performing OCR, Gemini does not apply self-correction. It returns exactly what it reads—even when the output contains errors. As a result, inaccuracies are likely to persist unless manually fixed.
+2. <span style="color:blue">`[DeepSeek](https://www.deepseek.com/)`</span>
+- In contrast, DeepSeek performs data cleanup. For example, it intelligently interprets ditto marks in tables and fills in repeated values based on preceding rows. We'll showcase several examples of this cleanup later.
+- Additionally, DeepSeek can read `.csv` files, which allowed it to reference our existing data structure. This feature proved especially useful, as new OCR outputs could be seamlessly merged with our dataset.
 
-> All in all, DeepSeek takes the crown as it was able to perform tasks and deliver satisfactory results for our research. Perhaps it was trained under similar data to recognize better than Gemini. Moreover, the tool gave us unique insights based on the table, a task that would have taken a long time to examine had we done it manually, reading row by row.
+> **🏆 Winner: DeepSeek** takes the crown, as it was able to perform key tasks and deliver results that directly supported our research. It may have been trained on similar datasets, enabling it to recognize and interpret our content more accurately than Gemini. Furthermore, DeepSeek provided unique insights based on our tables—something that would have required significant time and manual effort had we done it row by row.
 
 ## Modeling
 ### Processing the Report
-The following is a detailed explanation of our processes. We extracted shipping information from the Zanzibar Gazette 1909 by first screenshotting each page. Then, we fed this image to Google Gemini. Next are the prompts (bold texts) with their respective results that Gemini gave us. Then, we exported this .csv data into Google Sheets and created a table by splitting columns. From there, we decided to alter some of the header and data that we deem important to ‘clean’ further manually. 
+The following is a detailed explanation of our processes. We extracted shipping information from the Zanzibar Gazette 1909 by first screenshotting each page. Then, we fed this image to Google Gemini. Next are the prompts (bold texts) with their respective results that Gemini gave us. Then, we exported this `.csv` data into Google Sheets and created a table by splitting columns. From there, we decided to alter some of the header and data that we deem important to ‘clean’ further manually. 
 
 > **Hello! Can you please generate me a table and .csv based on the image shown?**
 Absolutely! Let's break down the information in the image and create a table and a CSV representation.
 
-| ![Prompt 1: Table Response.png](/assets/images/assignment-2/TableResponse.png)  |
+| ![This is Prompt 1: Table Response.png image](/assets/images/assignment-2/TableResponse.png)  |
 |---|
-| ![Prompt 1: CSV Response.png](/assets/images/assignment-2/CSVResponse.png)  |
+| ![This is Prompt 1: Prompt 1: CSV Response.png image](/assets/images/assignment-2/CSVResponse.png)  |
 
+#### Key Adjustments:
 There are several changes that we made before visualizing our data:
+
 1.  **Changing cargo type into ship type**
 - We examined that based on the two tables, we can classify the ships into two categories: a cargo ship and a warship (Man-O’-War). Cargo Type, we deem, is unnecessary for our research and would not provide beneficial information. Instead, knowing what type came during a specific week of the month (that is, cargo ships or warships) makes our data much more interesting.
 2. **Still in Harbour**
@@ -98,14 +107,13 @@ Initially, we tried using Google Sheets to represent our analysis on Dhows. Howe
 ## Conclusion
 This assignment has allowed us to learn more about AI, specifically its capabilities of doing humanities tasks. On first glance, we did not identify any major conclusions from our data. Rather than not having enough information, it lies at the point that nothing ‘interesting’ comes out of the water. Upon closer inspection, we were able to extract some information, albeit their truth has to be researched further beyond our data. 
 Zanzibar was a major maritime trade hub in East Africa. In 1909, it was under British colonial rule but had strong connections to Arabian traders, particularly from Oman. The high number of Zanzibar/British dhows indicates local dominance in maritime activity. We also took into account external influences that might affect the data, such as:
-
 - Seasonal trade routes depended heavily on monsoon patterns from March - May. Dhows from Arabia and India likely followed these seasonal winds. Notable by the drop in dhows arriving.
 - The dominance of British/Zanzibari dhows could reflect policies favoring local traders.
 - The presence of German dhows could be linked to German East Africa, now countries Rwanda and Burundi, the continental portion of Tanzania, and a small section of Mozambique.
 - Arabian and German traders had moderate involvement, while French traders played a minor role.
 
 ## Contributions
-*On this assignment, Ahmad prompted the AI chatbots, created the .csv file Google Sheets, and Dhows graph. Lucas visualized the main table (Shipping Report) into Kepler. We both refined the shipping report table and wrote the markdown post together.*
+*On this assignment, Ahmad prompted the AI chatbots, created the .csv file in Google Sheets, made the Dhows graph, and wrote the initial documentation. We both refined the Shipping Report table and collaboratively wrote the markdown post. Lucas focused on the technical aspects, including double-checking the main table, visualizing the data in Kepler, creating a GIF, and proofreading.*
 
 ## Resources
 Klein, Lauren, et al. "Provocations from the humanities for generative ai research." arXiv preprint arXiv:2502.19190 (2025).
