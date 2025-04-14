@@ -43,7 +43,7 @@ After working on our assignment using both Google’s Gemini and DeepSeek, we no
 - In contrast, DeepSeek <span style="color:green">performs data cleanup.</span>  For example, it intelligently interprets ditto marks in tables and fills in repeated values based on preceding rows. We'll showcase several examples of this cleanup later.
 - Additionally, DeepSeek <span style="color:green"> can read `.csv` files </span>, which allowed it to reference our existing data structure. This feature proved especially useful, as new OCR outputs could be seamlessly merged with our dataset.
 
-> **🏆 Winner: DeepSeek** takes the crown, as it was able to perform key tasks and deliver results that directly supported our research. It may have been trained on similar datasets, enabling it to recognize and interpret our content more accurately than Gemini. Furthermore, DeepSeek provided unique insights based on our tables—something that would have required significant time and manual effort had we done it row by row.
+> **<span style="color:#b8984f"> 🏆 Winner: </span> DeepSeek ** takes the crown, as it was able to perform key tasks and deliver results that directly supported our research. It may have been trained on similar datasets, enabling it to recognize and interpret our content more accurately than Gemini. Furthermore, DeepSeek provided unique insights based on our tables—something that would have required significant time and manual effort had we done it row by row.
 
 ## Modeling
 ### Processing the Report
@@ -118,10 +118,10 @@ This assignment has allowed us to learn more about AI, specifically its capabili
 
 Ultimately, while our project began as a technical exercise in digitization and data visualization, it gradually revealed layers of historical insight—underscoring how even seemingly mundane records can illuminate broader narratives when combined with careful analysis and contextual understanding.
 
-## <span style="color:#b8984f"> Contributions </span> 
+## Contributions
 *On this assignment, Ahmad prompted the AI chatbots, created the .csv file in Google Sheets, made the Dhows graph, and wrote the initial documentation. We both refined the Shipping Report table and collaboratively wrote the markdown post. Lucas focused on the technical aspects, including double-checking the main table, visualizing the data in Kepler, creating a GIF, and proofreading.*
 
-## <span style="color:#b8984f"> Resources </span>
+## Resources
 Klein, Lauren, et al. "Provocations from the humanities for generative ai research." arXiv preprint arXiv:2502.19190 (2025).
 The Editors of Encyclopaedia Britannica. "German East Africa". Encyclopedia Britannica, 15 Oct. 2024, https://www.britannica.com/place/German-East-Africa. 
 
