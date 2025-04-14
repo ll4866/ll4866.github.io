@@ -98,7 +98,7 @@ At this point, we discovered that Gemini does not support `.csv` files—but for
 | **"Remember the steps that you have done previously."** "Here is a new image similar to the ones I gave before. Extract the textual information and adjust the data so that it fits the  `1909_ShippingReport.csv` structure while ignoring longitude (from), latitude (from), longitude (destination), and latitude (destination) columns and leave them empty." | ![Prompt 3.png](/assets/images/assignment-2/Prompt3.png)|
 
 ### Fantastic Dhows and Where to Find Them
-Initially, we tried using Google Sheets to represent our analysis on Dhows. However, we encountered numerous problems regarding Timeline Graphs, and the outcome did not display the data like we expected. Instead, we used an online tool called <span style="color:blue">`[CSV Plots](https://www.csvplot.com/)`</span> to map our data in a line graph. 
+Initially, we tried using Google Sheets to represent our analysis on Dhows. However, we encountered numerous problems regarding Timeline Graphs, and the outcome did not display the data like we expected. Instead, we used an online tool called [<span style="color:blue">CSV Plots</span>](https://www.csvplot.com/) to map our data in a line graph. 
 
 | Dhows Sailed  |
 |---------------|
