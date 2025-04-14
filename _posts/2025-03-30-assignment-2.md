@@ -133,9 +133,9 @@ The Editors of Encyclopaedia Britannica. "German East Africa". Encyclopedia Brit
 
 Download links to our data:  
 <a href="/assets/csv/DAAH Assignment 2 Sheet - Ship Report 262 Rows.csv" download> Click here to download the CSV for Ships</a>
-
+<br/>
 <a href="/assets/csv/DAAH Assignment 2 Sheet - Dhows.csvv" download> Click here to download the CSV for Dhows</a>
-
+<br/>
 <a href="/assets/json/kepler.gl.json" download>📥 Click here to the Kepler data</a>
 
 **✅ Ready for grading**
