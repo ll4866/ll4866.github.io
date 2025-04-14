@@ -108,7 +108,7 @@ For clarity, origin labels are styled in blue, and destination tags in yellow. W
 ![This is a GIF](/assets/gif/Map.gif "This is a GIF.") 
 
 ### Fantastic Dhows and Where to Find Them
-Initially, we tried using Google Sheets to represent our analysis on Dhows. However, we encountered numerous problems regarding Timeline Graphs, and the outcome did not display the data like we expected. Instead, we used an online tool called [<span style="color:#5e5eff">CSV Plots</span>](https://www.csvplot.com/) to map our data in a line graph. 
+Initially, we tried using Google Sheets to represent our analysis on Dhows. However, we encountered numerous problems regarding Timeline Graphs, and the outcome did not display the data like we expected. Instead, we used an online tool called CSV Plots to map our data in a line graph. 
 
 | Dhows Sailed  |
 |---------------|
