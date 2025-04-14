@@ -15,7 +15,7 @@ toc_sticky: true
 ---
 *Written and researched by Ahmad Hafizh and Lucas Lin.*
 
-## <span style="color:#e9dcbe"> Background </span>
+## <span style="color:#b8984f"> Background </span>
 ### Source Material
 
 For this assignment, we analyzed the Zanzibar Gazette Year 1909. This specific year was chosen due to its high-quality metadata (text-searchable content), visual clarity, and the overall tidiness of its layout compared to earlier issues. We deliberately avoided the years 1914–1918 due to expected publication gaps or inconsistencies caused by World War I.
@@ -45,7 +45,7 @@ After working on our assignment using both Google’s Gemini and DeepSeek, we no
 
 > **🏆 Winner: DeepSeek** takes the crown, as it was able to perform key tasks and deliver results that directly supported our research. It may have been trained on similar datasets, enabling it to recognize and interpret our content more accurately than Gemini. Furthermore, DeepSeek provided unique insights based on our tables—something that would have required significant time and manual effort had we done it row by row.
 
-## <span style="color:#e9dcbe"> Modeling </span>
+## <span style="color:#b8984f"> Modeling </span>
 ### Processing the Report
 The following is a detailed explanation of our processes. We extracted shipping data from the Zanzibar Gazette (1909) by first screenshotting each page and then feeding these images into Google Gemini. Next are the prompts (bold texts) with their respective results that Gemini gave us. Then, we exported this `.csv` data into Google Sheets and created a table by splitting columns. From there, we manually cleaned and adjusted certain headers and entries we deemed important.
 
@@ -76,7 +76,7 @@ There are several changes that we made before visualizing our data:
 6.  **Ship Prefix Standardization Process**
 - Due to inconsistencies in how ship prefixes were recorded (e.g., S.S. for steamship, C.S. for cable ship), extensive manual corrections were necessary. Prefixes often appeared in the wrong columns, were omitted altogether, or featured irregular spacing and punctuation (e.g., "S .S.", "S.S ."). We conducted a comprehensive audit of each entry, cross-referencing historical shipping registers to confirm accurate prefix usage. All variations were then standardized to the correct "S.S." or "C.S." format, ensuring clarity and consistency throughout the dataset.
 
-## <span style="color:#e9dcbe"> Data Correction </span>
+## <span style="color:#b8984f"> Data Correction </span>
 ### A Major Overlook
 Three-quarters into the process, a significant oversight came to light when we attempted to visualize our data. We had been taking 'snippets' of the shipping reports by cropping only half of the page. However, upon a closer comparison—specifically juxtaposing the 16th March 1909 report with others—we realized that every Zanzibar Gazette shipping report from 1909 spans an entire page.
 
@@ -108,7 +108,7 @@ Initially, we tried using Google Sheets to represent our analysis on Dhows. Howe
 |---------------|
 | ![Dhows Arrived](/assets/images/assignment-2/DhowsArrive.png) |
 
-## <span style="color:#e9dcbe"> Conclusion </span> 
+## <span style="color:#b8984f"> Conclusion </span> 
 This assignment has allowed us to learn more about AI, specifically its capabilities of doing humanities tasks. On first glance, we did not identify any major conclusions from our data. Rather than not having enough information, it lies at the point that nothing particularly ‘interesting’ surfaced from the shipping records.However, through closer inspection and contextual analysis, we were able to identify meaningful patterns—though these observations remain provisional and would require further research beyond our dataset to confirm. Zanzibar, in 1909, stood as a vital maritime trade hub in East Africa. Although under British colonial rule at the time, it maintained strong commercial ties with Arabian traders, particularly those from Oman. The high number of Zanzibar/British dhows indicates local dominance in maritime activity. We also took into account external influences that might affect the data, such as:
 
 - **Seasonal Trade Routes:** Maritime trade was heavily influenced by monsoon patterns, particularly between March and May. Dhows from Arabia and India likely followed these seasonal wind cycles—evident in the noticeable drop in arriving dhows during these months.
@@ -118,10 +118,10 @@ This assignment has allowed us to learn more about AI, specifically its capabili
 
 Ultimately, while our project began as a technical exercise in digitization and data visualization, it gradually revealed layers of historical insight—underscoring how even seemingly mundane records can illuminate broader narratives when combined with careful analysis and contextual understanding.
 
-## <span style="color:#e9dcbe"> Contributions </span> 
+## <span style="color:#b8984f"> Contributions </span> 
 *On this assignment, Ahmad prompted the AI chatbots, created the .csv file in Google Sheets, made the Dhows graph, and wrote the initial documentation. We both refined the Shipping Report table and collaboratively wrote the markdown post. Lucas focused on the technical aspects, including double-checking the main table, visualizing the data in Kepler, creating a GIF, and proofreading.*
 
-## <span style="color:#e9dcbe"> Resources </span>
+## <span style="color:#b8984f"> Resources </span>
 Klein, Lauren, et al. "Provocations from the humanities for generative ai research." arXiv preprint arXiv:2502.19190 (2025).
 The Editors of Encyclopaedia Britannica. "German East Africa". Encyclopedia Britannica, 15 Oct. 2024, https://www.britannica.com/place/German-East-Africa. 
 
