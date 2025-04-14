@@ -65,7 +65,7 @@ There are several changes that we made before visualizing our data:
 5.  **Temporal Data Preparation:** Preparing the date data for Kepler visualization required a high level of precision. We implemented a strict standardization process, beginning with the reconstruction of incomplete dates by examining contextual clues from surrounding entries and aligning them with the publication rhythm of the newspaper. Each timestamp was reformatted to include both date and time components, with any missing time values defaulted to 00:00:00. The entire date column was manually processed to enforce a consistent structure—specifically, the "1909-MM-DD 00:00:00" format—ensuring full compatibility with Kepler’s input requirements. Special care was taken to correct OCR-induced date errors while preserving historical accuracy across the dataset.
 6.  **Ship Prefix Standardization Process:** Due to inconsistencies in how ship prefixes were recorded (e.g., S.S. for steamship, C.S. for cable ship), extensive manual corrections were necessary. Prefixes often appeared in the wrong columns, were omitted altogether, or featured irregular spacing and punctuation (e.g., "S .S.", "S.S ."). We conducted a comprehensive audit of each entry, cross-referencing historical shipping registers to confirm accurate prefix usage. All variations were then standardized to the correct "S.S." or "C.S." format, ensuring clarity and consistency throughout the dataset.
 
-<a href="/assets/csv/DAAH Assignment 2 Sheet - Ship Report 262 Rows.csv" download> Click here to download the CSV for Ships</a>
+<a href="/assets/csv/DAAH Assignment 2 Sheet - Ship Report 262 Rows.csv" download> Shipping Records (CSV) Download </a>
 
 ## Data Correction
 ### A Major Overlook
@@ -95,11 +95,11 @@ We created an interactive map by importing our standardized dataset into Kepler,
 2. **Destination Markers:** Uniform yellow dots represent the “Bound To” locations.
 3. **Trajectories:** Dynamic arrows connect origin and destination points, color-coded by vessel nationality (British = red, German = green, French = blue, etc.).
 
-For clarity, origin labels are styled in blue, and destination tags in yellow. We added a temporal dimension using an animated timeline (set to 2x playback speed), which renders routes sequentially based on rigorously formatted arrival dates (DD-MM-YYYY 00:00:00). This multi-layered visualization communicates three key narratives: (a) geographic movement patterns via the point-to-point connection system, (b) national fleet distributions through chromatic encoding, and (c) historical sequencing via the time-based animation.
+For clarity, origin labels are styled in blue, and destination tags in yellow. We added a temporal dimension using an animated timeline (set to 2x playback speed), which renders routes sequentially based on rigorously formatted arrival dates `(DD-MM-YYYY 00:00:00)`. This multi-layered visualization communicates three key narratives: (a) geographic movement patterns via the point-to-point connection system, (b) national fleet distributions through chromatic encoding, and (c) historical sequencing via the time-based animation.
 
 ![This is a GIF](/assets/gif/Map.gif "This is a GIF.") 
 
-<a href="/assets/json/kepler.gl.json" download>📥 Click here to the Kepler data</a>
+<a href="/assets/json/kepler.gl.json" download> Kepler.gl Visualization Data (JSON) </a>
 
 ### Fantastic Dhows and Where to Find Them
 Initially, we tried using Google Sheets to represent our analysis on Dhows. However, we encountered numerous problems regarding Timeline Graphs, and the outcome did not display the data like we expected. Instead, we used an online tool called CSV Plots to map our data in a line graph. 
@@ -112,7 +112,7 @@ Initially, we tried using Google Sheets to represent our analysis on Dhows. Howe
 |---------------|
 | ![Dhows Arrived](/assets/images/assignment-2/DhowsArrive.png) |
 
-<a href="/assets/csv/DAAH Assignment 2 Sheet - Dhows.csvv" download> Click here to download the CSV for Dhows</a>
+<a href="/assets/csv/DAAH Assignment 2 Sheet - Dhows.csvv" download> Dhows Records Data (CSV) Download </a>
 
 ## Conclusion
 This assignment has allowed us to learn more about AI, specifically its capabilities of doing humanities tasks. On first glance, we did not identify any major conclusions from our data. Rather than not having enough information, it lies at the point that nothing particularly ‘interesting’ surfaced from the shipping records.However, through closer inspection and contextual analysis, we were able to identify meaningful patterns—though these observations remain provisional and would require further research beyond our dataset to confirm. Zanzibar, in 1909, stood as a vital maritime trade hub in East Africa. Although under British colonial rule at the time, it maintained strong commercial ties with Arabian traders, particularly those from Oman. The high number of Zanzibar/British dhows indicates local dominance in maritime activity. We also took into account external influences that might affect the data, such as:
