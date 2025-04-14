@@ -18,8 +18,8 @@ tags:
 For this assignment, we analyzed the Zanzibar Gazette Year 1909. This specific year was chosen due to its high-quality metadata (text-searchable content), visual clarity, and the overall tidiness of its layout compared to earlier issues. We deliberately avoided the years 1914–1918 due to expected publication gaps or inconsistencies caused by World War I.
 
 Within this collection, we explored several tables, including mail schedules, meteorological data, customs reports, principal item exports, and ship sailings. Among these, the Shipping Reports caught our attention for two main reasons:
-1. They featured a relatively consistent layout and clear quality, making them easier for us—and presumably for machines—to process.
-2. Their ease of transcription allowed us to focus on automating the data extraction process and to invest more time in in-depth analysis and visualization.
+A. They featured a relatively consistent layout and clear quality, making them easier for us—and presumably for machines—to process.
+B. Their ease of transcription allowed us to focus on automating the data extraction process and to invest more time in in-depth analysis and visualization.
 
 ## 2 Competition Between Machines
 One cornerstone that Klein emphasizes is the idea that ‘*the bigger AI model does not mean it is better.*' Their research suggests that simply increasing the volume of data, model complexity, or computational power does not always lead to more accurate AI outputs. For humanities researchers, this insight highlights the limitations of pursuing a single, all-encompassing form of artificial intelligence—revealing the complexity and potential shortcomings of such an approach.
@@ -33,10 +33,10 @@ This prompt allows us to gain two things from the generated outcome. First, by d
 
 ### 2.1 Observations:
 After working on our assignment using both Google’s Gemini and DeepSeek, we noted the following:
-1. **Gemini**
+A. **Gemini**
 - The tool lacks support for reading .csv files. Since our project heavily relied on this format, this limitation significantly impacted our workflow.
 - When performing OCR, Gemini does not apply self-correction. It returns exactly what it reads—even when the output contains errors. As a result, inaccuracies are likely to persist unless manually fixed.
-2. **DeepSeek**
+B. **DeepSeek**
 - In contrast, DeepSeek performs data cleanup. For example, it intelligently interprets ditto marks in tables and fills in repeated values based on preceding rows. We'll showcase several examples of this cleanup later.
 - Additionally, DeepSeek can read  .csv files , which allowed it to reference our existing data structure. This feature proved especially useful, as new OCR outputs could be seamlessly merged with our dataset.
 
@@ -55,16 +55,16 @@ The following is a detailed explanation of our processes. We extracted shipping 
 ### 3.2 Key Adjustments to Raw Data:
 There are several changes that we made before visualizing our data:
 
-1.  **Changing "Cargo Type" to "Ship Type":** We observed that ships could be broadly classified into two categories: *a cargo ship* and *a warship (Man-O’-War)*. Since "Cargo Type", we deem, is unnecessary for our research and would not provide beneficial information. Instead, knowing what type came during a specific week of the month (that is, cargo ships or warships) makes our data much more interesting.
-2. **Replacing “Still in Harbour”:** During our review, we frequently encountered the phrase *Still in harbour* , typically appearing in the *Bound To* column. We interpreted this phrase signifies that the ship has yet to depart from its current harbor. To avoid ambiguity and enhance the accuracy of our visualizations, we replaced this phrase with the ship’s original harbor name. This ensured that the data would still plot correctly on the map—even when the vessel had not moved—preventing missing or broken lines in our final output.
-3.  **Geographic Data Verification:** The geocoding stage revealed several geographic inconsistencies that required custom solutions:
+I.  **Changing "Cargo Type" to "Ship Type":** We observed that ships could be broadly classified into two categories: *a cargo ship* and *a warship (Man-O’-War)*. Since "Cargo Type", we deem, is unnecessary for our research and would not provide beneficial information. Instead, knowing what type came during a specific week of the month (that is, cargo ships or warships) makes our data much more interesting.
+II. **Replacing “Still in Harbour”:** During our review, we frequently encountered the phrase *Still in harbour* , typically appearing in the *Bound To* column. We interpreted this phrase signifies that the ship has yet to depart from its current harbor. To avoid ambiguity and enhance the accuracy of our visualizations, we replaced this phrase with the ship’s original harbor name. This ensured that the data would still plot correctly on the map—even when the vessel had not moved—preventing missing or broken lines in our final output.
+III.  **Geographic Data Verification:** The geocoding stage revealed several geographic inconsistencies that required custom solutions:
   * Unrecognizable names like German Coast were replaced with their modern equivalents (e.g., Germany), following archival research.
   * Directional terms (e.g., South) were interpreted in context—typically mapped to South Africa when no specific destination was mentioned.
   * Spelling variations (e.g., Daressalaam vs Dar es Salaam) were standardized using a master reference list.
   * Obsolete or ambiguous locations (e.g., Tania, Gaulle ato Dobouti) were researched through colonial-era records to determine their modern equivalents.
-4.  **Text Recognition and Formatting Corrections:** Due to the suboptimal quality of the source images, our team conducted meticulous side-by-side comparisons between the OCR-extracted data and the original newspaper scans. From this process, we compiled a comprehensive list of common error patterns (e.g., "1900" vs "1909", "Wami" vs "Wani") to inform consistent and targeted corrections. Company names were also standardized through carefully defined rules addressing spacing (e.g., D.O.A.L. vs D. O. A. L.), capitalization (Co. vs co.), and punctuation for ampersands and abbreviations. Each data point was subject to double verification, with particular attention given to numerical values—often misread by OCR due to the poor image quality—to guarantee the highest level of accuracy.
-5.  **Temporal Data Preparation:** Preparing the date data for Kepler visualization required a high level of precision. We implemented a strict standardization process, beginning with the reconstruction of incomplete dates by examining contextual clues from surrounding entries and aligning them with the publication rhythm of the newspaper. Each timestamp was reformatted to include both date and time components, with any missing time values defaulted to 00:00:00. The entire date column was manually processed to enforce a consistent structure—specifically, the "1909-MM-DD 00:00:00" format—ensuring full compatibility with Kepler’s input requirements. Special care was taken to correct OCR-induced date errors while preserving historical accuracy across the dataset.
-6.  **Ship Prefix Standardization Process:** Due to inconsistencies in how ship prefixes were recorded (e.g., S.S. for steamship, C.S. for cable ship), extensive manual corrections were necessary. Prefixes often appeared in the wrong columns, were omitted altogether, or featured irregular spacing and punctuation (e.g., "S .S.", "S.S ."). We conducted a comprehensive audit of each entry, cross-referencing historical shipping registers to confirm accurate prefix usage. All variations were then standardized to the correct "S.S." or "C.S." format, ensuring clarity and consistency throughout the dataset.
+IV.  **Text Recognition and Formatting Corrections:** Due to the suboptimal quality of the source images, our team conducted meticulous side-by-side comparisons between the OCR-extracted data and the original newspaper scans. From this process, we compiled a comprehensive list of common error patterns (e.g., "1900" vs "1909", "Wami" vs "Wani") to inform consistent and targeted corrections. Company names were also standardized through carefully defined rules addressing spacing (e.g., D.O.A.L. vs D. O. A. L.), capitalization (Co. vs co.), and punctuation for ampersands and abbreviations. Each data point was subject to double verification, with particular attention given to numerical values—often misread by OCR due to the poor image quality—to guarantee the highest level of accuracy.
+V.  **Temporal Data Preparation:** Preparing the date data for Kepler visualization required a high level of precision. We implemented a strict standardization process, beginning with the reconstruction of incomplete dates by examining contextual clues from surrounding entries and aligning them with the publication rhythm of the newspaper. Each timestamp was reformatted to include both date and time components, with any missing time values defaulted to 00:00:00. The entire date column was manually processed to enforce a consistent structure—specifically, the "1909-MM-DD 00:00:00" format—ensuring full compatibility with Kepler’s input requirements. Special care was taken to correct OCR-induced date errors while preserving historical accuracy across the dataset.
+VI.  **Ship Prefix Standardization Process:** Due to inconsistencies in how ship prefixes were recorded (e.g., S.S. for steamship, C.S. for cable ship), extensive manual corrections were necessary. Prefixes often appeared in the wrong columns, were omitted altogether, or featured irregular spacing and punctuation (e.g., "S .S.", "S.S ."). We conducted a comprehensive audit of each entry, cross-referencing historical shipping registers to confirm accurate prefix usage. All variations were then standardized to the correct "S.S." or "C.S." format, ensuring clarity and consistency throughout the dataset.
 
 <a href="/assets/csv/DAAH Assignment 2 Sheet - Ship Report 262 Rows.csv" download> 🔗 Download: <span style="color:#5e5eff"> Shipping Records (CSV) </span> </a>
 
@@ -92,9 +92,9 @@ At this point, we discovered that Gemini does not support .csv files—but fortu
 ## 5. Visualization
 ### 5.1 Kepler Interactive Map
 We created an interactive map by importing our standardized dataset into Kepler, structuring it with three primary visualization layers:
-1. **Origin Points:** Translucent circles mark each departure location—blue for cargo ships and red for warships—plotted using their departure coordinates.
-2. **Destination Markers:** Uniform yellow dots represent the “Bound To” locations.
-3. **Trajectories:** Dynamic arrows connect origin and destination points, color-coded by vessel nationality (British = red, German = green, French = blue, etc.).
+A. **Origin Points:** Translucent circles mark each departure location—blue for cargo ships and red for warships—plotted using their departure coordinates.
+B. **Destination Markers:** Uniform yellow dots represent the “Bound To” locations.
+C. **Trajectories:** Dynamic arrows connect origin and destination points, color-coded by vessel nationality (British = red, German = green, French = blue, etc.).
 
 For clarity, origin labels are styled in blue, and destination tags in yellow. We added a temporal dimension using an animated timeline (set to 2x playback speed), which renders routes sequentially based on rigorously formatted arrival dates `(DD-MM-YYYY 00:00:00)`. This multi-layered visualization communicates three key narratives: (a) geographic movement patterns via the point-to-point connection system, (b) national fleet distributions through chromatic encoding, and (c) historical sequencing via the time-based animation.
 
