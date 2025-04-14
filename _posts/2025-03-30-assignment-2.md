@@ -98,7 +98,12 @@ At this point, we discovered that Gemini does not support `.csv` files—but for
 
 ## Visualization
 ### Mapping Zanzibar Shipping Report 1909
-We created an interactive map by importing our standardized dataset into Kepler, structuring it with three primary visualization layers: First, origin points are rendered as translucent circles (blue for cargo ships, red for warships) plotted using departure coordinates. Second, destination markers appear as uniform yellow dots generated from the “Bound To” locations. Third, dynamic trajectory arrows connecting these points, color-coded by vessel nationality (British=red, German=green, French=blue, etc.). For enhanced readability, we styled origin labels in blue and destination tags in yellow. The temporal dimension was implemented through an animated timeline (2x playback speed) that sequentially renders shipping routes based on our rigorously formatted arrival dates (DD-MM-YYYY 00:00:00). This multi-layered visualization simultaneously communicates: (a) geographic movement patterns via the point-to-point connection system, (b) national fleet distributions through chromatic encoding, and (c) historical sequencing via the time-based animation.
+We created an interactive map by importing our standardized dataset into Kepler, structuring it with three primary visualization layers:
+1. **Origin Points:** Translucent circles mark each departure location—blue for cargo ships and red for warships—plotted using their departure coordinates.
+2. **Destination Markers:** Uniform yellow dots represent the “Bound To” locations.
+3. **Trajectories:** Dynamic arrows connect origin and destination points, color-coded by vessel nationality (British = red, German = green, French = blue, etc.).
+
+For clarity, origin labels are styled in blue, and destination tags in yellow. We added a temporal dimension using an animated timeline (set to 2x playback speed), which renders routes sequentially based on rigorously formatted arrival dates (DD-MM-YYYY 00:00:00). This multi-layered visualization communicates three key narratives: (a) geographic movement patterns via the point-to-point connection system, (b) national fleet distributions through chromatic encoding, and (c) historical sequencing via the time-based animation.
 
 ![This is a GIF](/assets/gif/Map.gif "This is a GIF.") 
 
