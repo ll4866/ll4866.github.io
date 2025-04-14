@@ -131,7 +131,8 @@ Ultimately, while our project began as a technical exercise in digitization and 
 Klein, Lauren, et al. "Provocations from the humanities for generative ai research." arXiv preprint arXiv:2502.19190 (2025).
 The Editors of Encyclopaedia Britannica. "German East Africa". Encyclopedia Britannica, 15 Oct. 2024, https://www.britannica.com/place/German-East-Africa. 
 
-[Click to download a full dataset CSV for Kepler](.assets/csv/DAAH Assignment 2 Sheet - Ship Report 200 Rows.csv)
-[Click to dowload for the Kepler data](.assets/json/kepler.gl.json)
+<a href=".assets/csv/DAAH Assignment 2 Sheet - Ship Report 200 Rows.csv" download> Click here to download the CSV</a>
+<a href=".assets/json/kepler.gl.json" download>📥 Click here to the Kepler data</a>
+
 **✅ Working,,,**
 {: .notice}
