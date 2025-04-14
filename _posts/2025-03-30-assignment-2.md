@@ -42,8 +42,8 @@ After working on our assignment using both Google’s Gemini and DeepSeek, we no
 
 > **<span style="color:#b8984f"> 🏆 Winner: </span>** DeepSeek takes the crown, as it was able to perform key tasks and deliver results that directly supported our research. It may have been trained on similar datasets, enabling it to recognize and interpret our content more accurately than Gemini. Furthermore, DeepSeek provided unique insights based on our tables—something that would have required significant time and manual effort had we done it row by row.
 
-## 3. Modeling
-### 3.1 Processing the Report
+## 3. Data Processing Workflow
+### 3.1 Initial OCR with Gemini
 The following is a detailed explanation of our processes. We extracted shipping data from the Zanzibar Gazette (1909) by first screenshotting each page and then feeding these images into Google Gemini. Next are the prompts (bold texts) with their respective results that Gemini gave us. Then, we exported this `.csv` data into Google Sheets and created a table by splitting columns. From there, we manually cleaned and adjusted certain headers and entries we deemed important.
 
 > **Hello! Can you please generate me a table and .csv based on the image shown?**
@@ -52,7 +52,7 @@ The following is a detailed explanation of our processes. We extracted shipping 
 | ![This is Prompt 1: Table Response.png image](/assets/images/assignment-2/TableResponse.png)  |
 | ![This is Prompt 1: Prompt 1: CSV Response.png image](/assets/images/assignment-2/CSVResponse.png)  |
 
-### 3.2 Key Adjustments:
+### 3.2 Key Adjustments to Raw Data:
 There are several changes that we made before visualizing our data:
 
 1.  **Changing "Cargo Type" to "Ship Type":** We observed that ships could be broadly classified into two categories: *a cargo ship* and *a warship (Man-O’-War)*. Since "Cargo Type", we deem, is unnecessary for our research and would not provide beneficial information. Instead, knowing what type came during a specific week of the month (that is, cargo ships or warships) makes our data much more interesting.
@@ -68,8 +68,8 @@ There are several changes that we made before visualizing our data:
 
 <a href="/assets/csv/DAAH Assignment 2 Sheet - Ship Report 262 Rows.csv" download> 🔗 Download: <span style="color:#5e5eff"> Shipping Records (CSV) </span> </a>
 
-## 4. Data Correction
-### 4.1 A Major Overlook
+## 4. Data Correction & Scaling
+### 4.1 A Major Overlook: Incomplete Page Cropping
 Three-quarters into the process, a significant oversight came to light when we attempted to visualize our data. We had been taking 'snippets' of the shipping reports by cropping only half of the page. However, upon a closer comparison—specifically juxtaposing the 16th March 1909 report with others—we realized that every Zanzibar Gazette shipping report from 1909 spans an entire page.
 
 > This discovery revealed that the reports were not limited to cargo ships but also included warships (categorized as Man-O-War) and smaller, traditional vessels (classified as Dhows). Consequently, what was once a visualization focused solely on cargo ships was expanded to encompass a broader range of maritime activity.
@@ -90,7 +90,7 @@ At this point, we discovered that Gemini does not support .csv files—but fortu
 | **"Remember the steps that you have done previously."** "Here is a new image similar to the ones I gave before. Extract the textual information and adjust the data so that it fits the  `1909_ShippingReport.csv` structure while ignoring longitude (from), latitude (from), longitude (destination), and latitude (destination) columns and leave them empty." | ![Prompt 3.png](/assets/images/assignment-2/Prompt3.png)|
 
 ## 5. Visualization
-### 5.1 Mapping Zanzibar Shipping Report 1909
+### 5.1 Kepler Interactive Map
 We created an interactive map by importing our standardized dataset into Kepler, structuring it with three primary visualization layers:
 1. **Origin Points:** Translucent circles mark each departure location—blue for cargo ships and red for warships—plotted using their departure coordinates.
 2. **Destination Markers:** Uniform yellow dots represent the “Bound To” locations.
