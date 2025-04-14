@@ -132,8 +132,11 @@ Klein, Lauren, et al. "Provocations from the humanities for generative ai resear
 The Editors of Encyclopaedia Britannica. "German East Africa". Encyclopedia Britannica, 15 Oct. 2024, https://www.britannica.com/place/German-East-Africa. 
 
 Download links to our data:  
-<a href="/assets/csv/DAAH Assignment 2 Sheet - Ship Report 200 Rows.csv" download> Click here to download the CSV</a>
+<a href="/assets/csv/DAAH Assignment 2 Sheet - Ship Report 262 Rows.csv" download> Click here to download the CSV for Ships</a>
+
+<a href="/assets/csv/DAAH Assignment 2 Sheet - Dhows.csvv" download> Click here to download the CSV for Dhows</a>
+
 <a href="/assets/json/kepler.gl.json" download>📥 Click here to the Kepler data</a>
 
-**✅ Working,,,**
+**✅ Ready for grading**
 {: .notice}
