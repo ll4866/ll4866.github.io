@@ -10,17 +10,18 @@ tags:
   - Historical Data
   - Data Visualization
 ---
+## Introduction
 *Written and researched by Ahmad Hafizh and Lucas Lin.*
 
-## Background
-### Source Material
+## 1. Project Background
+### 1.1 Source Material
 For this assignment, we analyzed the Zanzibar Gazette Year 1909. This specific year was chosen due to its high-quality metadata (text-searchable content), visual clarity, and the overall tidiness of its layout compared to earlier issues. We deliberately avoided the years 1914–1918 due to expected publication gaps or inconsistencies caused by World War I.
 
 Within this collection, we explored several tables, including mail schedules, meteorological data, customs reports, principal item exports, and ship sailings. Among these, the Shipping Reports caught our attention for two main reasons:
 1. They featured a relatively consistent layout and clear quality, making them easier for us—and presumably for machines—to process.
 2. Their ease of transcription allowed us to focus on automating the data extraction process and to invest more time in in-depth analysis and visualization.
 
-### Competition Between Machines
+## 2 Competition Between Machines
 One cornerstone that Klein emphasizes is the idea that ‘*the bigger AI model does not mean it is better.*' Their research suggests that simply increasing the volume of data, model complexity, or computational power does not always lead to more accurate AI outputs. For humanities researchers, this insight highlights the limitations of pursuing a single, all-encompassing form of artificial intelligence—revealing the complexity and potential shortcomings of such an approach.
 
 Initially, we used the free version of ChatGPT-4  as our primary tool for text recognition. However, we quickly encountered limitations in processing capacity, managing only around five prompts and twenty rows of data. To address this, we shifted to using Google’s Gemini and DeepSeek which provided broader capabilities for our needs.
@@ -30,7 +31,7 @@ We began by using the following prompt for Google Gemini:
 
 This prompt allows us to gain two things from the generated outcome. First, by displaying the .csv in a table, we can immediately see the result that the AI has generated. This display is important as it will provide us with a quick spot if the AI missed or falsely recognized the text. Second, the .csv file helps us import the data into Google Sheets. We also compared both DeepSeek and Gemini results to see whether they would generate different results. In later parts of our article, we will discuss the pros and cons of both tools.
 
-### Observations:
+### 2.1 Observations:
 After working on our assignment using both Google’s Gemini and DeepSeek, we noted the following:
 1. **Gemini**
 - The tool lacks support for reading .csv files. Since our project heavily relied on this format, this limitation significantly impacted our workflow.
@@ -41,8 +42,8 @@ After working on our assignment using both Google’s Gemini and DeepSeek, we no
 
 > **<span style="color:#b8984f"> 🏆 Winner: </span>** DeepSeek takes the crown, as it was able to perform key tasks and deliver results that directly supported our research. It may have been trained on similar datasets, enabling it to recognize and interpret our content more accurately than Gemini. Furthermore, DeepSeek provided unique insights based on our tables—something that would have required significant time and manual effort had we done it row by row.
 
-## Modeling
-### Processing the Report
+## 3. Modeling
+### 3.1 Processing the Report
 The following is a detailed explanation of our processes. We extracted shipping data from the Zanzibar Gazette (1909) by first screenshotting each page and then feeding these images into Google Gemini. Next are the prompts (bold texts) with their respective results that Gemini gave us. Then, we exported this `.csv` data into Google Sheets and created a table by splitting columns. From there, we manually cleaned and adjusted certain headers and entries we deemed important.
 
 > **Hello! Can you please generate me a table and .csv based on the image shown?**
@@ -51,7 +52,7 @@ The following is a detailed explanation of our processes. We extracted shipping 
 | ![This is Prompt 1: Table Response.png image](/assets/images/assignment-2/TableResponse.png)  |
 | ![This is Prompt 1: Prompt 1: CSV Response.png image](/assets/images/assignment-2/CSVResponse.png)  |
 
-### Key Adjustments:
+### 3.2 Key Adjustments:
 There are several changes that we made before visualizing our data:
 
 1.  **Changing "Cargo Type" to "Ship Type":** We observed that ships could be broadly classified into two categories: *a cargo ship* and *a warship (Man-O’-War)*. Since "Cargo Type", we deem, is unnecessary for our research and would not provide beneficial information. Instead, knowing what type came during a specific week of the month (that is, cargo ships or warships) makes our data much more interesting.
@@ -65,17 +66,17 @@ There are several changes that we made before visualizing our data:
 5.  **Temporal Data Preparation:** Preparing the date data for Kepler visualization required a high level of precision. We implemented a strict standardization process, beginning with the reconstruction of incomplete dates by examining contextual clues from surrounding entries and aligning them with the publication rhythm of the newspaper. Each timestamp was reformatted to include both date and time components, with any missing time values defaulted to 00:00:00. The entire date column was manually processed to enforce a consistent structure—specifically, the "1909-MM-DD 00:00:00" format—ensuring full compatibility with Kepler’s input requirements. Special care was taken to correct OCR-induced date errors while preserving historical accuracy across the dataset.
 6.  **Ship Prefix Standardization Process:** Due to inconsistencies in how ship prefixes were recorded (e.g., S.S. for steamship, C.S. for cable ship), extensive manual corrections were necessary. Prefixes often appeared in the wrong columns, were omitted altogether, or featured irregular spacing and punctuation (e.g., "S .S.", "S.S ."). We conducted a comprehensive audit of each entry, cross-referencing historical shipping registers to confirm accurate prefix usage. All variations were then standardized to the correct "S.S." or "C.S." format, ensuring clarity and consistency throughout the dataset.
 
-<a href="/assets/csv/DAAH Assignment 2 Sheet - Ship Report 262 Rows.csv" download> Shipping Records (CSV) Download </a>
+<a href="/assets/csv/DAAH Assignment 2 Sheet - Ship Report 262 Rows.csv" download> 🔗 Download: <span style="color:#5e5eff"> Shipping Records (CSV) </span> </a>
 
-## Data Correction
-### A Major Overlook
+## 4. Data Correction
+### 4.1 A Major Overlook
 Three-quarters into the process, a significant oversight came to light when we attempted to visualize our data. We had been taking 'snippets' of the shipping reports by cropping only half of the page. However, upon a closer comparison—specifically juxtaposing the 16th March 1909 report with others—we realized that every Zanzibar Gazette shipping report from 1909 spans an entire page.
 
 > This discovery revealed that the reports were not limited to cargo ships but also included warships (categorized as Man-O-War) and smaller, traditional vessels (classified as Dhows). Consequently, what was once a visualization focused solely on cargo ships was expanded to encompass a broader range of maritime activity.
 
 With this new insight, we decided to incorporate warships into our primary shipping report table. However, since the *Dhows Arrived* and *Dhows Departed* data followed a different structure, we chose not to integrate them into the main table. Instead, we created a separate table and visualized the dhow data using bar graphs. 
 
-### Nudging the Tool
+### 4.2 Nudging the Tool
 After manually processing over a hundred rows, fatigue inevitably set in. Manually editing each entry was no longer feasible. This prompted a new idea:
 
 >***“What if we feed the machine our edited tabular data and ask them to do OCR and generate the output based on our table structure?”***
@@ -88,8 +89,8 @@ At this point, we discovered that Gemini does not support .csv files—but fortu
 | **Uploaded a screenshot of the Zanzibar Gazette Shipping Reports 1 June 1909** Now, examine the `1909_ShippingReport.csv` file I have provided. If you still remember and examined correctly, you should notice that the tabular data image I have provided you contains data structured similarly to the `.csv` file I provided. Can you merge the .csv file I just provided with the ones you created? Ignore the longitude (from), latitude (from), longitude (destination), and latitude (destination) columns and leave them empty. | ![Prompt 2.png](/assets/images/assignment-2/Prompt2.png)|
 | **"Remember the steps that you have done previously."** "Here is a new image similar to the ones I gave before. Extract the textual information and adjust the data so that it fits the  `1909_ShippingReport.csv` structure while ignoring longitude (from), latitude (from), longitude (destination), and latitude (destination) columns and leave them empty." | ![Prompt 3.png](/assets/images/assignment-2/Prompt3.png)|
 
-## Visualization
-### Mapping Zanzibar Shipping Report 1909
+## 5. Visualization
+### 5.1 Mapping Zanzibar Shipping Report 1909
 We created an interactive map by importing our standardized dataset into Kepler, structuring it with three primary visualization layers:
 1. **Origin Points:** Translucent circles mark each departure location—blue for cargo ships and red for warships—plotted using their departure coordinates.
 2. **Destination Markers:** Uniform yellow dots represent the “Bound To” locations.
@@ -99,9 +100,9 @@ For clarity, origin labels are styled in blue, and destination tags in yellow. W
 
 ![This is a GIF](/assets/gif/Map.gif "This is a GIF.") 
 
-<a href="/assets/json/kepler.gl.json" download> Kepler.gl Visualization Data (JSON) </a>
+<a href="/assets/json/kepler.gl.json" download> 🔗 Download: <span style="color:#5e5eff"> Kepler.gl Data (JSON) </span> </a>
 
-### Fantastic Dhows and Where to Find Them
+### 5.2 Fantastic Dhows and Where to Find Them
 Initially, we tried using Google Sheets to represent our analysis on Dhows. However, we encountered numerous problems regarding Timeline Graphs, and the outcome did not display the data like we expected. Instead, we used an online tool called CSV Plots to map our data in a line graph. 
 
 | Dhows Sailed  |
@@ -112,9 +113,9 @@ Initially, we tried using Google Sheets to represent our analysis on Dhows. Howe
 |---------------|
 | ![Dhows Arrived](/assets/images/assignment-2/DhowsArrive.png) |
 
-<a href="/assets/csv/DAAH Assignment 2 Sheet - Dhows.csvv" download> Dhows Records Data (CSV) Download </a>
+<a href="/assets/csv/DAAH Assignment 2 Sheet - Dhows.csvv" download> 🔗 Download: <span style="color:#5e5eff"> Dhows Data (CSV) </span> </a>
 
-## Conclusion
+## 6. Conclusion
 This assignment has allowed us to learn more about AI, specifically its capabilities of doing humanities tasks. On first glance, we did not identify any major conclusions from our data. Rather than not having enough information, it lies at the point that nothing particularly ‘interesting’ surfaced from the shipping records.However, through closer inspection and contextual analysis, we were able to identify meaningful patterns—though these observations remain provisional and would require further research beyond our dataset to confirm. Zanzibar, in 1909, stood as a vital maritime trade hub in East Africa. Although under British colonial rule at the time, it maintained strong commercial ties with Arabian traders, particularly those from Oman. The high number of Zanzibar/British dhows indicates local dominance in maritime activity. We also took into account external influences that might affect the data, such as:
 
 - **Seasonal Trade Routes:** Maritime trade was heavily influenced by monsoon patterns, particularly between March and May. Dhows from Arabia and India likely followed these seasonal wind cycles—evident in the noticeable drop in arriving dhows during these months.
@@ -124,7 +125,7 @@ This assignment has allowed us to learn more about AI, specifically its capabili
 
 Ultimately, while our project began as a technical exercise in digitization and data visualization, it gradually revealed layers of historical insight—underscoring how even seemingly mundane records can illuminate broader narratives when combined with careful analysis and contextual understanding.
 
-## Contributions
+## 7. Contributions
 *On this assignment, Ahmad prompted the AI chatbots, created the .csv file in Google Sheets, made the Dhows graph, and wrote the initial documentation. We both refined the Shipping Report table and collaboratively wrote the markdown post. Lucas focused on the technical aspects, including double-checking the main table, visualizing the data in Kepler, creating a GIF, and proofreading.*
 
 ## Resources
