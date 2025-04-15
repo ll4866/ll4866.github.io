@@ -77,7 +77,7 @@ There are several changes that we made before visualizing our data:
 ### 4.1 A Major Overlook: Incomplete Page Cropping
 Three-quarters into the process, a significant oversight came to light when we attempted to visualize our data. We had been taking 'snippets' of the shipping reports by cropping only half of the page. However, upon a closer comparison—specifically juxtaposing the 16th March 1909 report with others—we realized that every Zanzibar Gazette shipping report from 1909 spans an entire page.
 
-> This discovery revealed that the reports were not limited to cargo ships but also included warships (categorized as Man-O-War) and smaller, traditional vessels (classified as Dhows). Consequently, what was once a visualization focused solely on cargo ships was expanded to encompass a broader range of maritime activity.
+This discovery revealed that the reports were not limited to cargo ships but also included warships (categorized as Man-O-War) and smaller, traditional vessels (classified as Dhows). Consequently, what was once a visualization focused solely on cargo ships was expanded to encompass a broader range of maritime activity.
 
 With this new insight, we decided to incorporate warships into our primary shipping report table. However, since the *Dhows Arrived* and *Dhows Departed* data followed a different structure, we chose not to integrate them into the main table. Instead, we created a separate table and visualized the dhow data using bar graphs. 
 
@@ -99,16 +99,15 @@ At this point, we discovered that Gemini does not support .csv files—but fortu
 We created an interactive map by importing our standardized dataset into Kepler, structuring it with three primary visualization layers:
 
 A. **Origin Points:** Translucent circles mark each departure location—blue for cargo ships and red for warships—plotted using their departure coordinates.
-
+<br/>
 B. **Destination Markers:** Uniform yellow dots represent the “Bound To” locations.
-
+<br/>
 C. **Trajectories:** Dynamic arrows connect origin and destination points, color-coded by vessel nationality (British = red, German = green, French = blue, etc.).
 
-For clarity, origin labels are styled in blue, and destination tags in yellow. We added a temporal dimension using an animated timeline (set to 2x playback speed), which renders routes sequentially based on rigorously formatted arrival dates `(DD-MM-YYYY 00:00:00)`. This multi-layered visualization communicates three key narratives: (a) geographic movement patterns via the point-to-point connection system, (b) national fleet distributions through chromatic encoding, and (c) historical sequencing via the time-based animation.
-
 ![This is a GIF](/assets/gif/Map.gif "This is a GIF.") 
-
 <a href="/assets/json/kepler.gl.json" download> 🔗 Download: <span style="color:#5e5eff"> Kepler.gl Data (JSON) </span> </a>
+
+For clarity, origin labels are styled in blue, and destination tags in yellow. We added a temporal dimension using an animated timeline (set to 2x playback speed), which renders routes sequentially based on rigorously formatted arrival dates `(DD-MM-YYYY 00:00:00)`. This multi-layered visualization communicates three key narratives: (a) geographic movement patterns via the point-to-point connection system, (b) national fleet distributions through chromatic encoding, and (c) historical sequencing via the time-based animation.
 
 ### 5.2 Fantastic Dhows and Where to Find Them
 Initially, we tried using Google Sheets to represent our analysis on Dhows. However, we encountered numerous problems regarding Timeline Graphs, and the outcome did not display the data like we expected. Instead, we used an online tool called CSV Plots to map our data in a line graph. 
