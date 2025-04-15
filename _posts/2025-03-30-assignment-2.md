@@ -33,11 +33,11 @@ This prompt allows us to gain two things from the generated outcome. First, by d
 
 ### 2.1 Observations:
 After working on our assignment using both Google’s Gemini and DeepSeek, we noted the following:
-<br/>
+
 A. **Gemini**
 - The tool lacks support for reading .csv files. Since our project heavily relied on this format, this limitation significantly impacted our workflow.
 - When performing OCR, Gemini does not apply self-correction. It returns exactly what it reads—even when the output contains errors. As a result, inaccuracies are likely to persist unless manually fixed.
-<br/>
+
 B. **DeepSeek**
 - In contrast, DeepSeek performs data cleanup. For example, it intelligently interprets ditto marks in tables and fills in repeated values based on preceding rows. We'll showcase several examples of this cleanup later.
 - Additionally, DeepSeek can read  .csv files , which allowed it to reference our existing data structure. This feature proved especially useful, as new OCR outputs could be seamlessly merged with our dataset.
