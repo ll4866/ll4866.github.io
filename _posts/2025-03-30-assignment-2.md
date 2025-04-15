@@ -97,8 +97,11 @@ At this point, we discovered that Gemini does not support .csv files—but fortu
 ## 5. Visualization
 ### 5.1 Kepler Interactive Map
 We created an interactive map by importing our standardized dataset into Kepler, structuring it with three primary visualization layers:
+
 A. **Origin Points:** Translucent circles mark each departure location—blue for cargo ships and red for warships—plotted using their departure coordinates.
+
 B. **Destination Markers:** Uniform yellow dots represent the “Bound To” locations.
+
 C. **Trajectories:** Dynamic arrows connect origin and destination points, color-coded by vessel nationality (British = red, German = green, French = blue, etc.).
 
 For clarity, origin labels are styled in blue, and destination tags in yellow. We added a temporal dimension using an animated timeline (set to 2x playback speed), which renders routes sequentially based on rigorously formatted arrival dates `(DD-MM-YYYY 00:00:00)`. This multi-layered visualization communicates three key narratives: (a) geographic movement patterns via the point-to-point connection system, (b) national fleet distributions through chromatic encoding, and (c) historical sequencing via the time-based animation.
