@@ -9,7 +9,7 @@ tags:
 ## Introduction
 *Written and researched by Lucas Lin.*
 
-This report examines the capabilities of AI in recognizing and classifying attributes on AI-generated cat images sourced from CIVITAI. By analyzing how well AI models can identify predefined attributes such as Realistic, Artistic, Surreal, Humorous, and Abstract, we aim to assess the accuracy and reliability of these models in interpreting visual data. This study not only evaluates the technical performance of AI but also explores the broader implications of AI-driven image classification in the context of digital content creation.
+This assignment examines the capabilities of AI in recognizing and classifying attributes on AI-generated cat images sourced from CIVITAI. By analyzing how well AI models can identify predefined attributes such as Realistic, Artistic, Surreal, Humorous, and Abstract, we aim to assess the accuracy and reliability of these models in interpreting visual data. This not only evaluates the technical performance of AI but also explores the broader implications of AI-driven image classification in the context of digital content creation.
 
 ## 1. Building the Corpus
 ### 1.1 Corpus Desciption
@@ -20,12 +20,26 @@ This report examines the capabilities of AI in recognizing and classifying attri
 * **Organizaiton:** Images are organized into subfolders based on the attributes mentioned above.
 
 ### 1.2 Data Gathering
-I used the extension IMAGE DOWNLOADED and downloaded 99 images that were recently uploaded to CIVITAI on May 1 within the section of cat-generated images. The filter used was the default one by week, which provided a representative sample of the most recent AI-generated cat images. This approach ensured that the dataset was current and relevant to the ongoing trends in AI-generated imagery.
+I used the extension IMAGE DOWNLOADED and downloaded 99 images that were recently uploaded to CIVITAI on May 1, 2025 within the section of cat-generated images. The filter used was the default one by week, which provided a representative sample of the most recent AI-generated cat images. This approach ensured that the dataset was current and relevant to the ongoing trends in AI-generated imagery.
 
 ### 1.3 Organizing Corpus
-After downloading the images, I systematically searched for each image's prompts. Some images did not show their prompts, but for those that did, 67 of them, I collected their prompts and used KIMI to categorize them based on their prompts into equal amounts of subfolder categories. This process involved manually searching for each image's prompts and organizing them into corresponding attribute folders. It was a time-consuming task that required careful attention to detail, as I had to go back and edit the organization multiple times to ensure accuracy and consistency.
+To ensure a balanced and meaningful analysis, I decided to categorize the images into five distinct categories: Realistic, Artistic, Surreal, Humorous, and Abstract. Each category was chosen to reflect different styles and themes commonly found in AI-generated cat images. Here's the rationale behind each category:
+
+1. **Realistic and Photorealistic**: This category includes images that aim to depict cats in a highly detailed and lifelike manner, often with photorealistic qualities. These images typically feature natural settings, detailed textures, and accurate anatomical representations.
+
+2. **Artistic and Illustrative**: This category encompasses images that exhibit artistic styles, such as painterly, impressionistic, or illustrative techniques. These images often include elements like abstract backgrounds, stylized features, and a focus on artistic expression.
+
+3. **Surreal and Fantasy**: This category features images that incorporate surreal or fantastical elements, such as exaggerated features, dreamlike settings, or otherworldly themes. These images often push the boundaries of reality and imagination.
+
+4. **Humorous and Meme-like**: This category includes images that are designed to be humorous or meme-like, often featuring playful or exaggerated scenarios. These images are intended to evoke laughter or amusement and may include text or other elements that enhance their comedic effect.
+
+5. **Abstract and Minimalist**: This category contains images that are characterized by abstract or minimalist design principles. These images may feature simplified forms, geometric shapes, or a focus on color and composition rather than detailed representation.
+
+To ensure that the categorization process was unbiased and focused solely on the prompts rather than the visual content of the images, I utilized KIMI to categorize the images based on their prompts. By doing so, I aimed to create a diverse and representative dataset that would allow for a comprehensive analysis of the AI models' performance across different styles and themes. This approach helped to minimize any potential biases that might arise from subjective interpretation of the visual data.
 
 ## 2 Clustering Ecercise (Organe Data Mining)
+![This is Orange Image Grid](/assets/images/assignment-3/Screenshot 2025-05-11 at 15.12.54.png)
+
 ### 2.1 Different 
 Using the provided images2.ows workflow, I tested clustering with Inceptionv3 and other algorithms to see how they organize the data. I explored the following questions:
 How does one built-in algorithm such as Inceptionv3 in ODM cluster the data?
