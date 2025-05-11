@@ -135,7 +135,7 @@ Using distant viewing, I entered images with prompts to compare them if the Ai g
 The results:
 |Image| AI Generated| Prompt|
 |--|--|--|
-|![This is Image 66](/assets/images/assignment-3/IMAGE66.jpeg)||
+|![This is Image 66](/assets/images/assignment-3/Images/IMAGE1.jpeg)||
 
 ### 4.2 Generate 2D Clip
 
