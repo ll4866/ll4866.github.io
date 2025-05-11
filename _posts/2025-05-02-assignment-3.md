@@ -164,15 +164,21 @@ Using distant viewing tools, I analyzed a series of AI-generated images by input
 
 * **Category Prediction Inconsistencies:** The image classification often focused on superficial elements (e.g., “sandal,” “church,” “electric fan”), ignoring more semantically relevant content. This suggests that models still struggle with context recognition, especially in stylized or surreal images.
 
-* **Semantic Blindness in Stylized Content:** The AI's failure was most evident in anime or fantasy-style images, where specific details—like character design, pose, environment, or emotional tone—were critical to the meaning. Models prioritized generic or misclassified elements, overlooking key narrative signals.
+* **Semantic Blindness in Stylized Content:** The AI's failure was most evident in anime or fantasy-style images, where specific details—like character design, pose, environment, or emotional tone—were critical to the meaning. Models prioritized generic or misclassified elements, overlooking key narrative signals. Analyze 1–2 examples where AI failed to recognize cultural cues (e.g., a "catgirl" classified generically as "woman").
 
 * **Surprising Results:** Some classifications (e.g., "spider web," "comic book") revealed latent pattern biases in the dataset used to train the model, highlighting how irrelevant features can dominate AI perception.
 
 This analysis shows that while multimodal tools like CLIP can offer surface-level understanding of image content, they often lack sensitivity to aesthetic style, narrative intention, and prompt complexity—especially in art or stylized images. This gap reveals current limitations in AI's ability to semantically align image content with prompt-driven intent, particularly in non-photorealistic domains.
 
-### 4.2 DV Explorer Zero-Shot Test  
-![This is Zero Shot Abstract](/assets/images/assignment-3/ZeroShot-Abstract.png)
-![This is Zero Shot Artistic](/assets/images/assignment-3/ZeroShot-Artisitc.png)
+### 4.2 DV Explorer Zero-Shot Test 
+Testing DV Explorer on my subset of images. 
+|||
+|--|--|
+|![This is Zero Shot Abstract](/assets/images/assignment-3/ZeroShot-Abstract.png)| None of the images matches my category list |
+|![This is Zero Shot Artistic](/assets/images/assignment-3/ZeroShot-Artistic.png)| Same occured in this category |
+|![This is Zero Shot Humor](/assets/images/assignment-3/ZeroShot-Humor.png)| Only  3 images were currectly identified in this section|
+|![This is Zero Shot Real](/assets/images/assignment-3/ZeroShot-Real.png)| 8 out of 15 were correctly identified|
+|![This is Zero Shot Surreal](/assets/images/assignment-3/ZeroShot-Surreal.png)| 11 out of 13 were correctly identified|
 
 ### 4.3 Generate 2D Clip
 I uploaded all images with prompts into 2D clip. the follwoing is an analysis of the images how real it is and artisitc.
