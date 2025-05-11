@@ -9,24 +9,31 @@ tags:
 ## Introduction
 *Written and researched by Lucas Lin.*
 
-Summary What this assignment is about: This assignment is I would be constructing an Image Dataset and using Orange Data Mining and the DV Explorer to analyze it, work with materials and algorithms discussed in class. Its focus is to explore a custom-made corpus of digital images and write this small critical essay about my findings about it. 
+This report examines the capabilities of AI in recognizing and classifying attributes on AI-generated cat images sourced from CIVITAI. By analyzing how well AI models can identify predefined attributes such as Realistic, Artistic, Surreal, Humorous, and Abstract, we aim to assess the accuracy and reliability of these models in interpreting visual data. This study not only evaluates the technical performance of AI but also explores the broader implications of AI-driven image classification in the context of digital content creation.
 
-## 1 Image Corpus
-### 1.1 Select Cultural Domain
-The corpus I have selected are images from CIVITAI, is a website that allows users to share and download AI models particularly those used for image generation, I wanted to explore how well the algorithms do with clustering and classifying AI images if the images produces by the AI were accurate or not... I looked at cat images with the most reaction recently by week on May 1...
+## 1. Building the Corpus
+### 1.1 Corpus Desciption
+* **Source:** AI-generated images from CIVITAI, a platform for sharing and downloading AI models.
+* **Number of Images:** 99
+* **Number of Images with Prompt:** 67
+* **Attributes:** Realistic, Artistic, Surreal, Humorous, Abstract
+* **Organizaiton:** Images are organized into subfolders based on the attributes mentioned above.
+
 ### 1.2 Data Gathering
-I dowloaded the first 98 images 
+I used the extension IMAGE DOWNLOADED and downloaded 99 images that were recently uploaded to CIVITAI on May 1 within the section of cat-generated images. The filter used was the default one by week, which provided a representative sample of the most recent AI-generated cat images. This approach ensured that the dataset was current and relevant to the ongoing trends in AI-generated imagery.
+
 ### 1.3 Organizing Corpus
-Rename files systematically by what method
+After downloading the images, I systematically searched for each image's prompts. Some images did not show their prompts, but for those that did, 67 of them, I collected their prompts and used KIMI to categorize them based on their prompts into equal amounts of subfolder categories. This process involved manually searching for each image's prompts and organizing them into corresponding attribute folders. It was a time-consuming task that required careful attention to detail, as I had to go back and edit the organization multiple times to ensure accuracy and consistency.
 
 ## 2 Clustering Ecercise (Organe Data Mining)
 ### 2.1 Different 
-Use the provided images2.ows workflow and test clustering with Inceptionv3 and other algorithms.
+Using the provided images2.ows workflow, I tested clustering with Inceptionv3 and other algorithms to see how they organize the data. I explored the following questions:
 How does one built-in algorithm such as Inceptionv3 in ODM cluster the data?
 Do other algorithms give you different results?
 What features seem to be most characteristic of the different quadrants of the image plot?
 Using hierarchical clustering, isolate specific clusters to look more closely.
 How “in reading a corpus of visual culture through a neural network, [are you] always also doing the reverse?” (Impett and Offert, 2024)
+
 ### 2.2 Analysisng the Results
 Screenshot the main image plot;
 
