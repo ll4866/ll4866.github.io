@@ -170,7 +170,11 @@ Using distant viewing tools, I analyzed a series of AI-generated images by input
 
 This analysis shows that while multimodal tools like CLIP can offer surface-level understanding of image content, they often lack sensitivity to aesthetic style, narrative intention, and prompt complexity—especially in art or stylized images. This gap reveals current limitations in AI's ability to semantically align image content with prompt-driven intent, particularly in non-photorealistic domains.
 
-### 4.2 Generate 2D Clip
+### 4.2 DV Explorer Zero-Shot Test  
+![This is Zero Shot Abstract](/assets/images/assignment-3/ZeroShot-Abstract.png)
+![This is Zero Shot Artistic](/assets/images/assignment-3/ZeroShot-Artisitc.png)
+
+### 4.3 Generate 2D Clip
 I uploaded all images with prompts into 2D clip. the follwoing is an analysis of the images how real it is and artisitc.
 ![This is 2D Graph](/assets/images/assignment-3/2DGraphArtisticReal.png)
 Interestingly, most of the cartoon-style images are positioned in the “real” category rather than being labeled as “artistic,” which challenges the common assumption that drawings are inherently artistic. Image 6 and Image 19 stand out as neither realistic nor artistic—Image 19 appears artificial and puppet-like, which may contribute to its lack of realism or artistic value, while Image 6, although clearly a cartoon, lacks the expressive or stylized qualities typically associated with artistic depictions. Notably, all the cat images are consistently rated as realistic, perhaps due to the model’s training data containing many cat photos or because cats are relatively easy to render believably. In contrast, images categorized as artistic tend to exhibit dramatic shifts in style, vibrant color contrasts, or unique visual palettes that set them apart from both realistic and cartoon imagery.
