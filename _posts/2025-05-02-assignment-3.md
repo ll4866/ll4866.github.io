@@ -16,14 +16,16 @@ This assignment examines the capabilities of AI in recognizing and classifying a
 * **Source:** AI-generated images from CIVITAI, a platform for sharing and downloading AI models.
 * **Number of Images:** 99
 * **Number of Images with Prompt:** 67
-* **Attributes:** Realistic, Artistic, Surreal, Humorous, Abstract
+* **Attributes:** Realistic, Artistic, Surreal, Humorous, Abstract (Attributes are given to only images with prompts)
 * **Organizaiton:** Images are organized into subfolders based on the attributes mentioned above.
 
 ### 1.2 Data Gathering
-I used the extension IMAGE DOWNLOADED and downloaded 99 images that were recently uploaded to CIVITAI on May 1, 2025 within the section of cat-generated images. The filter used was the default one by week, which provided a representative sample of the most recent AI-generated cat images. This approach ensured that the dataset was current and relevant to the ongoing trends in AI-generated imagery.
+How I did is by using the extension IMAGE DOWNLOADED and downloaded 99 images from the CIVITAI website on the most recent upload on May 1, 2025 within the section of cat-generated images. The filter used was the default one by week, which provided a representative sample of the most recent AI-generated cat images of that week. This approach ensured that the dataset was current and relevant to the ongoing trends in AI-generated imagery.
+
+After downloading the images, I went back to each image individually to look for their prompt. I recorded each prompt for the images that had them, which was essential for the categorization process.
 
 ### 1.3 Organizing Corpus
-To ensure a balanced and meaningful analysis, I decided to categorize the images into five distinct categories: Realistic, Artistic, Surreal, Humorous, and Abstract. Each category was chosen to reflect different styles and themes commonly found in AI-generated cat images. Here's the rationale behind each category:
+To ensure a balanced and meaningful analysis, I decided to categorize the images into five distinct categories: Realistic, Artistic, Surreal, Humorous, and Abstract. Each category was chosen to reflect different styles and themes commonly found in AI-generated cat images. I found these categories by giving KIMI all the prompts of the images and having it categorize finding a common ground. I asked for multiple sets of categories and chose the following one. I then categorized based on the results the AI gave me as I wanted to both follow the mindset of the AI and also be more reliant on the prompt and how the AI thinks rather than I decide based on feeling. Here's the rationale behind each category:
 
 1. **Realistic and Photorealistic**: This category includes images that aim to depict cats in a highly detailed and lifelike manner, often with photorealistic qualities. These images typically feature natural settings, detailed textures, and accurate anatomical representations.
 
@@ -35,12 +37,20 @@ To ensure a balanced and meaningful analysis, I decided to categorize the images
 
 5. **Abstract and Minimalist**: This category contains images that are characterized by abstract or minimalist design principles. These images may feature simplified forms, geometric shapes, or a focus on color and composition rather than detailed representation.
 
-To ensure that the categorization process was unbiased and focused solely on the prompts rather than the visual content of the images, I utilized KIMI to categorize the images based on their prompts. By doing so, I aimed to create a diverse and representative dataset that would allow for a comprehensive analysis of the AI models' performance across different styles and themes. This approach helped to minimize any potential biases that might arise from subjective interpretation of the visual data.
+To ensure that the categorization process was unbiased and focused solely on the prompts rather than the visual content of the images, I utilized KIMI to categorize the images based on their prompts. This approach helped to minimize any potential biases that might arise from subjective interpretation of the visual data. Since I more focused on the comparison of the prompt and the image itself if the algorithm is able to recognize. I should categorize based on the prompt rather than the image itself.
 
-## 2 Clustering Ecercise (Organe Data Mining)
-![This is Orange Image Grid](/assets/images/assignment-3/Screenshot 2025-05-11 at 15.12.54.png)
-
+## 2 Clustering Exercise (Organe Data Mining)
 ### 2.1 Different 
+I began clustering the images without their categories in mind just to see if I could decipher how the algorithm was categorizing the images. The below are screenshots of the different results and how I try to identify how it clusters them.
+
+| Cluster Screnshot | Algorithm |
+|-------------------|-----------|
+| ![This is Cluster Guess 1](/assets/images/assignment-3/ClusterGuess.png)| SqueezeNet|
+| ![This is Cluster Guess 2](/assets/images/assignment-3/ClusterGuess2.png)| Painters |
+
+What I noticed is that they do organize the data differently. Some of the basic clustering are the same but the rest are not. SqueezeNet and Painters both clustered the images that appear to be like comic images together. Painters appear to caterize some of them by color and not content for osme images.
+
+
 Using the provided images2.ows workflow, I tested clustering with Inceptionv3 and other algorithms to see how they organize the data. I explored the following questions:
 How does one built-in algorithm such as Inceptionv3 in ODM cluster the data?
 Do other algorithms give you different results?
@@ -49,6 +59,8 @@ Using hierarchical clustering, isolate specific clusters to look more closely.
 How “in reading a corpus of visual culture through a neural network, [are you] always also doing the reverse?” (Impett and Offert, 2024)
 
 ### 2.2 Analysisng the Results
+
+
 Screenshot the main image plot;
 
 Method explain how Isolate clusters via hierarchical clustering; annotate findings.
