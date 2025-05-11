@@ -72,7 +72,7 @@ I expected the AI to at least partially succeed in classification, especially wh
 |![This is Hierchy 1](/assets/images/assignment-3/Hierchy0.png)|![This is Issue 1](/assets/images/assignment-3/Issue0.png)|
 | ![This is Evidence 1](/assets/images/assignment-3/Evidence0.1.png)| C1. It mostly caught the surreal/fantasy ones but seemed to group by solidity—like the texture or color density. | 
 |![This is Evidence 2](/assets/images/assignment-3/Evidence0.2.png)| C2. This had mostly artistic ones, but the grouping felt based on playfulness or expression rather than prompt. | 
-|![This is Results 0](/assets/images/assignment-3/Results0.png) | Inceptionv3 did a better job recognizing abstract stuff, but really struggled with identifying humor, surreal elements, and artistic styles.|
+|![This is Results 0](/assets/images/assignment-3/Results0.png) | `Inception V3` did a better job recognizing abstract stuff, but really struggled with identifying humor, surreal elements, and artistic styles.|
 
 > `Inceptionv3` was able to tell playful and serious apart, but struggled to match my defined categories.
 
@@ -82,7 +82,7 @@ I expected the AI to at least partially succeed in classification, especially wh
 |![This is Evidence 1.1](/assets/images/assignment-3/Evidence1.2.png)| C1: Captured dramatic lighting well, but didn’t recognize the artificial or staged quality.|
 |![This is Evidence 1.2](/assets/images/assignment-3/Evidence1.3.png)|C2: Did well with Artistic—most grouped images had detailed eyes/hair and self-portrait energy.| 
 |![This is Evidence 1.3](/assets/images/assignment-3/Evidence1.1.png)|	C3: Grouped anime/manga styles together—though these were actually intended to be Realistic based on prompt. Suggests a different idea of “realism.”| 
-|![This is Results 1](/assets/images/assignment-3/Results1.png) | SqueezeNet performed better than Inceptionv3, especially in identifying thematic and visual traits across most categories. Still had issues with nuance in artistic categories.|
+|![This is Results 1](/assets/images/assignment-3/Results1.png) | `SqueezeNet` performed better than `Inception V3`, especially in identifying thematic and visual traits across most categories. Still had issues with nuance in artistic categories.|
 
 > This model clustered by shared traits and atmosphere. Not perfect, but closer to my expectations.
 
@@ -90,12 +90,19 @@ I expected the AI to at least partially succeed in classification, especially wh
 |--|--|
 |![This is Hierchy 2](/assets/images/assignment-3/Hierchy2.png)|![This is Issue 2](/assets/images/assignment-3/Issue2.png)|
 |![This is Evidence 2.1](/assets/images/assignment-3/Evidence2.1.png)| C1: Capture a Anime-style digital art with realistic details|
-|![This is Evidence 2.2](/assets/images/assignment-3/Evidence2.2.png)|C2: | 
-|![This is Results 1](/assets/images/assignment-3/Results1.png) | SqueezeNet performed better than Inceptionv3, especially in identifying thematic and visual traits across most categories. Still had issues with nuance in artistic categories.|
+|![This is Evidence 2.2](/assets/images/assignment-3/Evidence2.2.png)|C2: Features creative cat like images that are not common sense, plaing around with merging cat with another feature.| 
+|![This is Results 2](/assets/images/assignment-3/Results2.png) | Painters does a better job in distinguishing between realistic Photorealistic and surreal fantasy. While the other types it does not do a great job.|
 
-> 
+> `Painters` model performs well in identifying anime-style digital art with realistic elements, as well as imaginative, non-literal cat depictions—such as cats creatively merged with other features or environments. This strength is particularly evident in the Surreal and Fantasy category, where Painters excels at capturing the visual essence and conceptual playfulness of the style. However, the model struggles to clearly distinguish between other styles, such as Realistic/Photorealistic and Abstract/Minimalist. This indicates that while Painters is effective at recognizing stylized or fantastical imagery, it needs improvement in parsing the more nuanced or overlapping characteristics of other artistic categories.
 
-These results indicate that while the algorithms were able to identify certain common traits and themes, they did not consistently classify the images according to the established categories. This suggests that the AI models may require further refinement to accurately interpret and categorize visual data based on textual prompts.
+|**D. DeepLoc**||
+|--|--|
+|![This is Hierchy 3](/assets/images/assignment-3/Hierchy3.png)|![This is Issue 3](/assets/images/assignment-3/Issue3.png)|
+|![This is Evidence 3.1](/assets/images/assignment-3/Evidence3.1.png)| C1: Capture a Anime-style digital art with realistic details|
+|![This is Evidence 3.2](/assets/images/assignment-3/Evidence3.2.png)|C2: Features creative cat like images that are not common sense, plaing around with merging cat with another feature.| 
+|![This is Results 3](/assets/images/assignment-3/Results2.png) | Painters does a better job in distinguishing between realistic Photorealistic and surreal fantasy. While the other types it does not do a great job.|
+
+> `DeepLoc` 
 
 ### 3.4 Reflection
 A few thoughts after examining the results:
