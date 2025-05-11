@@ -171,14 +171,16 @@ Using distant viewing tools, I analyzed a series of AI-generated images by input
 This analysis shows that while multimodal tools like CLIP can offer surface-level understanding of image content, they often lack sensitivity to aesthetic style, narrative intention, and prompt complexity—especially in art or stylized images. This gap reveals current limitations in AI's ability to semantically align image content with prompt-driven intent, particularly in non-photorealistic domains.
 
 ### 4.2 DV Explorer Zero-Shot Test 
-Testing DV Explorer on my subset of images. 
-|||
+To further evaluate multimodal alignment, I tested a subset of images using DV Explorer’s Zero-Shot Classification tool with the same category labels (Realistic, Artistic, Surreal, Humorous, Abstract). The results revealed significant disparities in model performance:
+
+| Results | Comparison|
 |--|--|
-|![This is Zero Shot Abstract](/assets/images/assignment-3/ZeroShot-Abstract.png)| None of the images matches my category list |
-|![This is Zero Shot Artistic](/assets/images/assignment-3/ZeroShot-Artistic.png)| Same occured in this category |
-|![This is Zero Shot Humor](/assets/images/assignment-3/ZeroShot-Humor.png)| Only  3 images were currectly identified in this section|
-|![This is Zero Shot Real](/assets/images/assignment-3/ZeroShot-Real.png)| 8 out of 15 were correctly identified|
-|![This is Zero Shot Surreal](/assets/images/assignment-3/ZeroShot-Surreal.png)| 11 out of 13 were correctly identified|
+|![This is Zero Shot Abstract](/assets/images/assignment-3/ZeroShot-Abstract.png)| <span style="color:red"> Terrible Performance </span>  |
+|![This is Zero Shot Artistic](/assets/images/assignment-3/ZeroShot-Artistic.png)| <span style="color:red"> Terrible Performance </span>  | |
+|![This is Zero Shot Humor](/assets/images/assignment-3/ZeroShot-Humor.png)| 3 out of 13 <span style="color:orange"> Ok Performance </span> |
+|![This is Zero Shot Real](/assets/images/assignment-3/ZeroShot-Real.png)| 8 out of 15 <span style="color:green"> Good Performance </span> |
+|![This is Zero Shot Surreal](/assets/images/assignment-3/ZeroShot-Surreal.png)| 11 out of 13 <span style="color:green"> Strong Performance </span> |
+This demonstrates that the model excels at detecting overt visual markers of realism or fantasy but struggles profoundly with culturally nuanced or conceptually abstract categories. The results align with Distant Viewing's observation that AI systems often recognize 'what' is depicted more readily than 'how' or 'why'—prioritizing literal features over stylistic intent or emotional resonance. Particularly telling is the humor detection failure, suggesting the model lacks training in internet meme semiotics where absurdity and irony dominate. These limitations expose how even multimodal models remain constrained by their training data's cultural priorities and object-centric biases.
 
 ### 4.3 Generate 2D Clip
 I uploaded all images with prompts into 2D clip. the follwoing is an analysis of the images how real it is and artisitc.
