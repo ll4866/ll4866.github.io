@@ -133,9 +133,11 @@ Ultimately, while AI models have become skilled at recognizing visual features, 
 Using distant viewing, I entered images with prompts to compare them if the Ai genereated text matches with the prompt or is it completely different.
 
 The results:
-|Image| AI Generated| Prompt|
-|--|--|--|
-|![This is Image 66](/assets/images/assignment-3/Images/IMAGE1.jpeg)||
+|Image | Prompt|
+|--|--|
+|![This is Image 1](/assets/images/assignment-3/Images/IMAGE1.png) **Predicted Caption**：a cat and a dog are in the snow | masterpiece, best quality, absurdres, volumetric lighting, dynamic lighting, cinematic lighting, [[dynamic pose]] , upper body shot, 1girl, solo, from behind, ((from above)), looking side, inner hair color, grey hair , gradient hair, long hair, messed hair , brown eyes, , ultra detailed eyes, small breasts , [[[abs]]], (office outfit), medium skirt, thick black pantyhose, pumps, rimless round glasses , , earrings, ear pierces , , BREAK [[skindentation]:0.5], chubby, ((chubby thick legs), thick legs, chubby legs), thick calf, [[muscular legs]:0.95], petting calico cat, black cat, white cat, tuxedo cat, ( simple background, simple gradient pastel turquoise background ), , detailed eyes, fl4t, MF9f, perfect hands, Bright_illu, sparkle, too many light particles, <lora:sdxl_turbo_weghts_beta_v0_1_0:0.95> <lora:Namori_Illustrious:0.8> <lora:Bright_style:0.75> <lora:fl4t:1.2> <lora:MF9fMTFYeA==-noobaiXLNAIXL_epsilonPred_V110_V1-CAME:0.9>, 「Negative prompt： nsfw, bad quality, worst quality, worst detail, censor, missing fingers, extra fingers, blurry eyes, poorly drawn eyes, skewed eyes, bad anatomy, furry, chubby stomach, pot belly, chibi, child, sketch, signature, text, glossy tights」|
+｜![This is Image 2](/assets/images/assignment-3/Images/IMAGE2.png) **Predicted Caption**：a woman with a cat on her head ｜ masterpiece, ultra-HD, cinematic lighting, photorealistic, impressionism (1.5), high detail, depth of field, (blurred background), (dramatic lighting),masterpiece, best quality, very aesthetic,8k,masterpiece, best quality,realistic, masterpiece, best quality, 8k, simple_background , half close-up, sexy pose, long black hair, straight hair,blunt bangs, red eye makeup, blushing, asian girl, small head, pretty girl, korean girl, extacy on face, ((slim body)), (small breasts), Dynamic angle, Dynamic pose, sfw, portrait, girl, pastel pink sundress, in a field of sunflowers. holding black cat. smiling. happy. sunset 「Negative prompt： Female tongue, female tongue out, Neck grab, worst quality, low quality, displeasing, text, , watermark, bad anatomy, text, artist name, signature, hearts, deformed hands, missing finger, shiny skin,child,children」｜
+｜｜｜
 
 ### 4.2 Generate 2D Clip
 
