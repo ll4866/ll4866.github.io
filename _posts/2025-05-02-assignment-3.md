@@ -20,12 +20,11 @@ This assignment examines the capabilities of AI in recognizing and classifying a
 * **Organizaiton:** Images are organized into subfolders based on the attributes mentioned above.
 
 ### 1.2 Data Gathering
-How I did is by using the extension IMAGE DOWNLOADED and downloaded 99 images from the CIVITAI website on the most recent upload on May 1, 2025 within the section of cat-generated images. The filter used was the default one by week, which provided a representative sample of the most recent AI-generated cat images of that week. This approach ensured that the dataset was current and relevant to the ongoing trends in AI-generated imagery.
-
+To gather the data, I used the IMAGE DOWNLOADER extension to download 99 images from the CIVITAI website. These images were the most recently uploaded on May 1, 2025, within the section of cat-generated images. The filter used was the default one by week, which provided a representative sample of the most recent AI-generated cat images of that week. This approach ensured that the dataset was current and relevant to the ongoing trends in AI-generated imagery.
 After downloading the images, I went back to each image individually to look for their prompt. I recorded each prompt for the images that had them, which was essential for the categorization process.
 
 ### 1.3 Organizing Corpus
-To ensure a balanced and meaningful analysis, I decided to categorize the images into five distinct categories: Realistic, Artistic, Surreal, Humorous, and Abstract. Each category was chosen to reflect different styles and themes commonly found in AI-generated cat images. I found these categories by giving KIMI all the prompts of the images and having it categorize finding a common ground. I asked for multiple sets of categories and chose the following one. I then categorized based on the results the AI gave me as I wanted to both follow the mindset of the AI and also be more reliant on the prompt and how the AI thinks rather than I decide based on feeling. Here's the rationale behind each category:
+To ensure a balanced and meaningful analysis, I decided to categorize the images into five distinct categories: Realistic, Artistic, Surreal, Humorous, and Abstract. Each category was chosen to reflect different styles and themes commonly found in AI-generated cat images. I found these categories by giving KIMI all the prompts of the images and having it categorize them, finding a common ground. I asked for multiple sets of categories and chose the following one. I then categorized based on the results the AI gave me, as I wanted to follow the mindset of the AI and be more reliant on the prompt and how the AI thinks rather than deciding based on my own feelings. Here's the rationale behind each category:
 
 1. **Realistic and Photorealistic**: This category includes images that aim to depict cats in a highly detailed and lifelike manner, often with photorealistic qualities. These images typically feature natural settings, detailed textures, and accurate anatomical representations.
 
@@ -66,11 +65,12 @@ I anticipated that the AI would accurately identify some classifications, given 
 ### 3.4 Result
 |**A. Inceptionv3**||
 |--|--|
-|![This is Hierchy 1](/assets/images/assignment-3/Hierchy0.png)|![This is Issue 1](/assets/images/assignment-3/Issue0.png)|
+|![This is Hierchy 1](/assets/images/assignment-3/Hierchy0.png)||
+|![This is Issue 1](/assets/images/assignment-3/Issue0.png)|Inceptionv3 was somewhat able to cluster the playful and serious images apart but it was not able to classify the categories I have established.|
 |![This is Evidence 1](/assets/images/assignment-3/Evidence0.1.png)| C1. Most Surreal Fantasy but it seems that it attempted to categorize by how solid the color or texture is in this cluste| 
 |![This is Evidence 2](/assets/images/assignment-3/Evidence0.2.png)| C2. Artistic illustrative is the most in this cluster but what the algorithm did was cluster the more animalistic playful images in this cluster | 
+|![This is Results 0](/assets/images/assignment-3/Results0.png) | |
 
-Inceptionv3 was somewhat able to cluster the playful and serious images apart but it was not able to classify the categories I have established.
 
 |**B. SqueezeNet**||
 |--|--|
