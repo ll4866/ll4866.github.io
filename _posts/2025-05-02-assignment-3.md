@@ -91,31 +91,31 @@ I expected the AI to at least partially succeed in classification, especially wh
 |![This is Hierchy 2](/assets/images/assignment-3/Hierchy2.png)|![This is Issue 2](/assets/images/assignment-3/Issue2.png)|
 |![This is Evidence 2.1](/assets/images/assignment-3/Evidence2.1.png)| C1: Capture a Anime-style digital art with realistic details|
 |![This is Evidence 2.2](/assets/images/assignment-3/Evidence2.2.png)|C2: Features creative cat like images that are not common sense, plaing around with merging cat with another feature.| 
-|![This is Results 2](/assets/images/assignment-3/Results2.png) | Painters does a better job in distinguishing between realistic Photorealistic and surreal fantasy. While the other types it does not do a great job.|
+|![This is Results 2](/assets/images/assignment-3/Results2.png) | `Painters` does a better job in distinguishing between realistic Photorealistic and surreal fantasy. While the other types it does not do a great job.|
 
 > `Painters` model performs well in identifying anime-style digital art with realistic elements, as well as imaginative, non-literal cat depictions—such as cats creatively merged with other features or environments. This strength is particularly evident in the Surreal and Fantasy category, where Painters excels at capturing the visual essence and conceptual playfulness of the style. However, the model struggles to clearly distinguish between other styles, such as Realistic/Photorealistic and Abstract/Minimalist. This indicates that while Painters is effective at recognizing stylized or fantastical imagery, it needs improvement in parsing the more nuanced or overlapping characteristics of other artistic categories.
 
 |**D. DeepLoc**||
 |--|--|
 |![This is Hierchy 3](/assets/images/assignment-3/Hierchy3.png)|![This is Issue 3](/assets/images/assignment-3/Issue3.png)|
-|![This is Evidence 3.1](/assets/images/assignment-3/Evidence3.1.png)| C1: Capture a Anime-style digital art with realistic details|
-|![This is Evidence 3.2](/assets/images/assignment-3/Evidence3.2.png)|C2: Features creative cat like images that are not common sense, plaing around with merging cat with another feature.| 
-|![This is Results 3](/assets/images/assignment-3/Results2.png) | Painters does a better job in distinguishing between realistic Photorealistic and surreal fantasy. While the other types it does not do a great job.|
+|![This is Evidence 3.1](/assets/images/assignment-3/Evidence3.1.png)| C1: Cute ;ight colored cat images with a deep story vibe to them|
+|![This is Evidence 3.2](/assets/images/assignment-3/Evidence3.2.png)|C2: Playful variations of the cat. Dark color like a poster for display.| 
+|![This is Results 3](/assets/images/assignment-3/Results2.png) | In terms of average it does a much better job than the other algorithms. It has more balanced results with no weakness.|
 
-> `DeepLoc` 
+> `DeepLoc` does not exhibit any major weaknesses, suggesting a robust and consistent algorithmic approach to recognizing diverse visual styles. Its performance stands out for being steady and well-rounded rather than excelling only in specific areas.
 
 ### 3.4 Reflection
 A few thoughts after examining the results:
 
 - **Performance Varies**: SqueezeNet was more aligned with the prompt-based categories. Inceptionv3 didn’t pick up on thematic or narrative elements as well.
-- **Category Boundaries Are Fuzzy**: The prompts themselves sometimes contained hybrid or complex descriptions. AI struggled most when an image embodied more than one attribute.
+- **Category Boundaries Are Fuzzy**: The prompts themselves sometimes contained hybrid or complex descriptions. AI struggled most when an image embodied more than one attribute. It did not pick the best categories to seperate the images from as they are all arguibly able to be involved into another of them. But even so I was more focused in attempting to see how AI works and identifyies things without too much human decision involveed but I failed to do so.
 - **AI Sees Differently**: Some classifications were “wrong” by prompt label but “logical” when considering visual similarity. That’s telling.
 
 Example:
 
 |Image | Prompt|
 |---|---|
-| ![This is Image 66](/assets/images/assignment-3/IMAGE66.jpeg)**Category:** *Realistic and Photorealistic*| raw analog candid grainy photo 3 cute fluffy kitten/spider hybrids with fluffy spider legs (no paws), ultra high definition, on a cosy room bed, sunny morning light, we can see a human hand like a pov from the bed, one of the hybrids is climbing on the hand while other climb the bed, its a pov from me waking up so we can see the raw form of the body under the blanket, the room seems to be of a goth teem from the 90's|
+| ![This is Image 66](/assets/images/assignment-3/images/IMAGE66.jpeg)**Category:** *Realistic and Photorealistic*| raw analog candid grainy photo 3 cute fluffy kitten/spider hybrids with fluffy spider legs (no paws), ultra high definition, on a cosy room bed, sunny morning light, we can see a human hand like a pov from the bed, one of the hybrids is climbing on the hand while other climb the bed, its a pov from me waking up so we can see the raw form of the body under the blanket, the room seems to be of a goth teem from the 90's|
 
 The image and prompt often feel like two entirely separate entities. One opens a world of interpretation and imagination, while the other imposes a frame or limit. A single description can lead to many different visual outcomes, just as a single image can inspire countless interpretations. Ideally, you’d expect a basic alignment between what a prompt describes and what the image delivers—but that’s not always the case.
 
@@ -128,9 +128,18 @@ This difference reveals a core challenge in machine vision: the gap between sema
 Ultimately, while AI models have become skilled at recognizing visual features, they’re still developing an understanding of how visual content and textual intent relate. There’s a gap between prompt and picture, between description and depiction. Until models can bridge that gap—understanding both what is seen and what is meant—their classifications will remain just approximations of human interpretation.
 
 ## 4 Multimodal Analysis (CLIP/DV Explorer)
+
 ### 4.1 Generate Captions
-Use 2DCLIP/DV Explorer to auto-caption images. Compare AI-generated text to my own interpretations.
-### 4.2 Explore Language-Image Relationship
+Using distant viewing, I entered images with prompts to compare them if the Ai genereated text matches with the prompt or is it completely different.
+
+The results:
+|Image| AI Generated| Prompt|
+|--|--|--|
+|![This is Image 66](/assets/images/assignment-3/IMAGE66.jpeg)||
+
+### 4.2 Generate 2D Clip
+
+### 4.3 Explore Language-Image Relationship
 Try to decipher how CLIrganize the corpus. Revisit the Impett & Offert quote in this context.
 
 ## 5 Overall
