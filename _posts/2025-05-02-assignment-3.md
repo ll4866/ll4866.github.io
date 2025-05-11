@@ -40,7 +40,7 @@ To ensure a balanced and meaningful analysis, I decided to categorize the images
 To ensure that the categorization process was unbiased and focused solely on the prompts rather than the visual content of the images, I utilized KIMI to categorize the images based on their prompts. This approach helped to minimize any potential biases that might arise from subjective interpretation of the visual data. Since I more focused on the comparison of the prompt and the image itself if the algorithm is able to recognize. I should categorize based on the prompt rather than the image itself.
 
 ## 2 Clustering Exercise (Organe Data Mining)
-### 2.1 Different 
+### 2.1 Different Algorithms Clustering
 I began clustering the images without their categories in mind just to see if I could decipher how the algorithm was categorizing the images. This approach aligns with the concept that "in reading a corpus of visual culture through a neural network, [are you] always also doing the reverse?" (Impett and Offert, 2024). By analyzing how AI interprets visual data, we gain insights into the AI's own categorization logic and biases.
 
 The below are screenshots of the different clustering results and how I try to identify how each algorithm clusters them.
@@ -58,24 +58,46 @@ This observation aligns with Impett and Offert's concept, as it demonstrates how
 
 ## 3 Classification & Consfusion Matrix
 ### 3.1 Categorizing Images
-As mentioned before, creating a classification system based on the attributes: Realistic, Artistic, Surreal, Humorous, Abstract. I found these categories by giving KIMI all the prompts of the images and having it categorize finding a common ground. I asked for multiple sets of categories and chose the above one. 
-### 3.2 Predition
-What i expect is for some of the classification to be accurately identified given they are image generated based on the classified wording.
-However the resulting did not meet what i was expecting as it was all over the place for it to clearly identify some categories.
-|||
-|--|--|
-|![This is Hierchy 1](/assets/images/assignment-3/Hierchy1.png)||
-|Inceptionv3||
-|||
-|||
+As previously mentioned, I developed a classification system based on the attributes: Realistic, Artistic, Surreal, Humorous, and Abstract. These categories were determined by analyzing the prompts of the images with the assistance of KIMI.
 
-### 3.3 Reflection
-Refine categories if needed.
-How well did any of the built-in algorithms you chose predict the categories you established?
-Did you go back and adjust any of your categories?
-When you isolate the cases of “false positives”, i.e. mis-predictions, can you understand why the algorithm got them wrong? (Think about the Monet/Manet mis-prediction case we saw in class).
-If you could train your own algorithm what would you aim to teach it?
-Reference Distant Viewing (Arnold & Tilton).
+### 3.2 Predition
+I anticipated that the AI would accurately identify some classifications, given that the images were generated based on specific descriptive wording. However, the results did not fully meet my expectations, as the AI's classifications were inconsistent and did not clearly identify some categories.
+
+### 3.4 Result
+|**A. Inceptionv3**||
+|--|--|
+|![This is Hierchy 1](/assets/images/assignment-3/Hierchy0.png)|![This is Issue 1](/assets/images/assignment-3/Issue0.png)|
+|![This is Evidence 1](/assets/images/assignment-3/Evidence0.1.png)| C1. Most Surreal Fantasy but it seems that it attempted to categorize by how solid the color or texture is in this cluste| 
+|![This is Evidence 2](/assets/images/assignment-3/Evidence0.2.png)| C2. Artistic illustrative is the most in this cluster but what the algorithm did was cluster the more animalistic playful images in this cluster | 
+
+Inceptionv3 was somewhat able to cluster the playful and serious images apart but it was not able to classify the categories I have established.
+
+|**B. SqueezeNet**||
+|--|--|
+|![This is Hierchy 1](/assets/images/assignment-3/Hierchy1.png)|![This is Issue 1](/assets/images/assignment-3/Issue1.png)|
+|![This is Evidence 1](/assets/images/assignment-3/Evidence1.1.png)| C3. It was successfully in picking out the drawing or manga-like cat images but given the prompts of these images were supposed to categorize them as Realistic. I guess in this definition of realistic is to make it look more authentic and human-made as possible rather than real existing.| 
+|![This is Evidence 2](/assets/images/assignment-3/Evidence1.2.png)| C1. This section the algorithm was able to capture a sense of cinematic lighting and color of the images but it was not able to realize that it was fake and some parts were not realistic so it approached differently but close in identifying real.|
+|![This is Evidence 2](/assets/images/assignment-3/Evidence1.3.png)| C2. Artistic - most of the images are supposed to be classified this way, and it does accomplish that as we can see that the algorithm senses artistic type. In this category, it is mostly the cats' faces, but the detail of the hair and eyes are so vivid and also portrayed as a self-portrait | 
+
+SqueezeNet perfectly picked out the images by common traits and thematic sense.
+
+These results indicate that while the algorithms were able to identify certain common traits and themes, they did not consistently classify the images according to the established categories. This suggests that the AI models may require further refinement to accurately interpret and categorize visual data based on textual prompts.
+
+### 3.4 Reflection
+Upon reviewing the classification results, several insights emerged:
+
+- **Algorithm Performance**: The performance of the algorithms varied significantly. While SqueezeNet showed a strong ability to identify thematic elements and common traits, Inceptionv3 struggled with accurate categorization based on the predefined attributes.
+- **Misclassification Accuracy**: The AI's ability to accurately classify images into the established categories was inconsistent. Some images could be considered for multiple categories but were placed in one due to the AI's interpretation. 
+
+|For instance, consider the image|Prompt:|
+|---|---|
+| ![This is Image 66](/assets/images/assignment-3/IMAGE66.jpeg) | raw analog candid grainy photo 3 cute fluffy kitten/spider hybrids with fluffy spider legs (no paws), ultra high definition, on a cosy room bed, sunny morning light, we can see a human hand like a pov from the bed, one of the hybrids is climbing on the hand while other climb the bed, its a pov from me waking up so we can see the raw form of the body under the blanket, the room seems to be of a goth teem from the 90's|
+
+The AI might label an image with a fantasy prompt as "realistic" because it looks closely at details like lighting, texture, and setting that make the image seem real. Even if the content is imaginary, if it looks like it could be real, the AI might put it in the realistic category. When categorizing the images, the AI uses the text of the prompts to decide where to place each image. It looks at the words and phrases in the prompts to understand the intended theme or style of the image. So, if the prompt describes an image with realistic qualities, the AI will categorize it as "realistic".
+
+On the other hand, clustering is a different process where an algorithm groups images based on what it sees in the images themselves, not the prompts. The algorithm examines visual elements like color, shape, texture, and composition. If the algorithm detects patterns or features in the images that it associates with realism, it might cluster them together, even if the original prompt was fantastical.
+
+The issue is the difference between words and imagery. This analysis, combined with insights from Distant Viewing (Arnold & Tilton), suggests that while AI has made significant progress in image classification, there is still room for improvement, particularly in how AI interprets and categorizes visual data based on textual descriptions.
 
 ## 4 Multimodal Analysis (CLIP/DV Explorer)
 ### 4.1 Generate Captions
