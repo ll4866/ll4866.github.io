@@ -41,42 +41,34 @@ To ensure that the categorization process was unbiased and focused solely on the
 
 ## 2 Clustering Exercise (Organe Data Mining)
 ### 2.1 Different 
-I began clustering the images without their categories in mind just to see if I could decipher how the algorithm was categorizing the images. The below are screenshots of the different results and how I try to identify how it clusters them.
+I began clustering the images without their categories in mind just to see if I could decipher how the algorithm was categorizing the images. This approach aligns with the concept that "in reading a corpus of visual culture through a neural network, [are you] always also doing the reverse?" (Impett and Offert, 2024). By analyzing how AI interprets visual data, we gain insights into the AI's own categorization logic and biases.
 
-| Cluster Screnshot | Algorithm |
+The below are screenshots of the different clustering results and how I try to identify how each algorithm clusters them.
+
+| Cluster Screenshot | Algorithm |
 |-------------------|-----------|
-| ![This is Cluster Guess 1](/assets/images/assignment-3/ClusterGuess.png)| SqueezeNet|
+| ![This is Cluster Guess 0](/assets/images/assignment-3/ClusterGuess0.png)| Inceptionv3|
+| ![This is Cluster Guess 1](/assets/images/assignment-3/ClusterGuess1.png)| SqueezeNet|
 | ![This is Cluster Guess 2](/assets/images/assignment-3/ClusterGuess2.png)| Painters |
+| ![This is Cluster Guess3](/assets/images/assignment-3/ClusterGuess3.png)| DeepLoc |
 
-What I noticed is that they do organize the data differently. Some of the basic clustering are the same but the rest are not. SqueezeNet and Painters both clustered the images that appear to be like comic images together. Painters appear to caterize some of them by color and not content for osme images.
+What I noticed is that ODM clustering algorithms do organize the data differently. Inceptionv3 focuses more on similar objects, for instance if they both showcase a black cat. SqueezeNet is more about its thematic. DeepLoc is more by its color brightness, with the darker ones on the top left and bright ones bottom right. Painters is a by color and type.
 
-
-Using the provided images2.ows workflow, I tested clustering with Inceptionv3 and other algorithms to see how they organize the data. I explored the following questions:
-How does one built-in algorithm such as Inceptionv3 in ODM cluster the data?
-Do other algorithms give you different results?
-What features seem to be most characteristic of the different quadrants of the image plot?
-Using hierarchical clustering, isolate specific clusters to look more closely.
-How “in reading a corpus of visual culture through a neural network, [are you] always also doing the reverse?” (Impett and Offert, 2024)
-
-### 2.2 Analysisng the Results
-
-
-Screenshot the main image plot;
-
-Method explain how Isolate clusters via hierarchical clustering; annotate findings.
-
-Reflect: How does the algorithm’s view differ from yours?
-### 2.1 Comparison Insights
-Compare algorithm outputs.
-
-Address the Impett & Offert quote on neural networks.
+This observation aligns with Impett and Offert's concept, as it demonstrates how AI algorithms interpret visual data in ways that might differ from human perception. Each algorithm brings its own biases and methods to the task, which can lead to different clustering outcomes. By examining these outcomes, we can infer how AI 'reads' visual culture and how it might 'write back' its understanding into new categorizations or interpretations.
 
 ## 3 Classification & Consfusion Matrix
 ### 3.1 Categorizing Images
-Creating clssification system
-### 3.2 Preditiong
-What to expect 
-Analysing any errors that occured and why
+As mentioned before, creating a classification system based on the attributes: Realistic, Artistic, Surreal, Humorous, Abstract. I found these categories by giving KIMI all the prompts of the images and having it categorize finding a common ground. I asked for multiple sets of categories and chose the above one. 
+### 3.2 Predition
+What i expect is for some of the classification to be accurately identified given they are image generated based on the classified wording.
+However the resulting did not meet what i was expecting as it was all over the place for it to clearly identify some categories.
+|||
+|--|--|
+|![This is Hierchy 1](/assets/images/assignment-3/Hierchy1.png)||
+|Inceptionv3||
+|||
+|||
+
 ### 3.3 Reflection
 Refine categories if needed.
 How well did any of the built-in algorithms you chose predict the categories you established?
