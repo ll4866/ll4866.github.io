@@ -208,7 +208,7 @@ The findings from this assignment suggest that while AI has made significant str
 
 This analysis, combined with insights from Distant Viewing (Arnold & Tilton), suggests that while AI has made significant progress in image classification, the journey towards AI that can truly understand and interpret visual culture is ongoing and requires further refinement and understanding of the nuances in visual data.
 
-**✅ Working**
+**✅ Ready for Grading**
 <br/>
 Due: May 11, 2025 23:59 PM
 {: .notice}
