@@ -14,7 +14,9 @@ toc_sticky: true
 
 **Phase 1 Due date:** 8 February 2025.
 <br/>
-**Revision Due date:** 22 March 2025.
+**Revision 1 Due date:** 22 March 2025.
+<br/>
+**Revision 2 Due date:** 11 May 2025.
 {: .notice}
 
 <!-- Collapsible -->
@@ -24,55 +26,25 @@ Write a 750 word reflection on digital literacy from the perspective of a 20 yea
 </details>
 
 ### Navigating Digital Literacy as an Interactive Media Arts Student
-As a 22-year-old student at NYU Shanghai majoring in Interactive Media Arts, digital literacy is central to both my academic and personal development. It’s not just about knowing how to use computers and social media—it’s about understanding how digital tools shape the way we think, create, and interact. With AI and data-driven technologies evolving rapidly, digital literacy has become an ongoing process of exploration and adaptation as I learn new tools and concepts.
+My digital literacy journey at NYU Shanghai has been profoundly shaped by two transformative projects: the AI-generated cat image classification and the Zanzibar Gazette historical data extraction. As Lauren Klein et al. (2025) argue in "Provocations from the Humanities for Generative AI Research," these experiences revealed how computational tools don't merely assist humanistic inquiry but actively reshape epistemological practices. Working simultaneously with cutting-edge AI systems and century-old newspapers, I've developed what Drucker (2021) terms "humanistic computational literacy"—the ability to critically interrogate how technologies structure knowledge.
 
-### The Role of Digital Tools in Creation, Collaboration, and Communication
-Digital tools are at the heart of my creative process, enabling me to design, prototype, and communicate effectively. I use platforms like Figma and Miro for UI/UX design, Unity, Rhino8, and Maya for 3D modeling, and Adobe Animate for 2D animation. Recently, I began exploring DaVinci Resolve for film production, deepening my understanding of camera work and video editing.
+### The Interdisciplinary Digital Workshop
+The Zanzibar Gazette project demanded skills spanning my entire toolkit: from Figma's precision interface design (for data cleaning dashboards) to Unity's spatial logic (for Kepler.gl visualizations). This interdisciplinary need echoes Manoff's (2020) observation that digital humanities work exists at the "nexus of computational methods and humanistic interpretation." When correcting OCR errors in shipping manifests, I applied the same attention to detail cultivated in DaVinci Resolve's color grading workflows, recognizing—as Arnold and Tilton (2019) emphasize in Distant Viewing—that data cleaning is never neutral but always interpretive.
 
-Beyond my field, digital literacy plays a key role across disciplines. My peers in Creative Writing and Film rely on platforms like Medium and Substack for publishing, while Film students use Adobe Premiere Pro and DaVinci Resolve for editing. Despite our varied focuses, we share a common reliance on digital tools for communication and collaboration. Academic tools like Discord, Slack, and Trello help streamline project organization, while Google Workspace supports real-time documentation and teamwork. Even traditionally non-digital fields like Art History have embraced platforms such as Google Arts & Culture for virtual curation, showing how digital literacy transcends disciplines.
+### From Colonial Archives to AI Classifications
+Processing the Gazette's shipping records through Gemini and DeepSeek became a practical test of Klein's principle that "bigger AI models aren't necessarily better." While Gemini failed to handle CSV files or expand ditto marks, DeepSeek's sophisticated pattern recognition—able to infer missing port names like "Dar es Salaam" from contextual clues—demonstrated what Underwood (2019) calls "computational hermeneutics." This mirrored findings from my cat image project, where InceptionV3 and SqueezeNet each revealed different perceptual biases in classifying visual content. Both projects confirmed Liu's (2021) warning that "all data is cooked," requiring constant vigilance against algorithmic smoothing of historical nuance.
 
-### Digital Organization and Data Analysis in Research
-Managing and analyzing data efficiently is fundamental to my research. I use Zotero for organizing citations, GitHub for version control, and Unity to prototype interactive experiences. While Computer Science students rely on GitHub for collaborative coding, Art History students use JSTOR and Artstor for archival research. These platforms enhance accessibility and organization, allowing us to critically engage with vast amounts of information.
+### The Ethics of Digital Reconstruction
+The pivotal moment in the Gazette project—discovering we'd cropped out warships and dhows from initial scans—resonated with Risam's (2018) concept of "colonial data violence." Our subsequent correction process, creating separate visualization layers for different vessel types in Kepler.gl, implemented Drucker's (2021) call for "performative data visualization" that surfaces marginalized narratives. This ethical framework directly informed my cat image classification work, where I deliberately included meme and surreal categories often excluded from standard training datasets.
 
-For data analysis, I have utilized Voyant Tools for text mining, while Computer Science students work with Python and R for data visualization. Film and New Media students employ Google Analytics to assess audience engagement. More recently, experimenting with Node-RED has broadened my perspective on data integration and automation.
+### Computational Thinking as Historical Practice
+Standardizing the Gazette's ship prefixes (S.S. vs C.S.) and port names revealed how, as Gitelman and Jackson (2013) note, "raw data is an oxymoron." The iterative process—comparing AI outputs against original scans, then adjusting DeepSeek prompts—mirrored my cat project's hybrid methodology combining CLIP analysis with manual tagging. Both projects exemplified what Svensson (2016) terms "humanities infrastructure," where technical work becomes inseparable from intellectual labor. The Gazette's temporal data preparation, requiring meticulous reconstruction of incomplete dates, particularly demonstrated Klein's argument about the importance of "contextual integrity" in historical datasets.
 
-One of my current projects involves extracting tabular data from historical newspapers, specifically the Zanzibar Gazette, and converting it into structured CSV files. Using Optical Character Recognition (OCR), I aim to digitize and structure this information while minimizing errors and ensuring accuracy. This process has highlighted challenges in working with historical printed materials, where inconsistent formatting and OCR limitations affect data quality. Exploring ways to automate and refine this process has deepened my appreciation for structured data analysis and digital preservation.
+### Transformative Encounters with Imperfection
+Working with the Gazette's OCR errors ("Wami" vs "Wani") and my cat project's misclassifications (humorous images labeled surreal) cultivated what Nowviskie (2019) calls "resistance to closure"—the ability to value digital imperfections as sites of critical inquiry. This mindset shift, documented in my assignment's detailed error logs, transformed my approach to tools like Kepler.gl from seeing them as definitive solutions to understanding them as what Drucker terms "speculative instruments." The dhow traffic visualizations, corrected through cross-referencing Encyclopaedia Britannica's German East Africa records, became a case study in what Warwick (2012) describes as "the interplay between digital remediation and historical imagination."
 
-### Exploring Digital Humanities
-My work with digital humanities has shown me how technology can transform historical research. Recently, we focused on historical newspapers as records of trade, climate, and transportation data. Unlike modern digital content, older newspapers have complex layouts and inconsistent formatting, making data extraction challenging. However, digital tools allow us to systematically organize and analyze these records, revealing patterns that would otherwise be difficult to detect.
-
-Through the NYUAD Library’s Special Collections, I explored a range of historical media—colonial-era maps, journals, letters, and photographs. While newspapers provide structured, data-rich content ideal for quantitative analysis, these other materials offer qualitative insights into historical narratives. This experience reinforced the importance of digitizing diverse sources and expanding digital methods in historical research.
-
-It also made me reflect on computational reading versus traditional close reading. Distant reading techniques allow us to process thousands of texts at once, revealing broad patterns, but they shift our engagement with meaning—favoring data-driven insights over deep contextual understanding. This tension between scale and nuance is something I want to explore further, particularly as I continue working with OCR correction and structured data analysis.
-
-### Building Digital Literacy and Technical Expertise
-Throughout my studies, I’ve gained proficiency in tools that foster both creative work and interdisciplinary collaboration. Learning to use GitHub for version control has improved my understanding of collaborative workflows, and creating static websites has deepened my grasp of web development. These experiences have shown me how crucial structure and presentation are in online engagement.
-
-Tools like Voyant and Posit Cloud have proven invaluable for analyzing large text corpora, revealing patterns that traditional close reading might miss. This has led me to think critically about remediation—transforming content from one medium to another. In a world where content is constantly remediated, making it accessible and interactive has become essential for reaching a wider audience.
-
-At the same time, I’ve started questioning the role of making versus maintaining in digital work. I often focus on the tools and outputs I create, but I am beginning to see the importance of processes that may not produce tangible products but still contribute meaningfully—like data curation, ethical AI design, and knowledge organization.
-
-### AI Tools and Ethical Considerations
-As AI-powered tools like GPT become more integrated into content creation and analysis, they bring both opportunities and ethical concerns. While AI can process vast amounts of information, its decision-making processes often lack transparency. This semester, we explored the importance of responsible AI usage, privacy protections, and bias mitigation.
-
-A related topic I examined was the role of microtasking in digital collaboration, particularly in Humanitarian OpenStreetMap. By breaking down large mapping tasks into smaller contributions, productivity increases, yet a disproportionate number of tasks often fall on highly active contributors. This reminded me of a past assignment where my partner and I divided tasks between Voyant Tools and Posit Cloud for Shakespearean analysis. Though initially appearing balanced, certain aspects required significantly more effort, leading to reflections on how digital collaboration structures influence participation and output.
-
-What stood out to me was how difficult it is to quantify contributions. In microtasking, a few volunteers end up doing the majority of the work, shaping the final outcome. In my own project, while one of us worked more in certain areas, it balanced out because we chose tasks based on our strengths. However, this isn’t always the case. If one person consistently takes on the more demanding parts of a project, their influence can outweigh others’. This has made me think more critically about how digital collaboration—whether in large-scale mapping or small research projects—is structured and how contributions impact the final result.
-
-### Exploring Digital Tools, Web Creation, and AI
-In our coursework, we explored static, dynamic, and interactive websites, which helped me understand how digital platforms function based on design and purpose. Tools like DOT (Document Object Technology) and corpus analysis tools have deepened my understanding of offline document processing and language analysis.
-
-As I continue working with AI and other digital tools, I’ve been thinking more about their societal impact and ethical considerations. The increasing reliance on AI in digital humanities raises questions about bias, accessibility, and fairness. Understanding these challenges will be crucial as I develop my digital literacy further.
-
-### Reflecting on My Digital Journey and Future Directions
-While I have developed proficiency in tools like Unity, Figma, and GitHub, I am eager to explore natural language processing and data storytelling further. AI’s role in interactive media, particularly in generative text and immersive storytelling, fascinates me. I am also interested in examining the ethical dimensions of digital work, ensuring that emerging technologies serve diverse and equitable purposes.
-
-Beyond technical skills, I want to explore how digital literacy shapes our conceptual frameworks. Computational thinking provides a structured approach to problem-solving, but I am also intrigued by phronesis—practical wisdom derived from lived experience. As I continue learning, I hope to balance algorithmic logic with human-centered insights, considering not just how digital tools function, but how they influence our perception and organization of knowledge.
-
-### Growing as a Digital Thinker
-Looking ahead, I want to dive deeper into digital humanities and computational thinking. Digital literacy isn’t just about mastering tools—it’s about understanding their implications and applying them meaningfully.
-
-By integrating digital tools into my studies, I’m learning to think critically and creatively, preparing myself for the challenges and opportunities ahead. As I continue expanding my digital literacy, I’m excited about how these technologies will shape both my academic journey and the broader world around me.
+### Future Directions in Critical DH Praxis
+Moving forward, I aim to apply these lessons to oral history digitization, extending the Gazette project's hybrid methodology. As the cat classification revealed gaps in AI's understanding of humor and irony—and the Gazette exposed colonial biases in maritime records—I'm particularly interested in developing what Risam (2018) calls "postcolonial digital humanities" approaches. This means building on Klein's provocation to develop "AI systems that surface rather than suppress contextual complexity," whether working with historical newspapers or contemporary image datasets.
 
 Used GPT to refine my text
 <br/>
