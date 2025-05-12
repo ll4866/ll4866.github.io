@@ -62,7 +62,6 @@ Each clustering algorithm “read” the images differently. These patterns echo
 ## 3 Classification & Consfusion Matrix
 ### 3.1 Categorizing Images
 As previously mentioned, I developed a classification system based on the attributes: Realistic, Artistic, Surreal, Humorous, and Abstract. These categories were determined by analyzing the prompts of the images with the assistance of KIMI.
-<a href="/assets/images/assignment-3/Images" download> 🔗 Download: <span style="color:#5e5eff"> Classified AI Cat Images Folder </span> </a>
 
 ### 3.2 Prediction
 I anticipated that the AI would accurately identify some classifications, given that the images were generated based on specific descriptive wording. However, the results did not fully meet my expectations, as the AI's classifications were inconsistent and did not clearly identify some categories.
